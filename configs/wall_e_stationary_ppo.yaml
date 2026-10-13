@@ -1,0 +1,59 @@
+# Simulation-only station keeping. Position, velocity and wheel speeds below
+# are simulator measurements; this observation vector is NOT deployable on TT
+# motors without encoders or an independently validated motion measurement.
+model_path: simulation/models/wall_e_balance.xml
+motor_config_path: configs/mujoco_balance_n20_assumption.yaml
+seed: 42042
+environment:
+  objective: stationary
+  control_period_s: 0.01
+  motor_torque_update: per_physics_step
+  max_pwm_percent: 40.0
+  reset_pitch_center_deg: 32.5
+  reset_pitch_range_deg: 3.0
+  fall_angle_deg: 45.0
+  max_episode_seconds: 10.0
+  target_pitch_deg: 32.5
+  # pitch ERROR deg, rate deg/s, wheels rad/s, axle displacement m, speed m/s.
+  observation_scales: [5.0, 100.0, 10.0, 10.0, 0.05, 0.1]
+  reward:
+    # r = 0.1 + 0.9 exp(-cost); positive and bounded in [0.1, 1].
+    # Cost discourages displacement, drift, tilt, rapid rotation and effort.
+    alive: 0.1
+    stationary_bonus: 0.9
+    position_scale_m: 0.05
+    velocity_scale_m_s: 0.05
+    pitch_weight: 1.0
+    pitch_scale_deg: 5.0
+    pitch_rate_weight: 0.1
+    pitch_rate_scale_deg_s: 100.0
+    wheel_speed_weight: 0.02
+    wheel_speed_scale_rad_s: 5.0
+    action_weight: 0.01
+evaluation:
+  # Explicit simulation acceptance criteria, not hardware specifications.
+  settling_time_s: 1.0
+  max_excursion_m: 0.05
+  settled_rms_speed_m_s: 0.02
+  settled_rms_pitch_error_deg: 2.0
+training:
+  total_timesteps: 200000
+  policy: MlpPolicy
+  device: cpu
+  ppo:
+    learning_rate: 0.0001
+    n_steps: 1024
+    batch_size: 128
+    n_epochs: 10
+    gamma: 0.995
+    gae_lambda: 0.95
+    clip_range: 0.2
+    ent_coef: 0.0
+    policy_kwargs:
+      log_std_init: -1.0
+  checkpoint_every_steps: 16384
+  validation_every_steps: 8192
+  validation_episodes: 5
+  independent_eval_episodes: 20
+  validation_seed_offset: 10000
+  independent_seed_offset: 20000

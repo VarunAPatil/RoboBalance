@@ -1,0 +1,57 @@
+# First simulation-only PPO experiment. N20 curve/signs come from a supplied
+# specification image, not measurements of the assembled Wall-E.
+model_path: simulation/models/wall_e_balance.xml
+motor_config_path: configs/mujoco_balance_n20_assumption.yaml
+seed: 42042
+
+environment:
+  control_period_s: 0.01
+  # Recompute the speed-dependent motor map each 2 ms physics step while PPO
+  # holds one action for the full 10 ms control interval.
+  motor_torque_update: per_physics_step
+  # Provisional simulation action cap: a same-seed 20k-step comparison found
+  # better survival than 30% with much lower wheel speed than 80%.
+  # The supplier motor specifications remain in the separate motor config.
+  max_pwm_percent: 40.0
+  # CAD chassis COM is 14.117 mm forward and 22.148 mm above the axle at
+  # qpos0; atan2(forward, up) gives a provisional 32.514 deg balance angle.
+  reset_pitch_center_deg: 32.5
+  reset_pitch_range_deg: 3.0
+  fall_angle_deg: 45.0
+  max_episode_seconds: 5.0
+  target_pitch_deg: 32.5
+  # Raw observation units: deg, deg/s, rad/s, rad/s. No hidden chassis angle.
+  # Divide by these scales before passing float32 observations to PPO.
+  observation_scales: [20.0, 100.0, 30.0, 30.0]
+  reward:
+    # First-task objective: one point per 10 ms survived. The earlier squared
+    # penalties made a quick fall score better than a longer survival.
+    # These optional weights stay zero until shaping is redesigned and tested.
+    alive: 1.0
+    pitch_weight: 0.0
+    pitch_scale_deg: 10.0
+    pitch_rate_weight: 0.0
+    pitch_rate_scale_deg_s: 100.0
+    wheel_speed_weight: 0.0
+    wheel_speed_scale_rad_s: 30.0
+    action_weight: 0.0
+
+training:
+  total_timesteps: 20000
+  policy: MlpPolicy
+  device: cpu
+  ppo:
+    learning_rate: 0.0003
+    n_steps: 256
+    batch_size: 64
+    n_epochs: 5
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_range: 0.2
+    ent_coef: 0.0
+  checkpoint_every_steps: 256
+  validation_every_steps: 1024
+  validation_episodes: 3
+  independent_eval_episodes: 10
+  validation_seed_offset: 10000
+  independent_seed_offset: 20000
