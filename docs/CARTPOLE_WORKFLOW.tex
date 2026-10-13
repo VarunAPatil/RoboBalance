@@ -1,0 +1,212 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,xcolor,hyperref,fancyvrb}
+\definecolor{accent}{HTML}{175C78}
+\hypersetup{colorlinks=true,urlcolor=accent,pdftitle={CartPole: exact workflow and hands-on guide}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\newcommand{\block}[1]{\par\vspace{6pt}{\large\bfseries\color{accent}#1}\par}
+\newcommand{\page}[1]{\newpage{\small\color{accent} WALL-E RL\hfill #1}\par}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small,frame=single}
+\begin{document}
+{\small\color{accent} WALL-E RL\hfill 27 September 2026}\par
+\vspace{12pt}{\Huge\bfseries CartPole, end to end}\par
+{\Large Exact workflow and hands-on guide}\par
+\block{What you will see}
+You will inspect observations, compare a fixed controller with our trained actor, see actual action probabilities, watch a simulation, train a small new policy, and inspect learning curves. These activities run on the laptop. They do not test the physical Wall-E robot.
+
+\block{1. The system we are controlling}
+CartPole is a cart with a hinged pole. The cart can be pushed left or right; the controller must keep the pole upright without leaving the track. One step advances 0.02 seconds of simulated time in our installed environment.
+\begin{center}\begin{tabular}{lll}
+\textbf{Observation} & \textbf{Unit} & \textbf{Purpose}\\\hline
+Cart position & m & Know distance from track center\\
+Cart velocity & m/s & Know direction and speed\\
+Pole angle & rad & Know tilt from upright\\
+Pole angular velocity & rad/s & Know whether tilt is changing
+\end{tabular}\end{center}
+Action 0 pushes left; action 1 pushes right. The force magnitude is fixed. Default reward is $+1$ per step, including the failure step. Failure occurs beyond approximately $\pm12^\circ$ pole angle or $\pm2.4$ m cart position. The episode time limit is 500 steps.
+
+\block{2. Keep the roles distinct}
+\begin{itemize}
+\item \textbf{Gymnasium/CartPole:} maintains simulated state and returns the consequences of an action.
+\item \textbf{Actor:} maps the four observations to probabilities for left and right. Training samples actions; deterministic evaluation picks the most probable.
+\item \textbf{Critic:} predicts discounted future return. It supports learning rather than choosing the action.
+\item \textbf{PPO:} collects experience and changes network weights.
+\item \textbf{Callbacks:} save models and periodically evaluate them.
+\item \textbf{TensorBoard:} displays recorded metrics; it does not train the model.
+\end{itemize}
+\block{3. The two loops}
+\textbf{Interaction:} observation $\to$ actor $\to$ action $\to$ physics update $\to$ next observation and reward.\par
+\textbf{Learning:} collect transitions $\to$ estimate advantages and return targets $\to$ optimize actor and critic $\to$ collect fresh transitions.
+\par Inference runs only the action-selection loop with fixed weights. Receiving a reward does not automatically make a policy learn.
+
+\page{THE EXACT TRAINING WORKFLOW}
+\block{4. What training/train.py does, in order}
+\begin{enumerate}
+\item Read \texttt{--config}, \texttt{--run-dir}, and \texttt{--timesteps}. Defaults come from \texttt{configs/ppo.yaml}.
+\item Create a new run folder. Existing folders are rejected, preventing accidental reuse. Save effective configuration and dependency records.
+\item Create separate training and validation CartPole environments, initially seeded with 42 and 1042. Monitor wrappers record episode rewards and lengths.
+\item Construct PPO with \texttt{MlpPolicy}, CPU execution, seed 42, and TensorBoard logging.
+\item Configure checkpoint and validation callbacks, then call \texttt{model.learn(...)}.
+\item Save \texttt{final\_model.zip}. Evaluate this final policy over 30 episodes with seeds 10042--10071 and write \texttt{final\_evaluation.json}.
+\item Close the environments, including when an error occurs inside the training block.
+\end{enumerate}
+\block{5. What one PPO cycle does}
+With our single environment, \texttt{n\_steps=1024} collects 1,024 transitions with fixed policy weights. The buffer contains observations, actions, rewards, episode-boundary information, critic predictions, and old action log probabilities.
+\[
+\delta_t=r_t+\gamma\hat V(s_{t+1})-\hat V(s_t)
+\]
+GAE combines prediction errors across steps to estimate advantages; true terminal transitions have no future value. PPO derives critic targets from the collected experience and estimated advantages.
+
+Shuffle samples into minibatches of 64. Make 10 passes: $1024/64=16$ minibatches per pass and $16\times10=160$ optimizer steps per rollout. These optimizer steps reuse recorded data; they are not additional environment interactions. Collect a new rollout afterward.
+
+\block{6. Actual networks and settings}
+The installed default actor is $4\to64\to64\to2$ action scores, converted to categorical probabilities. The separate critic is $4\to64\to64\to1$ value. Both hidden networks use Tanh; the optimizer is Adam. We do not override the default network architecture.
+\begin{center}\begin{tabular}{ll}
+Learning rate & 0.0003\\
+Discount $\gamma$ & 0.99\\
+GAE $\lambda$ & 0.95\\
+Actor clipping & 0.2\\
+Entropy coefficient & 0.0
+\end{tabular}\end{center}
+Clipping changes the actor's learning objective; it is not a hard clamp on probabilities or weights. Zero entropy coefficient removes the extra entropy bonus, not stochastic action sampling.
+
+\page{CALLBACKS AND EXPERIMENT OUTPUTS}
+\block{7. What happens every 10,000 training steps?}
+Our single-environment setup invokes both callbacks every 10,000 collection steps. This can happen partway through a rollout, rather than exactly at an optimizer boundary.
+\textbf{CheckpointCallback} saves a model snapshot to \texttt{checkpoints/}, such as \texttt{rl\_model\_10000\_steps.zip}.
+
+\textbf{EvalCallback} runs 10 full episodes in the separate validation environment, selecting actions deterministically. It records results in \texttt{validation/evaluations.npz}. If the mean reward is strictly better than before, it saves \texttt{best/best\_model.zip}. Validation experience is not used to update weights.
+
+Callback frequencies count callback calls. With parallel environments, a call represents multiple transitions and frequencies need adjustment. We currently use one environment.
+
+\block{8. Find these files in each run}
+\begin{description}
+\item[config.yaml] Effective settings, including command-line timestep overrides.
+\item[versions.json] Python, library, and platform versions.
+\item[requirements-freeze.txt] Installed dependencies for reproduction.
+\item[train\_monitor.csv] Training episode rewards and lengths.
+\item[validation\_monitor.csv] Validation episode rewards and lengths.
+\item[tensorboard/] Learning and evaluation metrics.
+\item[checkpoints/] Periodic snapshots, without performance selection.
+\item[best/best\_model.zip] Highest validation-mean policy seen.
+\item[final\_model.zip] Policy after training finishes; may differ from best.
+\item[final\_evaluation.json] Final policy's fresh-episode results and actual training steps.
+\end{description}
+
+\block{9. Existing experiment and its limits}
+The saved run is \texttt{experiments/cartpole-ppo-seed42-100k/}. Its 100,000-step request completed 100,352 steps because PPO finished the last 1,024-step rollout. The recorded final and separate holdout evaluations each scored $500.0\pm0.0$ over 30 episodes.
+
+That establishes a CartPole workflow milestone. It does not establish physical balance. In particular, the real robot lacks encoders, so its observations cannot automatically include CartPole-like wheel position and velocity.
+
+\block{10. Evaluation score versus critic value}
+The episode score sums rewards without discounting. The critic estimates discounted return: 500 certain remaining rewards of 1 at $\gamma=0.99$ sum to about 99.34, not 500. A critic prediction is approximate and depends on the policy.
+
+\page{HANDS-ON: INSPECT AND WATCH}
+\block{11. Start in VS Code's terminal}
+Run these commands from the project root:
+\begin{code}
+cd /home/varun/Intelligent_systems/Wall-E/wall-e-rl
+source .venv/bin/activate
+\end{code}
+The environment already contains the training dependencies. All commands below use its Python. Commands that load a saved model do not retrain it.
+
+\block{12. First see what a fixed controller does}
+\begin{code}
+python -m training.demo --controller right
+\end{code}
+At seed 20042, verified locally: 10 steps, return 10, true termination. Look at the increasing rightward cart velocity and growing leftward pole rotation. Always pushing right ignores the changing state.
+
+\block{13. Inspect the trained actor}
+\begin{code}
+python -m training.demo --controller ppo --print-every 1
+\end{code}
+This prints every step. For less output, omit \texttt{--print-every 1}; the default prints the first five, every fiftieth, and the ending step.
+
+Locally verified first two decisions:
+\begin{code}
+step 1: P(left)=0.993 P(right)=0.007 -> LEFT
+step 2: P(left)=0.366 P(right)=0.634 -> RIGHT
+\end{code}
+The printed probabilities apply to the observation \emph{before} the action. The numbers after \texttt{next=} describe the state \emph{after} that action. They are in order: position, velocity, angle, angular velocity. Rounding can hide small differences. At seed 20042 the deterministic policy reaches 500 steps with \texttt{truncated=True}, equivalent to 10 seconds of simulated time.
+
+\block{14. Open the animation}
+The rendering dependency \texttt{pygame} was absent when this guide was built. Install the extra once, then watch from a desktop terminal:
+\begin{code}
+python -m pip install 'gymnasium[classic-control]'
+python -m training.demo --render
+python -m training.demo --controller right --render
+\end{code}
+The fixed controller fails quickly; the PPO attempt lasts longer. GUI rendering was not tested during guide creation. If a display is unavailable, omit \texttt{--render}; the numerical example still works. Watch how motor-like pushes change motion over several steps, not only the pole angle immediately.
+
+\page{HANDS-ON: EXPERIMENT WITH THE POLICY}
+\block{15. Try another starting state}
+\begin{code}
+python -m training.demo --seed 20043
+python -m training.demo --controller right --seed 20043
+\end{code}
+The seed changes the initial randomized state. Compare both controllers using the same seed so that the starting situation is matched. Different versions or execution conditions can affect reproducibility.
+
+\block{16. Try stochastic action selection}
+\begin{code}
+python -m training.demo --stochastic --print-every 1
+\end{code}
+This samples from the learned distribution instead of picking the more probable action. The weights remain fixed. A less probable action can occur; that is not a bug. The demo seeds action-sampling randomness too, so the same seed is intended to repeat the same experiment on a compatible setup. To explore another sequence, change the seed.
+
+\block{17. Evaluate several episodes without animation}
+\begin{code}
+python -m training.evaluate \
+  experiments/cartpole-ppo-seed42-100k/final_model.zip \
+  --episodes 30 --seed 30042
+\end{code}
+This prints mean reward, spread, and episode-length range. These are new evaluation seeds; this guide does not promise a particular result. Evaluation never changes weights.
+
+\block{18. Run a short new training experiment}
+\begin{code}
+python -m training.train --timesteps 2048
+\end{code}
+This builds fresh networks and performs two rollout/update cycles. It saves a new timestamped run and evaluates its final policy. Expect a short run to be weaker or variable; 2,048 steps check the workflow, not completion of learning. With the default 10,000-step callback frequencies, this short run has no periodic checkpoint or callback evaluation. It still saves a final model and runs final evaluation.
+
+The program prints the run path. Replace \texttt{<new-run>} below with that actual folder name; do not type the angle brackets literally:
+\begin{code}
+python -m training.demo \
+  --model experiments/<new-run>/final_model.zip --render
+\end{code}
+Compare the short-run actor with the existing 100k actor from the same seed. More training does not guarantee improvement on every individual episode.
+
+\page{HANDS-ON: WATCH LEARNING AND INTERPRET IT}
+\small
+\block{19. Train long enough to see the callbacks}
+\begin{code}
+python -m training.train --timesteps 20000
+\end{code}
+This starts another fresh run, not a continuation of the earlier short run. With 1,024-step blocks it completes 20,480 steps. Checkpoint and validation events occur at 10,000 and 20,000 collection steps. Actual runtime depends on the machine; a specific final score is not guaranteed.
+
+\block{20. Open TensorBoard in a second terminal}
+\begin{code}
+cd /home/varun/Intelligent_systems/Wall-E/wall-e-rl
+source .venv/bin/activate
+tensorboard --logdir experiments --port 6006
+\end{code}
+Open \url{http://localhost:6006} in your browser. Select the run you want to inspect. Stop the server with Ctrl+C when finished.
+
+\begin{description}
+\item[rollout/ep\_rew\_mean] Recent training episode rewards. Higher usually means longer CartPole survival; it is not an independent evaluation.
+\item[rollout/ep\_len\_mean] Recent episode lengths. In this reward scheme they closely track episode returns.
+\item[eval/mean\_reward] Periodic deterministic validation performance. A 2,048-step run has no such callback points with our default frequencies.
+\item[train/value\_loss] How closely critic predictions fit their training targets. Lower alone does not establish a better policy.
+\item[train/approx\_kl] A measure of policy-distribution change during optimization.
+\item[train/clip\_fraction] Fraction of sampled probability ratios outside the configured clipping interval.
+\item[train/entropy\_loss] Related to action-distribution uncertainty; it is negative entropy in this implementation, not episode reward.
+\end{description}
+TensorBoard smoothing can hide variation. Inspect unsmoothed values and the separate evaluation results, not just a smooth rising curve.
+
+\block{21. A useful completion checklist}
+Can you identify the four observation entries? Distinguish pre-action probabilities from the next observation? Explain a positive angle with negative angular velocity? Tell failure from time-limit truncation? Locate the saved model and evaluation JSON? Explain why inference leaves the weights unchanged?
+
+\block{Files and references}
+\texttt{training/demo.py}: runnable numerical and visual demonstration.\par
+\texttt{training/train.py}: training orchestration and callbacks.\par
+\texttt{training/evaluate.py}: fresh deterministic episodes.\par
+\texttt{docs/CARTPOLE\_GYMNASIUM.md}: detailed observation trace.\par
+Official background: \href{https://gymnasium.farama.org/environments/classic_control/cart_pole/}{Gymnasium CartPole}, \href{https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html}{Stable-Baselines3 PPO}, and \href{https://spinningup.openai.com/en/latest/spinningup/rl_intro.html}{Spinning Up concepts}. This guide's workflow and commands were checked against our local source and installed implementation.
+\end{document}

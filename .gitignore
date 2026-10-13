@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.vscode/browse.vc.db*
+.vscode/
+experiments/*
+!experiments/.gitkeep
+archive/
+papers/*.pdf
+*.core
+core
+.DS_Store
