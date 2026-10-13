@@ -1,0 +1,230 @@
+{
+  "mode": "static geometry-only; no joints, inertials, actuation, contact dynamics, or RL",
+  "source_urdf": "Assembly 1/assembly_1/urdf/assembly_1.urdf",
+  "source_sha256": "2b36828c3e11cd8cc90e3f3cd164ebaa30394eceb374e10859ab6bfdb632a0ef",
+  "source_links": 545,
+  "source_joints": {
+    "fixed": 542,
+    "continuous": 2
+  },
+  "root_link": "root",
+  "source_exported_mass_kg_unreliable": 0.23876112368804775,
+  "visual_instances": 404,
+  "unique_mesh_assets": 396,
+  "visuals_with_source_rgba": 374,
+  "group_visual_counts": {
+    "chassis": 400,
+    "revolute_2": 2,
+    "revolute_1": 2
+  },
+  "source_bounds_m": {
+    "min": [
+      0.0213159498064958,
+      -0.11588950041723252,
+      -0.04632973298080584
+    ],
+    "max": [
+      0.21431599131025458,
+      0.024019223115921015,
+      0.06497590962830543
+    ]
+  },
+  "display_translation_m": [
+    -0.1178159705583752,
+    0.04593513865065575,
+    0.04932973298080584
+  ],
+  "display_bounds_m": {
+    "min": [
+      -0.0965000207518794,
+      -0.06995436176657677,
+      0.0030000000000000027
+    ],
+    "max": [
+      0.09650002075187938,
+      0.06995436176657677,
+      0.11430564260911127
+    ]
+  },
+  "display_transform_note": "Only one global translation: center XY and place lowest geometry 3 mm over visual floor. No individual mesh recentering or compensation.",
+  "hinges_inspection_only": {
+    "revolute_2": {
+      "child": "rim",
+      "parent": "output_shaft_2_solid1",
+      "origin_source_m": [
+        0.18431583886002045,
+        -0.07908941737856293,
+        -0.011870102254636701
+      ],
+      "axis_in_child_frame": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "axis_in_source_world": [
+        -0.9999999999823961,
+        -2.6535995404960084e-06,
+        5.307193079085322e-06
+      ]
+    },
+    "revolute_1": {
+      "child": "rim_1",
+      "parent": "output_shaft_2_solid1_1",
+      "origin_source_m": [
+        0.051316150544267435,
+        -0.07908958595271563,
+        -0.011870032647250457
+      ],
+      "axis_in_child_frame": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "axis_in_source_world": [
+        0.9999999999694943,
+        7.3464102056053644e-06,
+        -2.6535763036646574e-06
+      ]
+    }
+  },
+  "key_visuals": {
+    "battery_cells_mesh": [
+      {
+        "link": "battery18650__none_2",
+        "mesh": "Battery18650__NONE_2.stl",
+        "group": "chassis"
+      }
+    ],
+    "battery_holder_mesh": [
+      {
+        "link": "batterycaseplastic__fillet1",
+        "mesh": "BatteryCasePlastic__Fillet1.stl",
+        "group": "chassis"
+      }
+    ],
+    "battery_springs_mesh": [
+      {
+        "link": "batterycasespring__cut_extrude2",
+        "mesh": "BatteryCaseSpring__Cut_Extrude2.stl",
+        "group": "chassis"
+      }
+    ],
+    "main_pcb_mesh": [
+      {
+        "link": "sra_board_unsaved_export_ok3bnj_pcb",
+        "mesh": "sra_board_unsaved_export_ok3Bnj_PCB.stl",
+        "group": "chassis"
+      }
+    ],
+    "daughterboard_mesh": [
+      {
+        "link": "body___pcb",
+        "mesh": "Body___PCB.stl",
+        "group": "chassis"
+      }
+    ],
+    "screws": [
+      {
+        "link": "screw_m3_75mm",
+        "mesh": "Screw_M3_75mm.stl",
+        "group": "chassis"
+      },
+      {
+        "link": "screw_m3_75mm_1",
+        "mesh": "Screw_M3_75mm.stl",
+        "group": "chassis"
+      },
+      {
+        "link": "screw_m3_75mm_2",
+        "mesh": "Screw_M3_75mm.stl",
+        "group": "chassis"
+      },
+      {
+        "link": "screw_m3_75mm_3",
+        "mesh": "Screw_M3_75mm.stl",
+        "group": "chassis"
+      }
+    ],
+    "motor_shells": [
+      {
+        "link": "tt_motor_90_1_solid1",
+        "mesh": "TT_MOTOR_90_1_solid1.stl",
+        "group": "chassis"
+      },
+      {
+        "link": "tt_motor_90_1_solid1_1",
+        "mesh": "TT_MOTOR_90_1_solid1.stl",
+        "group": "chassis"
+      }
+    ],
+    "motor_cores": [
+      {
+        "link": "mini_motor_1_solid1",
+        "mesh": "mini_motor_1_solid1.stl",
+        "group": "chassis"
+      },
+      {
+        "link": "mini_motor_1_solid1_1",
+        "mesh": "mini_motor_1_solid1.stl",
+        "group": "chassis"
+      }
+    ],
+    "motor_shafts": [
+      {
+        "link": "output_shaft_2_solid1",
+        "mesh": "output_shaft_2_solid1.stl",
+        "group": "chassis"
+      },
+      {
+        "link": "output_shaft_2_solid1_1",
+        "mesh": "output_shaft_2_solid1.stl",
+        "group": "chassis"
+      }
+    ],
+    "rims": [
+      {
+        "link": "rim",
+        "mesh": "Rim.stl",
+        "group": "revolute_2"
+      },
+      {
+        "link": "rim_1",
+        "mesh": "Rim.stl",
+        "group": "revolute_1"
+      }
+    ],
+    "tires": [
+      {
+        "link": "tyre",
+        "mesh": "Tyre.stl",
+        "group": "revolute_1"
+      },
+      {
+        "link": "tyre_1",
+        "mesh": "Tyre.stl",
+        "group": "revolute_2"
+      }
+    ]
+  },
+  "mass_targets_not_applied_to_static_scene": {
+    "battery_cells_holder_springs_shared_density_group_kg": 0.153,
+    "battery_group_complete_signed_mesh_volume_m3_abs_sum": 6.480540249996368e-05,
+    "battery_group_effective_uniform_density_kg_m3": 2360.9142771713473,
+    "each_screw_kg": 0.0045,
+    "each_complete_wheel_kg": 0.04,
+    "each_complete_motor_including_shaft_kg": 0.029,
+    "populated_pcb_target_kg": 0.03
+  },
+  "remaining_physical_model_limits": [
+    "Source tiny/invalid per-component inertias omitted; direct URDF import previously failed at 0603_resistor_004_2.",
+    "Many tiny electronics meshes are non-watertight/disconnected; no complete trustworthy aggregate inertia yet.",
+    "The 30 g target covers the populated main PCB and mounted components, but this corrected export has not had its mass/COM audit recomputed.",
+    "Complete assembled mass, wheel-motion sensing, motor response, battery voltage, contact/friction and sensor timing are not yet characterized."
+  ],
+  "dependency_versions": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "mujoco": "3.7.0",
+    "Pillow": "12.3.0"
+  }
+}

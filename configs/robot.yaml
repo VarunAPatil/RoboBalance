@@ -1,0 +1,30 @@
+# Characterization worksheet. Unknown values remain null until measured.
+# User confirms assembled robot uses this local 2027 design.
+controller_module: ESP32-S3-WROOM-1
+reference_design_path: /home/varun/Wall-E-2027-Board-Design/sra_board.kicad_sch
+reference_design_revision: "2027"
+imu_model: MPU6050  # User-confirmed installed IMU
+imu_interface: null
+motor_type: TT L-shaped DC gearmotor
+motor_driver: TB6612FNG  # From the 2027 schematic; verify module marking in Phase 2
+encoders: false
+body_mass_kg: null
+wheel_mass_kg: 0.040  # User-provided 40 g per wheel; method and uncertainty unspecified
+motor_mass_kg: 0.029  # User-provided 29 g per motor
+pcb_mass_kg: 0.030  # User-provided 30 g for populated PCB and mounted components; screws separate
+m3_screw_mass_kg: 0.0045  # User-provided 4.5 g per screw
+m3_screw_count: null
+battery_holder_mass_kg: 0.018  # User-provided 18 g for one holder
+battery_mass_kg: 0.045  # User-provided 45 g per battery
+# For this CAD mass audit, the complete three-cell + holder + six-spring group
+# is 153 g at one shared effective density. Do not add the above standalone
+# holder/cell values on top of this group in a physical model.
+battery_holder_cells_springs_group_mass_kg: 0.153
+battery_count: null
+center_of_mass_height_m: null
+body_pitch_inertia_kg_m2: null
+wheel_radius_m: null
+axle_spacing_m: null
+battery_voltage_range_v: null
+line_sensor_array: null
+host_operating_system: null

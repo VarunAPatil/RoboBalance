@@ -1,0 +1,67 @@
+# Explicit bridge between the CAD-derived MJCF and the Wall-E firmware loop.
+# Null hardware parameters are intentionally not guessed. The default model
+# builder refuses to create a claimed hardware IMU model until its pose is set.
+imu:
+  # Board_001 is the IMU body; user confirms the MPU is at its center.
+  # In the MuJoCo chassis frame, +X points from left wheel to right wheel,
+  # +Y is forward, and +Z is up. Thus IMU +X (backward) -> chassis -Y,
+  # IMU +Y (right) -> chassis +X, and IMU +Z (up) -> chassis +Z.
+  site_pos_m: [0.12277433, -0.06984629, 0.06267491]
+  site_quat_wxyz: [0.70710678, 0.0, 0.0, -0.70710678]
+  accel_counts_per_g: 16384.0       # MPU6050 configured for +/-2 g in firmware
+  gyro_counts_per_dps: 131.0        # MPU6050 configured for +/-250 deg/s
+  complementary_alpha: 0.995        # Firmware ALPHA
+  # Empirical fused-output replay, updated from the 2026-10-12 three-run
+  # capture set at experiments/hardware_imu/repeat_20261012T132500Z/.
+  # This is pose-specific; its difference from the earlier set suggests the
+  # hardware orientation was not reproduced across sessions. It is not raw
+  # MPU bias. Keep disabled for balance runs until measured in that pose.
+  startup_transient_enabled: false
+  startup_roll_seed_error_deg: 13.86
+  startup_pitch_seed_error_deg: -1.50
+  startup_transient_tau_s: 9.2
+  angle_zero_deg: 0.0               # Calibrated to the MuJoCo qpos0 reset pose, not hardware
+  pitch_setpoint_deg: 0.0           # Upright target relative to this simulated reset-pose zero
+  gyro_integer_truncation: true     # Match firmware's int16 / 131 truncation
+  accel_bias_m_s2: [0.0, 0.0, 0.0] # Zero means ideal sensor, not a measured bias
+  gyro_bias_rad_s: [0.0, 0.0, 0.0] # Zero means ideal sensor, not a measured bias
+  accel_noise_std_m_s2: [0.0, 0.0, 0.0]
+  gyro_noise_std_rad_s: [0.0, 0.0, 0.0]
+  random_seed: 42
+  # Local sensor-frame indices/signs are configurable after checking the
+  # installed board orientation. Firmware expects pitch from accel X/gyro Y.
+  accel_axis_order: [0, 1, 2]
+  accel_axis_signs: [1, 1, 1]
+  gyro_axis_order: [0, 1, 2]
+  gyro_axis_signs: [1, 1, 1]
+
+controller:
+  mode: firmware_compatible # firmware_compatible or time_corrected
+  kp: 11.0                   # Current firmware default; tuning is not implied
+  ki: 0.0
+  kd: 4.0
+  period_s: 0.01             # Nominal vTaskDelay(10 ms), actual timing varies
+  command_limit: 90.0        # Source motor_cmd limit
+  error_deadband_deg: 1.0
+  pwm_min_percent: 60.0
+  pwm_max_percent: 80.0
+  pwm_output_mode: firmware_clamped # --tune defaults to continuous; normal runs retain this firmware-style clamp
+
+motor:
+  mode: ideal_torque_test_only # ideal_torque_test_only or dc_motor
+  # A direct torque test requires an explicit --ideal-test-torque-nm argument.
+  # Do not read this as a measured motor limit.
+  left_sign: null
+  right_sign: null
+  dc_motor:
+    resistance_ohm: null
+    torque_constant_nm_per_a: null
+    back_emf_v_per_rad_s: null
+    battery_voltage_v: null
+    gear_ratio_motor_per_wheel: null
+    efficiency: null
+    max_wheel_torque_nm: null
+    deadzone_duty: null
+
+simulation:
+  fall_angle_deg: 45.0             # Reset episode when total chassis tilt reaches this angle

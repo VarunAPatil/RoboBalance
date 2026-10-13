@@ -1,0 +1,74 @@
+# Simulation-only motor assumptions transcribed from the user-provided
+# N20-12V-200 specification image. This is NOT measured characterization.
+# At 80% PWM the inferred standstill torque is about 0.136 N*m per wheel;
+# use the speed-dependent model rather than the older constant-torque fixture.
+# Effective geared-output-shaft parameters are inferred from the 12 V stall
+# torque/current and no-load speed; gearbox ratio is therefore represented as
+# 1.0 at the wheel hinge, with gearbox losses folded into the effective values.
+
+imu:
+  site_pos_m: [0.12277433, -0.06984629, 0.06267491]
+  site_quat_wxyz: [0.70710678, 0.0, 0.0, -0.70710678]
+  accel_counts_per_g: 16384.0
+  gyro_counts_per_dps: 131.0
+  complementary_alpha: 0.995
+  startup_transient_enabled: false
+  startup_roll_seed_error_deg: 13.86
+  startup_pitch_seed_error_deg: -1.50
+  startup_transient_tau_s: 9.2
+  angle_zero_deg: 0.0
+  pitch_setpoint_deg: 0.0
+  gyro_integer_truncation: true
+  accel_bias_m_s2: [0.0, 0.0, 0.0]
+  gyro_bias_rad_s: [0.0, 0.0, 0.0]
+  accel_noise_std_m_s2: [0.0, 0.0, 0.0]
+  gyro_noise_std_rad_s: [0.0, 0.0, 0.0]
+  random_seed: 42
+  accel_axis_order: [0, 1, 2]
+  accel_axis_signs: [1, 1, 1]
+  gyro_axis_order: [0, 1, 2]
+  gyro_axis_signs: [1, 1, 1]
+
+controller:
+  mode: firmware_compatible
+  kp: 11.0
+  ki: 0.0
+  kd: 4.0
+  period_s: 0.01
+  command_limit: 90.0
+  error_deadband_deg: 1.0
+  pwm_min_percent: 60.0
+  pwm_max_percent: 80.0
+  pwm_output_mode: firmware_clamped
+
+motor:
+  mode: dc_motor
+  left_sign: 1       # Assumed MJCF-to-command signs for simulation only
+  right_sign: -1
+  assumption_name: N20-12V-200
+  # The supplied table lists rated speed and no-load speed both as 200 rpm.
+  # The model uses the no-load endpoint for its curve; its 0.52 kg-cm rated
+  # torque is retained below as source data, not a hard torque limit. The
+  # endpoint fit predicts about 142 rpm at that torque, so the table's speed
+  # entries cannot both describe a loaded rated operating point.
+  source_specs:
+    rated_speed_rpm: 200.0
+    no_load_speed_rpm: 200.0
+    rated_voltage_v: 12.0
+    rated_torque_kg_cm: 0.52
+    stall_torque_kg_cm: 1.8
+    no_load_current_a: 0.06
+    stall_current_a: 0.75
+  dc_motor:
+    resistance_ohm: 16.0                  # 12 V / 0.75 A stall current
+    torque_constant_nm_per_a: 0.255825652 # 1.8 kg-cm / (0.75 A - 0.06 A)
+    back_emf_v_per_rad_s: 0.527121172     # (12 V - R*I_no_load) / (200 rpm in rad/s)
+    battery_voltage_v: 11.8               # User's assumed operating voltage
+    gear_ratio_motor_per_wheel: 1.0        # Already an effective output-shaft model
+    efficiency: 1.0                        # Folded into effective output parameters
+    max_wheel_torque_nm: 0.1765197          # 1.8 kg-cm stall torque at rated 12 V
+    deadzone_duty: 0.0                      # Not supplied; idealized zero dead zone
+    no_load_current_a: 0.06                 # Modeled as Coulomb gearbox/motor loss
+
+simulation:
+  fall_angle_deg: 45.0

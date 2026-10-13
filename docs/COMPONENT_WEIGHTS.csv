@@ -1,0 +1,9 @@
+Component,Quantity,Unit weight (g),Total weight (g),Notes
+Wheel,2,40,=B2*C2,User-provided weight per wheel
+Motor,2,29,=B3*C3,User-provided weight per motor
+M3 screw,4,4.5,"=IF(B4="""","""",B4*C4)",Four CAD-visible screw instances; installed count not independently verified
+PCB,1,30,=B5*C5,User-provided 30 g for the populated board and mounted modules; screws counted separately
+Battery holder,1,18,=B6*C6,Standalone user-provided weight; simulation uses one shared-density 153 g group for holder plus three cells plus springs
+Battery,3,45,"=IF(B7="""","""",B7*C7)",Three CAD-visible cells; installed count not independently verified; standalone 18+3x45=153 g sum is not the simulation density split
+Known subtotal,,,"=SUM(D2,D3,D5,D6)",Excludes M3 screws and batteries
+Listed total with screws and batteries,,,"=IF(OR(B4="""",B7=""""),"""",SUM(D2:D7))",339 g at CAD-visible counts; not a measured complete robot mass and excludes unlisted parts

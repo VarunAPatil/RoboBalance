@@ -1,0 +1,1393 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="wall_e_com_markers_not_dynamics">
+  <!--COM sites are inspection markers. Inertials remain omitted; this is not a dynamic model.-->
+  <compiler angle="radian" inertiafromgeom="false" />
+  <option gravity="0 0 0" />
+  <visual>
+    <global offwidth="1280" offheight="960" azimuth="135" elevation="25" />
+    <rgba haze="0.78 0.83 0.88 1" />
+  </visual>
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient" rgb1="0.72 0.80 0.87" rgb2="0.95 0.97 0.99" width="512" height="512" />
+    <texture name="floor_grid" type="2d" builtin="checker" rgb1="0.82 0.84 0.86" rgb2="0.88 0.90 0.92" width="256" height="256" />
+    <material name="floor_mat" texture="floor_grid" texrepeat="12 12" reflectance="0" />
+    <mesh name="asset_0000" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal.stl" scale="1 1 1" />
+    <mesh name="asset_0001" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_1.stl" scale="1 1 1" />
+    <mesh name="asset_0002" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_2.stl" scale="1 1 1" />
+    <mesh name="asset_0003" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_3.stl" scale="1 1 1" />
+    <mesh name="asset_0004" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_4.stl" scale="1 1 1" />
+    <mesh name="asset_0005" file="../../Assembly 1/assembly_1/meshes/Battery18650__NONE_2.stl" scale="1 1 1" />
+    <mesh name="asset_0006" file="../../Assembly 1/assembly_1/meshes/BatteryCasePlastic__Fillet1.stl" scale="1 1 1" />
+    <mesh name="asset_0007" file="../../Assembly 1/assembly_1/meshes/BatteryCaseSpring__Cut_Extrude2.stl" scale="1 1 1" />
+    <mesh name="asset_0008" file="../../Assembly 1/assembly_1/meshes/Board_001.stl" scale="1 1 1" />
+    <mesh name="asset_0009" file="../../Assembly 1/assembly_1/meshes/Body___Adhesive_Pad.stl" scale="1 1 1" />
+    <mesh name="asset_0010" file="../../Assembly 1/assembly_1/meshes/Body___Back_Panel.stl" scale="1 1 1" />
+    <mesh name="asset_0011" file="../../Assembly 1/assembly_1/meshes/Body___Black_Tape.stl" scale="1 1 1" />
+    <mesh name="asset_0012" file="../../Assembly 1/assembly_1/meshes/Body___Flex_Connector_Bend.stl" scale="1 1 1" />
+    <mesh name="asset_0013" file="../../Assembly 1/assembly_1/meshes/Body___Flex_Connector_Terminals.stl" scale="1 1 1" />
+    <mesh name="asset_0014" file="../../Assembly 1/assembly_1/meshes/Body___Front_Panel.stl" scale="1 1 1" />
+    <mesh name="asset_0015" file="../../Assembly 1/assembly_1/meshes/Body___PCB.stl" scale="1 1 1" />
+    <mesh name="asset_0016" file="../../Assembly 1/assembly_1/meshes/Body___Protective_Foil.stl" scale="1 1 1" />
+    <mesh name="asset_0017" file="../../Assembly 1/assembly_1/meshes/Body___Screen_Border.stl" scale="1 1 1" />
+    <mesh name="asset_0018" file="../../Assembly 1/assembly_1/meshes/COMPOUND.stl" scale="1 1 1" />
+    <mesh name="asset_0019" file="../../Assembly 1/assembly_1/meshes/COMPOUND_1.stl" scale="1 1 1" />
+    <mesh name="asset_0020" file="../../Assembly 1/assembly_1/meshes/COMPOUND_10.stl" scale="1 1 1" />
+    <mesh name="asset_0021" file="../../Assembly 1/assembly_1/meshes/COMPOUND_100.stl" scale="1 1 1" />
+    <mesh name="asset_0022" file="../../Assembly 1/assembly_1/meshes/COMPOUND_101.stl" scale="1 1 1" />
+    <mesh name="asset_0023" file="../../Assembly 1/assembly_1/meshes/COMPOUND_102.stl" scale="1 1 1" />
+    <mesh name="asset_0024" file="../../Assembly 1/assembly_1/meshes/COMPOUND_103.stl" scale="1 1 1" />
+    <mesh name="asset_0025" file="../../Assembly 1/assembly_1/meshes/COMPOUND_104.stl" scale="1 1 1" />
+    <mesh name="asset_0026" file="../../Assembly 1/assembly_1/meshes/COMPOUND_105.stl" scale="1 1 1" />
+    <mesh name="asset_0027" file="../../Assembly 1/assembly_1/meshes/COMPOUND_106.stl" scale="1 1 1" />
+    <mesh name="asset_0028" file="../../Assembly 1/assembly_1/meshes/COMPOUND_107.stl" scale="1 1 1" />
+    <mesh name="asset_0029" file="../../Assembly 1/assembly_1/meshes/COMPOUND_108.stl" scale="1 1 1" />
+    <mesh name="asset_0030" file="../../Assembly 1/assembly_1/meshes/COMPOUND_109.stl" scale="1 1 1" />
+    <mesh name="asset_0031" file="../../Assembly 1/assembly_1/meshes/COMPOUND_11.stl" scale="1 1 1" />
+    <mesh name="asset_0032" file="../../Assembly 1/assembly_1/meshes/COMPOUND_110.stl" scale="1 1 1" />
+    <mesh name="asset_0033" file="../../Assembly 1/assembly_1/meshes/COMPOUND_111.stl" scale="1 1 1" />
+    <mesh name="asset_0034" file="../../Assembly 1/assembly_1/meshes/COMPOUND_112.stl" scale="1 1 1" />
+    <mesh name="asset_0035" file="../../Assembly 1/assembly_1/meshes/COMPOUND_113.stl" scale="1 1 1" />
+    <mesh name="asset_0036" file="../../Assembly 1/assembly_1/meshes/COMPOUND_114.stl" scale="1 1 1" />
+    <mesh name="asset_0037" file="../../Assembly 1/assembly_1/meshes/COMPOUND_115.stl" scale="1 1 1" />
+    <mesh name="asset_0038" file="../../Assembly 1/assembly_1/meshes/COMPOUND_116.stl" scale="1 1 1" />
+    <mesh name="asset_0039" file="../../Assembly 1/assembly_1/meshes/COMPOUND_117.stl" scale="1 1 1" />
+    <mesh name="asset_0040" file="../../Assembly 1/assembly_1/meshes/COMPOUND_118.stl" scale="1 1 1" />
+    <mesh name="asset_0041" file="../../Assembly 1/assembly_1/meshes/COMPOUND_119.stl" scale="1 1 1" />
+    <mesh name="asset_0042" file="../../Assembly 1/assembly_1/meshes/COMPOUND_12.stl" scale="1 1 1" />
+    <mesh name="asset_0043" file="../../Assembly 1/assembly_1/meshes/COMPOUND_120.stl" scale="1 1 1" />
+    <mesh name="asset_0044" file="../../Assembly 1/assembly_1/meshes/COMPOUND_121.stl" scale="1 1 1" />
+    <mesh name="asset_0045" file="../../Assembly 1/assembly_1/meshes/COMPOUND_122.stl" scale="1 1 1" />
+    <mesh name="asset_0046" file="../../Assembly 1/assembly_1/meshes/COMPOUND_123.stl" scale="1 1 1" />
+    <mesh name="asset_0047" file="../../Assembly 1/assembly_1/meshes/COMPOUND_124.stl" scale="1 1 1" />
+    <mesh name="asset_0048" file="../../Assembly 1/assembly_1/meshes/COMPOUND_125.stl" scale="1 1 1" />
+    <mesh name="asset_0049" file="../../Assembly 1/assembly_1/meshes/COMPOUND_126.stl" scale="1 1 1" />
+    <mesh name="asset_0050" file="../../Assembly 1/assembly_1/meshes/COMPOUND_127.stl" scale="1 1 1" />
+    <mesh name="asset_0051" file="../../Assembly 1/assembly_1/meshes/COMPOUND_128.stl" scale="1 1 1" />
+    <mesh name="asset_0052" file="../../Assembly 1/assembly_1/meshes/COMPOUND_129.stl" scale="1 1 1" />
+    <mesh name="asset_0053" file="../../Assembly 1/assembly_1/meshes/COMPOUND_13.stl" scale="1 1 1" />
+    <mesh name="asset_0054" file="../../Assembly 1/assembly_1/meshes/COMPOUND_130.stl" scale="1 1 1" />
+    <mesh name="asset_0055" file="../../Assembly 1/assembly_1/meshes/COMPOUND_131.stl" scale="1 1 1" />
+    <mesh name="asset_0056" file="../../Assembly 1/assembly_1/meshes/COMPOUND_132.stl" scale="1 1 1" />
+    <mesh name="asset_0057" file="../../Assembly 1/assembly_1/meshes/COMPOUND_133.stl" scale="1 1 1" />
+    <mesh name="asset_0058" file="../../Assembly 1/assembly_1/meshes/COMPOUND_134.stl" scale="1 1 1" />
+    <mesh name="asset_0059" file="../../Assembly 1/assembly_1/meshes/COMPOUND_135.stl" scale="1 1 1" />
+    <mesh name="asset_0060" file="../../Assembly 1/assembly_1/meshes/COMPOUND_136.stl" scale="1 1 1" />
+    <mesh name="asset_0061" file="../../Assembly 1/assembly_1/meshes/COMPOUND_137.stl" scale="1 1 1" />
+    <mesh name="asset_0062" file="../../Assembly 1/assembly_1/meshes/COMPOUND_138.stl" scale="1 1 1" />
+    <mesh name="asset_0063" file="../../Assembly 1/assembly_1/meshes/COMPOUND_139.stl" scale="1 1 1" />
+    <mesh name="asset_0064" file="../../Assembly 1/assembly_1/meshes/COMPOUND_14.stl" scale="1 1 1" />
+    <mesh name="asset_0065" file="../../Assembly 1/assembly_1/meshes/COMPOUND_140.stl" scale="1 1 1" />
+    <mesh name="asset_0066" file="../../Assembly 1/assembly_1/meshes/COMPOUND_141.stl" scale="1 1 1" />
+    <mesh name="asset_0067" file="../../Assembly 1/assembly_1/meshes/COMPOUND_142.stl" scale="1 1 1" />
+    <mesh name="asset_0068" file="../../Assembly 1/assembly_1/meshes/COMPOUND_143.stl" scale="1 1 1" />
+    <mesh name="asset_0069" file="../../Assembly 1/assembly_1/meshes/COMPOUND_144.stl" scale="1 1 1" />
+    <mesh name="asset_0070" file="../../Assembly 1/assembly_1/meshes/COMPOUND_145.stl" scale="1 1 1" />
+    <mesh name="asset_0071" file="../../Assembly 1/assembly_1/meshes/COMPOUND_146.stl" scale="1 1 1" />
+    <mesh name="asset_0072" file="../../Assembly 1/assembly_1/meshes/COMPOUND_147.stl" scale="1 1 1" />
+    <mesh name="asset_0073" file="../../Assembly 1/assembly_1/meshes/COMPOUND_148.stl" scale="1 1 1" />
+    <mesh name="asset_0074" file="../../Assembly 1/assembly_1/meshes/COMPOUND_149.stl" scale="1 1 1" />
+    <mesh name="asset_0075" file="../../Assembly 1/assembly_1/meshes/COMPOUND_15.stl" scale="1 1 1" />
+    <mesh name="asset_0076" file="../../Assembly 1/assembly_1/meshes/COMPOUND_150.stl" scale="1 1 1" />
+    <mesh name="asset_0077" file="../../Assembly 1/assembly_1/meshes/COMPOUND_151.stl" scale="1 1 1" />
+    <mesh name="asset_0078" file="../../Assembly 1/assembly_1/meshes/COMPOUND_152.stl" scale="1 1 1" />
+    <mesh name="asset_0079" file="../../Assembly 1/assembly_1/meshes/COMPOUND_153.stl" scale="1 1 1" />
+    <mesh name="asset_0080" file="../../Assembly 1/assembly_1/meshes/COMPOUND_154.stl" scale="1 1 1" />
+    <mesh name="asset_0081" file="../../Assembly 1/assembly_1/meshes/COMPOUND_155.stl" scale="1 1 1" />
+    <mesh name="asset_0082" file="../../Assembly 1/assembly_1/meshes/COMPOUND_156.stl" scale="1 1 1" />
+    <mesh name="asset_0083" file="../../Assembly 1/assembly_1/meshes/COMPOUND_157.stl" scale="1 1 1" />
+    <mesh name="asset_0084" file="../../Assembly 1/assembly_1/meshes/COMPOUND_158.stl" scale="1 1 1" />
+    <mesh name="asset_0085" file="../../Assembly 1/assembly_1/meshes/COMPOUND_159.stl" scale="1 1 1" />
+    <mesh name="asset_0086" file="../../Assembly 1/assembly_1/meshes/COMPOUND_16.stl" scale="1 1 1" />
+    <mesh name="asset_0087" file="../../Assembly 1/assembly_1/meshes/COMPOUND_160.stl" scale="1 1 1" />
+    <mesh name="asset_0088" file="../../Assembly 1/assembly_1/meshes/COMPOUND_161.stl" scale="1 1 1" />
+    <mesh name="asset_0089" file="../../Assembly 1/assembly_1/meshes/COMPOUND_162.stl" scale="1 1 1" />
+    <mesh name="asset_0090" file="../../Assembly 1/assembly_1/meshes/COMPOUND_163.stl" scale="1 1 1" />
+    <mesh name="asset_0091" file="../../Assembly 1/assembly_1/meshes/COMPOUND_164.stl" scale="1 1 1" />
+    <mesh name="asset_0092" file="../../Assembly 1/assembly_1/meshes/COMPOUND_165.stl" scale="1 1 1" />
+    <mesh name="asset_0093" file="../../Assembly 1/assembly_1/meshes/COMPOUND_166.stl" scale="1 1 1" />
+    <mesh name="asset_0094" file="../../Assembly 1/assembly_1/meshes/COMPOUND_167.stl" scale="1 1 1" />
+    <mesh name="asset_0095" file="../../Assembly 1/assembly_1/meshes/COMPOUND_168.stl" scale="1 1 1" />
+    <mesh name="asset_0096" file="../../Assembly 1/assembly_1/meshes/COMPOUND_169.stl" scale="1 1 1" />
+    <mesh name="asset_0097" file="../../Assembly 1/assembly_1/meshes/COMPOUND_17.stl" scale="1 1 1" />
+    <mesh name="asset_0098" file="../../Assembly 1/assembly_1/meshes/COMPOUND_170.stl" scale="1 1 1" />
+    <mesh name="asset_0099" file="../../Assembly 1/assembly_1/meshes/COMPOUND_171.stl" scale="1 1 1" />
+    <mesh name="asset_0100" file="../../Assembly 1/assembly_1/meshes/COMPOUND_172.stl" scale="1 1 1" />
+    <mesh name="asset_0101" file="../../Assembly 1/assembly_1/meshes/COMPOUND_173.stl" scale="1 1 1" />
+    <mesh name="asset_0102" file="../../Assembly 1/assembly_1/meshes/COMPOUND_174.stl" scale="1 1 1" />
+    <mesh name="asset_0103" file="../../Assembly 1/assembly_1/meshes/COMPOUND_175.stl" scale="1 1 1" />
+    <mesh name="asset_0104" file="../../Assembly 1/assembly_1/meshes/COMPOUND_176.stl" scale="1 1 1" />
+    <mesh name="asset_0105" file="../../Assembly 1/assembly_1/meshes/COMPOUND_177.stl" scale="1 1 1" />
+    <mesh name="asset_0106" file="../../Assembly 1/assembly_1/meshes/COMPOUND_178.stl" scale="1 1 1" />
+    <mesh name="asset_0107" file="../../Assembly 1/assembly_1/meshes/COMPOUND_179.stl" scale="1 1 1" />
+    <mesh name="asset_0108" file="../../Assembly 1/assembly_1/meshes/COMPOUND_18.stl" scale="1 1 1" />
+    <mesh name="asset_0109" file="../../Assembly 1/assembly_1/meshes/COMPOUND_180.stl" scale="1 1 1" />
+    <mesh name="asset_0110" file="../../Assembly 1/assembly_1/meshes/COMPOUND_181.stl" scale="1 1 1" />
+    <mesh name="asset_0111" file="../../Assembly 1/assembly_1/meshes/COMPOUND_182.stl" scale="1 1 1" />
+    <mesh name="asset_0112" file="../../Assembly 1/assembly_1/meshes/COMPOUND_183.stl" scale="1 1 1" />
+    <mesh name="asset_0113" file="../../Assembly 1/assembly_1/meshes/COMPOUND_184.stl" scale="1 1 1" />
+    <mesh name="asset_0114" file="../../Assembly 1/assembly_1/meshes/COMPOUND_185.stl" scale="1 1 1" />
+    <mesh name="asset_0115" file="../../Assembly 1/assembly_1/meshes/COMPOUND_186.stl" scale="1 1 1" />
+    <mesh name="asset_0116" file="../../Assembly 1/assembly_1/meshes/COMPOUND_187.stl" scale="1 1 1" />
+    <mesh name="asset_0117" file="../../Assembly 1/assembly_1/meshes/COMPOUND_188.stl" scale="1 1 1" />
+    <mesh name="asset_0118" file="../../Assembly 1/assembly_1/meshes/COMPOUND_189.stl" scale="1 1 1" />
+    <mesh name="asset_0119" file="../../Assembly 1/assembly_1/meshes/COMPOUND_19.stl" scale="1 1 1" />
+    <mesh name="asset_0120" file="../../Assembly 1/assembly_1/meshes/COMPOUND_190.stl" scale="1 1 1" />
+    <mesh name="asset_0121" file="../../Assembly 1/assembly_1/meshes/COMPOUND_191.stl" scale="1 1 1" />
+    <mesh name="asset_0122" file="../../Assembly 1/assembly_1/meshes/COMPOUND_192.stl" scale="1 1 1" />
+    <mesh name="asset_0123" file="../../Assembly 1/assembly_1/meshes/COMPOUND_193.stl" scale="1 1 1" />
+    <mesh name="asset_0124" file="../../Assembly 1/assembly_1/meshes/COMPOUND_194.stl" scale="1 1 1" />
+    <mesh name="asset_0125" file="../../Assembly 1/assembly_1/meshes/COMPOUND_195.stl" scale="1 1 1" />
+    <mesh name="asset_0126" file="../../Assembly 1/assembly_1/meshes/COMPOUND_196.stl" scale="1 1 1" />
+    <mesh name="asset_0127" file="../../Assembly 1/assembly_1/meshes/COMPOUND_197.stl" scale="1 1 1" />
+    <mesh name="asset_0128" file="../../Assembly 1/assembly_1/meshes/COMPOUND_198.stl" scale="1 1 1" />
+    <mesh name="asset_0129" file="../../Assembly 1/assembly_1/meshes/COMPOUND_199.stl" scale="1 1 1" />
+    <mesh name="asset_0130" file="../../Assembly 1/assembly_1/meshes/COMPOUND_2.stl" scale="1 1 1" />
+    <mesh name="asset_0131" file="../../Assembly 1/assembly_1/meshes/COMPOUND_20.stl" scale="1 1 1" />
+    <mesh name="asset_0132" file="../../Assembly 1/assembly_1/meshes/COMPOUND_200.stl" scale="1 1 1" />
+    <mesh name="asset_0133" file="../../Assembly 1/assembly_1/meshes/COMPOUND_201.stl" scale="1 1 1" />
+    <mesh name="asset_0134" file="../../Assembly 1/assembly_1/meshes/COMPOUND_202.stl" scale="1 1 1" />
+    <mesh name="asset_0135" file="../../Assembly 1/assembly_1/meshes/COMPOUND_203.stl" scale="1 1 1" />
+    <mesh name="asset_0136" file="../../Assembly 1/assembly_1/meshes/COMPOUND_204.stl" scale="1 1 1" />
+    <mesh name="asset_0137" file="../../Assembly 1/assembly_1/meshes/COMPOUND_21.stl" scale="1 1 1" />
+    <mesh name="asset_0138" file="../../Assembly 1/assembly_1/meshes/COMPOUND_22.stl" scale="1 1 1" />
+    <mesh name="asset_0139" file="../../Assembly 1/assembly_1/meshes/COMPOUND_23.stl" scale="1 1 1" />
+    <mesh name="asset_0140" file="../../Assembly 1/assembly_1/meshes/COMPOUND_24.stl" scale="1 1 1" />
+    <mesh name="asset_0141" file="../../Assembly 1/assembly_1/meshes/COMPOUND_25.stl" scale="1 1 1" />
+    <mesh name="asset_0142" file="../../Assembly 1/assembly_1/meshes/COMPOUND_26.stl" scale="1 1 1" />
+    <mesh name="asset_0143" file="../../Assembly 1/assembly_1/meshes/COMPOUND_27.stl" scale="1 1 1" />
+    <mesh name="asset_0144" file="../../Assembly 1/assembly_1/meshes/COMPOUND_28.stl" scale="1 1 1" />
+    <mesh name="asset_0145" file="../../Assembly 1/assembly_1/meshes/COMPOUND_29.stl" scale="1 1 1" />
+    <mesh name="asset_0146" file="../../Assembly 1/assembly_1/meshes/COMPOUND_3.stl" scale="1 1 1" />
+    <mesh name="asset_0147" file="../../Assembly 1/assembly_1/meshes/COMPOUND_30.stl" scale="1 1 1" />
+    <mesh name="asset_0148" file="../../Assembly 1/assembly_1/meshes/COMPOUND_31.stl" scale="1 1 1" />
+    <mesh name="asset_0149" file="../../Assembly 1/assembly_1/meshes/COMPOUND_32.stl" scale="1 1 1" />
+    <mesh name="asset_0150" file="../../Assembly 1/assembly_1/meshes/COMPOUND_33.stl" scale="1 1 1" />
+    <mesh name="asset_0151" file="../../Assembly 1/assembly_1/meshes/COMPOUND_34.stl" scale="1 1 1" />
+    <mesh name="asset_0152" file="../../Assembly 1/assembly_1/meshes/COMPOUND_35.stl" scale="1 1 1" />
+    <mesh name="asset_0153" file="../../Assembly 1/assembly_1/meshes/COMPOUND_36.stl" scale="1 1 1" />
+    <mesh name="asset_0154" file="../../Assembly 1/assembly_1/meshes/COMPOUND_37.stl" scale="1 1 1" />
+    <mesh name="asset_0155" file="../../Assembly 1/assembly_1/meshes/COMPOUND_38.stl" scale="1 1 1" />
+    <mesh name="asset_0156" file="../../Assembly 1/assembly_1/meshes/COMPOUND_39.stl" scale="1 1 1" />
+    <mesh name="asset_0157" file="../../Assembly 1/assembly_1/meshes/COMPOUND_4.stl" scale="1 1 1" />
+    <mesh name="asset_0158" file="../../Assembly 1/assembly_1/meshes/COMPOUND_40.stl" scale="1 1 1" />
+    <mesh name="asset_0159" file="../../Assembly 1/assembly_1/meshes/COMPOUND_41.stl" scale="1 1 1" />
+    <mesh name="asset_0160" file="../../Assembly 1/assembly_1/meshes/COMPOUND_42.stl" scale="1 1 1" />
+    <mesh name="asset_0161" file="../../Assembly 1/assembly_1/meshes/COMPOUND_43.stl" scale="1 1 1" />
+    <mesh name="asset_0162" file="../../Assembly 1/assembly_1/meshes/COMPOUND_44.stl" scale="1 1 1" />
+    <mesh name="asset_0163" file="../../Assembly 1/assembly_1/meshes/COMPOUND_45.stl" scale="1 1 1" />
+    <mesh name="asset_0164" file="../../Assembly 1/assembly_1/meshes/COMPOUND_46.stl" scale="1 1 1" />
+    <mesh name="asset_0165" file="../../Assembly 1/assembly_1/meshes/COMPOUND_47.stl" scale="1 1 1" />
+    <mesh name="asset_0166" file="../../Assembly 1/assembly_1/meshes/COMPOUND_48.stl" scale="1 1 1" />
+    <mesh name="asset_0167" file="../../Assembly 1/assembly_1/meshes/COMPOUND_49.stl" scale="1 1 1" />
+    <mesh name="asset_0168" file="../../Assembly 1/assembly_1/meshes/COMPOUND_5.stl" scale="1 1 1" />
+    <mesh name="asset_0169" file="../../Assembly 1/assembly_1/meshes/COMPOUND_50.stl" scale="1 1 1" />
+    <mesh name="asset_0170" file="../../Assembly 1/assembly_1/meshes/COMPOUND_51.stl" scale="1 1 1" />
+    <mesh name="asset_0171" file="../../Assembly 1/assembly_1/meshes/COMPOUND_52.stl" scale="1 1 1" />
+    <mesh name="asset_0172" file="../../Assembly 1/assembly_1/meshes/COMPOUND_53.stl" scale="1 1 1" />
+    <mesh name="asset_0173" file="../../Assembly 1/assembly_1/meshes/COMPOUND_54.stl" scale="1 1 1" />
+    <mesh name="asset_0174" file="../../Assembly 1/assembly_1/meshes/COMPOUND_55.stl" scale="1 1 1" />
+    <mesh name="asset_0175" file="../../Assembly 1/assembly_1/meshes/COMPOUND_56.stl" scale="1 1 1" />
+    <mesh name="asset_0176" file="../../Assembly 1/assembly_1/meshes/COMPOUND_57.stl" scale="1 1 1" />
+    <mesh name="asset_0177" file="../../Assembly 1/assembly_1/meshes/COMPOUND_58.stl" scale="1 1 1" />
+    <mesh name="asset_0178" file="../../Assembly 1/assembly_1/meshes/COMPOUND_59.stl" scale="1 1 1" />
+    <mesh name="asset_0179" file="../../Assembly 1/assembly_1/meshes/COMPOUND_6.stl" scale="1 1 1" />
+    <mesh name="asset_0180" file="../../Assembly 1/assembly_1/meshes/COMPOUND_60.stl" scale="1 1 1" />
+    <mesh name="asset_0181" file="../../Assembly 1/assembly_1/meshes/COMPOUND_61.stl" scale="1 1 1" />
+    <mesh name="asset_0182" file="../../Assembly 1/assembly_1/meshes/COMPOUND_62.stl" scale="1 1 1" />
+    <mesh name="asset_0183" file="../../Assembly 1/assembly_1/meshes/COMPOUND_63.stl" scale="1 1 1" />
+    <mesh name="asset_0184" file="../../Assembly 1/assembly_1/meshes/COMPOUND_64.stl" scale="1 1 1" />
+    <mesh name="asset_0185" file="../../Assembly 1/assembly_1/meshes/COMPOUND_65.stl" scale="1 1 1" />
+    <mesh name="asset_0186" file="../../Assembly 1/assembly_1/meshes/COMPOUND_66.stl" scale="1 1 1" />
+    <mesh name="asset_0187" file="../../Assembly 1/assembly_1/meshes/COMPOUND_67.stl" scale="1 1 1" />
+    <mesh name="asset_0188" file="../../Assembly 1/assembly_1/meshes/COMPOUND_68.stl" scale="1 1 1" />
+    <mesh name="asset_0189" file="../../Assembly 1/assembly_1/meshes/COMPOUND_69.stl" scale="1 1 1" />
+    <mesh name="asset_0190" file="../../Assembly 1/assembly_1/meshes/COMPOUND_7.stl" scale="1 1 1" />
+    <mesh name="asset_0191" file="../../Assembly 1/assembly_1/meshes/COMPOUND_70.stl" scale="1 1 1" />
+    <mesh name="asset_0192" file="../../Assembly 1/assembly_1/meshes/COMPOUND_71.stl" scale="1 1 1" />
+    <mesh name="asset_0193" file="../../Assembly 1/assembly_1/meshes/COMPOUND_72.stl" scale="1 1 1" />
+    <mesh name="asset_0194" file="../../Assembly 1/assembly_1/meshes/COMPOUND_73.stl" scale="1 1 1" />
+    <mesh name="asset_0195" file="../../Assembly 1/assembly_1/meshes/COMPOUND_74.stl" scale="1 1 1" />
+    <mesh name="asset_0196" file="../../Assembly 1/assembly_1/meshes/COMPOUND_75.stl" scale="1 1 1" />
+    <mesh name="asset_0197" file="../../Assembly 1/assembly_1/meshes/COMPOUND_76.stl" scale="1 1 1" />
+    <mesh name="asset_0198" file="../../Assembly 1/assembly_1/meshes/COMPOUND_77.stl" scale="1 1 1" />
+    <mesh name="asset_0199" file="../../Assembly 1/assembly_1/meshes/COMPOUND_78.stl" scale="1 1 1" />
+    <mesh name="asset_0200" file="../../Assembly 1/assembly_1/meshes/COMPOUND_79.stl" scale="1 1 1" />
+    <mesh name="asset_0201" file="../../Assembly 1/assembly_1/meshes/COMPOUND_8.stl" scale="1 1 1" />
+    <mesh name="asset_0202" file="../../Assembly 1/assembly_1/meshes/COMPOUND_80.stl" scale="1 1 1" />
+    <mesh name="asset_0203" file="../../Assembly 1/assembly_1/meshes/COMPOUND_81.stl" scale="1 1 1" />
+    <mesh name="asset_0204" file="../../Assembly 1/assembly_1/meshes/COMPOUND_82.stl" scale="1 1 1" />
+    <mesh name="asset_0205" file="../../Assembly 1/assembly_1/meshes/COMPOUND_83.stl" scale="1 1 1" />
+    <mesh name="asset_0206" file="../../Assembly 1/assembly_1/meshes/COMPOUND_84.stl" scale="1 1 1" />
+    <mesh name="asset_0207" file="../../Assembly 1/assembly_1/meshes/COMPOUND_85.stl" scale="1 1 1" />
+    <mesh name="asset_0208" file="../../Assembly 1/assembly_1/meshes/COMPOUND_86.stl" scale="1 1 1" />
+    <mesh name="asset_0209" file="../../Assembly 1/assembly_1/meshes/COMPOUND_87.stl" scale="1 1 1" />
+    <mesh name="asset_0210" file="../../Assembly 1/assembly_1/meshes/COMPOUND_88.stl" scale="1 1 1" />
+    <mesh name="asset_0211" file="../../Assembly 1/assembly_1/meshes/COMPOUND_89.stl" scale="1 1 1" />
+    <mesh name="asset_0212" file="../../Assembly 1/assembly_1/meshes/COMPOUND_9.stl" scale="1 1 1" />
+    <mesh name="asset_0213" file="../../Assembly 1/assembly_1/meshes/COMPOUND_90.stl" scale="1 1 1" />
+    <mesh name="asset_0214" file="../../Assembly 1/assembly_1/meshes/COMPOUND_91.stl" scale="1 1 1" />
+    <mesh name="asset_0215" file="../../Assembly 1/assembly_1/meshes/COMPOUND_92.stl" scale="1 1 1" />
+    <mesh name="asset_0216" file="../../Assembly 1/assembly_1/meshes/COMPOUND_93.stl" scale="1 1 1" />
+    <mesh name="asset_0217" file="../../Assembly 1/assembly_1/meshes/COMPOUND_94.stl" scale="1 1 1" />
+    <mesh name="asset_0218" file="../../Assembly 1/assembly_1/meshes/COMPOUND_95.stl" scale="1 1 1" />
+    <mesh name="asset_0219" file="../../Assembly 1/assembly_1/meshes/COMPOUND_96.stl" scale="1 1 1" />
+    <mesh name="asset_0220" file="../../Assembly 1/assembly_1/meshes/COMPOUND_97.stl" scale="1 1 1" />
+    <mesh name="asset_0221" file="../../Assembly 1/assembly_1/meshes/COMPOUND_98.stl" scale="1 1 1" />
+    <mesh name="asset_0222" file="../../Assembly 1/assembly_1/meshes/COMPOUND_99.stl" scale="1 1 1" />
+    <mesh name="asset_0223" file="../../Assembly 1/assembly_1/meshes/C_0805_2012Metric_10.stl" scale="1 1 1" />
+    <mesh name="asset_0224" file="../../Assembly 1/assembly_1/meshes/C_1206_3216Metric_2.stl" scale="1 1 1" />
+    <mesh name="asset_0225" file="../../Assembly 1/assembly_1/meshes/D_SMA.stl" scale="1 1 1" />
+    <mesh name="asset_0226" file="../../Assembly 1/assembly_1/meshes/D_SMB.stl" scale="1 1 1" />
+    <mesh name="asset_0227" file="../../Assembly 1/assembly_1/meshes/Diode_2_001.stl" scale="1 1 1" />
+    <mesh name="asset_0228" file="../../Assembly 1/assembly_1/meshes/Diode_2_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0229" file="../../Assembly 1/assembly_1/meshes/Diode_2_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0230" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1.stl" scale="1 1 1" />
+    <mesh name="asset_0231" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0232" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_10.stl" scale="1 1 1" />
+    <mesh name="asset_0233" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_11.stl" scale="1 1 1" />
+    <mesh name="asset_0234" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_12.stl" scale="1 1 1" />
+    <mesh name="asset_0235" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_13.stl" scale="1 1 1" />
+    <mesh name="asset_0236" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_14.stl" scale="1 1 1" />
+    <mesh name="asset_0237" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_15.stl" scale="1 1 1" />
+    <mesh name="asset_0238" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_16.stl" scale="1 1 1" />
+    <mesh name="asset_0239" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_17.stl" scale="1 1 1" />
+    <mesh name="asset_0240" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_18.stl" scale="1 1 1" />
+    <mesh name="asset_0241" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_19.stl" scale="1 1 1" />
+    <mesh name="asset_0242" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_2.stl" scale="1 1 1" />
+    <mesh name="asset_0243" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_20.stl" scale="1 1 1" />
+    <mesh name="asset_0244" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_21.stl" scale="1 1 1" />
+    <mesh name="asset_0245" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_22.stl" scale="1 1 1" />
+    <mesh name="asset_0246" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_23.stl" scale="1 1 1" />
+    <mesh name="asset_0247" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_24.stl" scale="1 1 1" />
+    <mesh name="asset_0248" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_25.stl" scale="1 1 1" />
+    <mesh name="asset_0249" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_26.stl" scale="1 1 1" />
+    <mesh name="asset_0250" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_27.stl" scale="1 1 1" />
+    <mesh name="asset_0251" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_28.stl" scale="1 1 1" />
+    <mesh name="asset_0252" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_29.stl" scale="1 1 1" />
+    <mesh name="asset_0253" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_3.stl" scale="1 1 1" />
+    <mesh name="asset_0254" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_30.stl" scale="1 1 1" />
+    <mesh name="asset_0255" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_31.stl" scale="1 1 1" />
+    <mesh name="asset_0256" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_32.stl" scale="1 1 1" />
+    <mesh name="asset_0257" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_33.stl" scale="1 1 1" />
+    <mesh name="asset_0258" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_34.stl" scale="1 1 1" />
+    <mesh name="asset_0259" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_35.stl" scale="1 1 1" />
+    <mesh name="asset_0260" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_36.stl" scale="1 1 1" />
+    <mesh name="asset_0261" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_37.stl" scale="1 1 1" />
+    <mesh name="asset_0262" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_38.stl" scale="1 1 1" />
+    <mesh name="asset_0263" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_39.stl" scale="1 1 1" />
+    <mesh name="asset_0264" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_4.stl" scale="1 1 1" />
+    <mesh name="asset_0265" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_40.stl" scale="1 1 1" />
+    <mesh name="asset_0266" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_41.stl" scale="1 1 1" />
+    <mesh name="asset_0267" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_42.stl" scale="1 1 1" />
+    <mesh name="asset_0268" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_43.stl" scale="1 1 1" />
+    <mesh name="asset_0269" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_44.stl" scale="1 1 1" />
+    <mesh name="asset_0270" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_45.stl" scale="1 1 1" />
+    <mesh name="asset_0271" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_46.stl" scale="1 1 1" />
+    <mesh name="asset_0272" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_47.stl" scale="1 1 1" />
+    <mesh name="asset_0273" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_48.stl" scale="1 1 1" />
+    <mesh name="asset_0274" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_49.stl" scale="1 1 1" />
+    <mesh name="asset_0275" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_5.stl" scale="1 1 1" />
+    <mesh name="asset_0276" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_50.stl" scale="1 1 1" />
+    <mesh name="asset_0277" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_51.stl" scale="1 1 1" />
+    <mesh name="asset_0278" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_6.stl" scale="1 1 1" />
+    <mesh name="asset_0279" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_7.stl" scale="1 1 1" />
+    <mesh name="asset_0280" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_8.stl" scale="1 1 1" />
+    <mesh name="asset_0281" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_9.stl" scale="1 1 1" />
+    <mesh name="asset_0282" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings.stl" scale="1 1 1" />
+    <mesh name="asset_0283" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_1.stl" scale="1 1 1" />
+    <mesh name="asset_0284" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_2.stl" scale="1 1 1" />
+    <mesh name="asset_0285" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_3.stl" scale="1 1 1" />
+    <mesh name="asset_0286" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_4.stl" scale="1 1 1" />
+    <mesh name="asset_0287" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_5.stl" scale="1 1 1" />
+    <mesh name="asset_0288" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_6.stl" scale="1 1 1" />
+    <mesh name="asset_0289" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_7.stl" scale="1 1 1" />
+    <mesh name="asset_0290" file="../../Assembly 1/assembly_1/meshes/Fuse_1210_3225Metric.stl" scale="1 1 1" />
+    <mesh name="asset_0291" file="../../Assembly 1/assembly_1/meshes/Fuse_1210_3225Metric_1.stl" scale="1 1 1" />
+    <mesh name="asset_0292" file="../../Assembly 1/assembly_1/meshes/HTSSOP_24_1EP_4_4x7_8mm_P0_65mm_EP3_4x7_8mm_Mask2_4x4_68mm.stl" scale="1 1 1" />
+    <mesh name="asset_0293" file="../../Assembly 1/assembly_1/meshes/JST_B2B_EH_A_2.stl" scale="1 1 1" />
+    <mesh name="asset_0294" file="../../Assembly 1/assembly_1/meshes/LED_0805_2012Metric_51.stl" scale="1 1 1" />
+    <mesh name="asset_0295" file="../../Assembly 1/assembly_1/meshes/MSK12C02.stl" scale="1 1 1" />
+    <mesh name="asset_0296" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1.stl" scale="1 1 1" />
+    <mesh name="asset_0297" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0298" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_2.stl" scale="1 1 1" />
+    <mesh name="asset_0299" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_3.stl" scale="1 1 1" />
+    <mesh name="asset_0300" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_4.stl" scale="1 1 1" />
+    <mesh name="asset_0301" file="../../Assembly 1/assembly_1/meshes/MSK12C02_2.stl" scale="1 1 1" />
+    <mesh name="asset_0302" file="../../Assembly 1/assembly_1/meshes/MSK12C02_3.stl" scale="1 1 1" />
+    <mesh name="asset_0303" file="../../Assembly 1/assembly_1/meshes/Part_1.stl" scale="1 1 1" />
+    <mesh name="asset_0304" file="../../Assembly 1/assembly_1/meshes/Part_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0305" file="../../Assembly 1/assembly_1/meshes/Part_2.stl" scale="1 1 1" />
+    <mesh name="asset_0306" file="../../Assembly 1/assembly_1/meshes/PinHeader_1x03_P254mm_Vertical.stl" scale="1 1 1" />
+    <mesh name="asset_0307" file="../../Assembly 1/assembly_1/meshes/PinHeader_1x10_P254mm_Vertical.stl" scale="1 1 1" />
+    <mesh name="asset_0308" file="../../Assembly 1/assembly_1/meshes/PinHeader_1x12_P254mm_Vertical_1.stl" scale="1 1 1" />
+    <mesh name="asset_0309" file="../../Assembly 1/assembly_1/meshes/PinSocket_1x04_P2_54mm_Vertical.stl" scale="1 1 1" />
+    <mesh name="asset_0310" file="../../Assembly 1/assembly_1/meshes/PinSocket_1x08_P2_54mm_Vertical_1.stl" scale="1 1 1" />
+    <mesh name="asset_0311" file="../../Assembly 1/assembly_1/meshes/R_0805_2012Metric_19.stl" scale="1 1 1" />
+    <mesh name="asset_0312" file="../../Assembly 1/assembly_1/meshes/Rim.stl" scale="1 1 1" />
+    <mesh name="asset_0313" file="../../Assembly 1/assembly_1/meshes/SM_LED_001.stl" scale="1 1 1" />
+    <mesh name="asset_0314" file="../../Assembly 1/assembly_1/meshes/SM_LED_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0315" file="../../Assembly 1/assembly_1/meshes/SM_LED_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0316" file="../../Assembly 1/assembly_1/meshes/SOT25_001.stl" scale="1 1 1" />
+    <mesh name="asset_0317" file="../../Assembly 1/assembly_1/meshes/SOT25_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0318" file="../../Assembly 1/assembly_1/meshes/SOT_143.stl" scale="1 1 1" />
+    <mesh name="asset_0319" file="../../Assembly 1/assembly_1/meshes/SOT_223.stl" scale="1 1 1" />
+    <mesh name="asset_0320" file="../../Assembly 1/assembly_1/meshes/SOT_23_6.stl" scale="1 1 1" />
+    <mesh name="asset_0321" file="../../Assembly 1/assembly_1/meshes/SW_SPST_PTS810.stl" scale="1 1 1" />
+    <mesh name="asset_0322" file="../../Assembly 1/assembly_1/meshes/Screw_M3_75mm.stl" scale="1 1 1" />
+    <mesh name="asset_0323" file="../../Assembly 1/assembly_1/meshes/TT_MOTOR_90_1_solid1.stl" scale="1 1 1" />
+    <mesh name="asset_0324" file="../../Assembly 1/assembly_1/meshes/Tyre.stl" scale="1 1 1" />
+    <mesh name="asset_0325" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_001.stl" scale="1 1 1" />
+    <mesh name="asset_0326" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0327" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0328" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_002.stl" scale="1 1 1" />
+    <mesh name="asset_0329" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_002_1.stl" scale="1 1 1" />
+    <mesh name="asset_0330" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_002_2.stl" scale="1 1 1" />
+    <mesh name="asset_0331" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_003.stl" scale="1 1 1" />
+    <mesh name="asset_0332" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_003_1.stl" scale="1 1 1" />
+    <mesh name="asset_0333" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_003_2.stl" scale="1 1 1" />
+    <mesh name="asset_0334" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_004.stl" scale="1 1 1" />
+    <mesh name="asset_0335" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_004_1.stl" scale="1 1 1" />
+    <mesh name="asset_0336" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_004_2.stl" scale="1 1 1" />
+    <mesh name="asset_0337" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_005.stl" scale="1 1 1" />
+    <mesh name="asset_0338" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_005_1.stl" scale="1 1 1" />
+    <mesh name="asset_0339" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_005_2.stl" scale="1 1 1" />
+    <mesh name="asset_0340" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_006.stl" scale="1 1 1" />
+    <mesh name="asset_0341" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_006_1.stl" scale="1 1 1" />
+    <mesh name="asset_0342" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_006_2.stl" scale="1 1 1" />
+    <mesh name="asset_0343" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_001.stl" scale="1 1 1" />
+    <mesh name="asset_0344" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0345" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0346" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_002.stl" scale="1 1 1" />
+    <mesh name="asset_0347" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_002_1.stl" scale="1 1 1" />
+    <mesh name="asset_0348" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_002_2.stl" scale="1 1 1" />
+    <mesh name="asset_0349" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_003.stl" scale="1 1 1" />
+    <mesh name="asset_0350" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_003_1.stl" scale="1 1 1" />
+    <mesh name="asset_0351" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_003_2.stl" scale="1 1 1" />
+    <mesh name="asset_0352" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_004.stl" scale="1 1 1" />
+    <mesh name="asset_0353" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_004_1.stl" scale="1 1 1" />
+    <mesh name="asset_0354" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_004_2.stl" scale="1 1 1" />
+    <mesh name="asset_0355" file="../../Assembly 1/assembly_1/meshes/_1x8_Male_Header_001.stl" scale="1 1 1" />
+    <mesh name="asset_0356" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001.stl" scale="1 1 1" />
+    <mesh name="asset_0357" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0358" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_10.stl" scale="1 1 1" />
+    <mesh name="asset_0359" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_11.stl" scale="1 1 1" />
+    <mesh name="asset_0360" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_12.stl" scale="1 1 1" />
+    <mesh name="asset_0361" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_13.stl" scale="1 1 1" />
+    <mesh name="asset_0362" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_14.stl" scale="1 1 1" />
+    <mesh name="asset_0363" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_15.stl" scale="1 1 1" />
+    <mesh name="asset_0364" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_16.stl" scale="1 1 1" />
+    <mesh name="asset_0365" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_17.stl" scale="1 1 1" />
+    <mesh name="asset_0366" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_18.stl" scale="1 1 1" />
+    <mesh name="asset_0367" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_19.stl" scale="1 1 1" />
+    <mesh name="asset_0368" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0369" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_20.stl" scale="1 1 1" />
+    <mesh name="asset_0370" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_21.stl" scale="1 1 1" />
+    <mesh name="asset_0371" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_22.stl" scale="1 1 1" />
+    <mesh name="asset_0372" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_23.stl" scale="1 1 1" />
+    <mesh name="asset_0373" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_24.stl" scale="1 1 1" />
+    <mesh name="asset_0374" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_3.stl" scale="1 1 1" />
+    <mesh name="asset_0375" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_4.stl" scale="1 1 1" />
+    <mesh name="asset_0376" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_5.stl" scale="1 1 1" />
+    <mesh name="asset_0377" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_6.stl" scale="1 1 1" />
+    <mesh name="asset_0378" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_7.stl" scale="1 1 1" />
+    <mesh name="asset_0379" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_8.stl" scale="1 1 1" />
+    <mesh name="asset_0380" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_9.stl" scale="1 1 1" />
+    <mesh name="asset_0381" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2.stl" scale="1 1 1" />
+    <mesh name="asset_0382" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1.stl" scale="1 1 1" />
+    <mesh name="asset_0383" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0384" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_2.stl" scale="1 1 1" />
+    <mesh name="asset_0385" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_3.stl" scale="1 1 1" />
+    <mesh name="asset_0386" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_4.stl" scale="1 1 1" />
+    <mesh name="asset_0387" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_5.stl" scale="1 1 1" />
+    <mesh name="asset_0388" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_6.stl" scale="1 1 1" />
+    <mesh name="asset_0389" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_2.stl" scale="1 1 1" />
+    <mesh name="asset_0390" file="../../Assembly 1/assembly_1/meshes/a71ba716_8551_11ed_a139_00155d22e2d7_part.stl" scale="1 1 1" />
+    <mesh name="asset_0391" file="../../Assembly 1/assembly_1/meshes/a71ba78e_8551_11ed_a139_00155d22e2d7_part.stl" scale="1 1 1" />
+    <mesh name="asset_0392" file="../../Assembly 1/assembly_1/meshes/a71ba78e_8551_11ed_a139_00155d22e2d7_part_1.stl" scale="1 1 1" />
+    <mesh name="asset_0393" file="../../Assembly 1/assembly_1/meshes/mini_motor_1_solid1.stl" scale="1 1 1" />
+    <mesh name="asset_0394" file="../../Assembly 1/assembly_1/meshes/output_shaft_2_solid1.stl" scale="1 1 1" />
+    <mesh name="asset_0395" file="../../Assembly 1/assembly_1/meshes/sra_board_unsaved_export_ok3Bnj_PCB.stl" scale="1 1 1" />
+  </asset>
+  <worldbody>
+    <light name="key" pos="0.2 -0.25 0.5" dir="-0.3 0.5 -1" directional="true" diffuse="0.9 0.9 0.9" />
+    <light name="fill" pos="-0.2 0.2 0.4" dir="0.4 -0.5 -1" directional="true" diffuse="0.5 0.55 0.6" />
+    <geom name="visual_floor" type="plane" pos="0 0 0" size="0.55 0.55 0.01" material="floor_mat" contype="0" conaffinity="0" />
+    <camera name="three_quarter" pos="0.25 -0.3 0.18" quat="0.759485525 0.5543395865 0.2006986114 0.2749716851" />
+    <camera name="battery_side" pos="-0.23 0.28 0.18" quat="0.2752149883 0.1946627416 -0.5436620762 -0.7686316895" />
+    <body name="chassis_static" pos="-0.1178159706 0.04593513865 0.04932973298">
+      <body name="wheel_left_static" pos="0.05131615054 -0.07908958595 -0.01187003265" quat="0.7071077194 3.896020632e-06 -0.707105843 1.298672395e-06">
+        <geom name="visual_rim_1_0" type="mesh" mesh="asset_0312" pos="0 0 0.03" quat="0.5452952735 3.970912924e-22 -2.039299675e-22 -0.8382440365" rgba="1 1 0 1" contype="0" conaffinity="0" />
+        <geom name="visual_tyre_0" type="mesh" mesh="asset_0324" pos="0 -1.387778781e-17 0.03" quat="0.5452952735 3.970912924e-22 -2.039299675e-22 -0.8382440365" rgba="0.227451 0.227451 0.227451 1" contype="0" conaffinity="0" />
+      </body>
+      <body name="wheel_right_static" pos="0.1843158389 -0.07908941738 -0.01187010225" quat="2.236852895e-06 -0.7071086576 3.604815576e-07 -0.7071049048">
+        <geom name="visual_rim_0" type="mesh" mesh="asset_0312" pos="-1.734723476e-18 0 0.03" quat="0.7071054825 -1.0208571e-22 -4.180174966e-22 0.7071080799" rgba="1 1 0 1" contype="0" conaffinity="0" />
+        <geom name="visual_tyre_1_0" type="mesh" mesh="asset_0324" pos="-1.734723476e-18 -1.387778781e-17 0.03" quat="0.7071054825 -1.0208571e-22 -4.180174966e-22 0.7071080799" rgba="0.227451 0.227451 0.227451 1" contype="0" conaffinity="0" />
+      </body>
+      <geom name="visual_0603_capacitor_001_0" type="mesh" mesh="asset_0325" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_001_1_0" type="mesh" mesh="asset_0326" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_001_2_0" type="mesh" mesh="asset_0327" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.737255 0.615686 0.415686 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_002_0" type="mesh" mesh="asset_0328" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_002_1_0" type="mesh" mesh="asset_0329" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.737255 0.615686 0.415686 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_002_2_0" type="mesh" mesh="asset_0330" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_003_0" type="mesh" mesh="asset_0331" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.737255 0.615686 0.415686 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_003_1_0" type="mesh" mesh="asset_0332" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_003_2_0" type="mesh" mesh="asset_0333" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_004_0" type="mesh" mesh="asset_0334" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_004_1_0" type="mesh" mesh="asset_0335" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_004_2_0" type="mesh" mesh="asset_0336" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.737255 0.615686 0.415686 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_005_0" type="mesh" mesh="asset_0337" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.737255 0.615686 0.415686 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_005_1_0" type="mesh" mesh="asset_0338" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_005_2_0" type="mesh" mesh="asset_0339" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_006_0" type="mesh" mesh="asset_0340" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_006_1_0" type="mesh" mesh="asset_0341" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.737255 0.615686 0.415686 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_capacitor_006_2_0" type="mesh" mesh="asset_0342" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_001_0" type="mesh" mesh="asset_0343" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_001_1_0" type="mesh" mesh="asset_0344" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_001_2_0" type="mesh" mesh="asset_0345" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_002_0" type="mesh" mesh="asset_0346" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_002_1_0" type="mesh" mesh="asset_0347" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_002_2_0" type="mesh" mesh="asset_0348" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_003_0" type="mesh" mesh="asset_0349" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_003_1_0" type="mesh" mesh="asset_0350" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_003_2_0" type="mesh" mesh="asset_0351" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_004_0" type="mesh" mesh="asset_0352" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_004_1_0" type="mesh" mesh="asset_0353" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_0603_resistor_004_2_0" type="mesh" mesh="asset_0354" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_1x8_male_header_001_0" type="mesh" mesh="asset_0355" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_0" type="mesh" mesh="asset_0356" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_1_0" type="mesh" mesh="asset_0357" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_10_0" type="mesh" mesh="asset_0358" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_11_0" type="mesh" mesh="asset_0359" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_12_0" type="mesh" mesh="asset_0360" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_13_0" type="mesh" mesh="asset_0361" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_14_0" type="mesh" mesh="asset_0362" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_15_0" type="mesh" mesh="asset_0363" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_16_0" type="mesh" mesh="asset_0364" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_17_0" type="mesh" mesh="asset_0365" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_18_0" type="mesh" mesh="asset_0366" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_19_0" type="mesh" mesh="asset_0367" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_2_0" type="mesh" mesh="asset_0368" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_20_0" type="mesh" mesh="asset_0369" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_21_0" type="mesh" mesh="asset_0370" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_22_0" type="mesh" mesh="asset_0371" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_23_0" type="mesh" mesh="asset_0372" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_24_0" type="mesh" mesh="asset_0373" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_3_0" type="mesh" mesh="asset_0374" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_4_0" type="mesh" mesh="asset_0375" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_5_0" type="mesh" mesh="asset_0376" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_6_0" type="mesh" mesh="asset_0377" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_7_0" type="mesh" mesh="asset_0378" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_8_0" type="mesh" mesh="asset_0379" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_24_qfn_001_9_0" type="mesh" mesh="asset_0380" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_0" type="mesh" mesh="asset_0381" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_0" type="mesh" mesh="asset_0382" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_1_0" type="mesh" mesh="asset_0383" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_2_0" type="mesh" mesh="asset_0384" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_3_0" type="mesh" mesh="asset_0385" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_4_0" type="mesh" mesh="asset_0386" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_5_0" type="mesh" mesh="asset_0387" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_1_6_0" type="mesh" mesh="asset_0388" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_8x1_male_header_pins_v2_2_0" type="mesh" mesh="asset_0389" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_a71ba716_8551_11ed_a139_00155d22e2d7_part_0" type="mesh" mesh="asset_0390" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.14902 0.145098 0.145098 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_a71ba78e_8551_11ed_a139_00155d22e2d7_part_0" type="mesh" mesh="asset_0391" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_a71ba78e_8551_11ed_a139_00155d22e2d7_part_1_0" type="mesh" mesh="asset_0392" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_barreljack_horizontal_0" type="mesh" mesh="asset_0000" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.14902 0.145098 0.145098 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_barreljack_horizontal_1_0" type="mesh" mesh="asset_0001" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_barreljack_horizontal_2_0" type="mesh" mesh="asset_0002" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_barreljack_horizontal_3_0" type="mesh" mesh="asset_0003" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_barreljack_horizontal_4_0" type="mesh" mesh="asset_0004" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_battery18650__none_2_0" type="mesh" mesh="asset_0005" pos="0.117816113 -0.0660578 0.00387991" quat="0.4999981634 0.5 -0.5000018366 -0.5" rgba="0.30 0.50 0.71 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_batterycaseplastic__fillet1_0" type="mesh" mesh="asset_0006" pos="0.117816113 -0.0660578 0.00387991" quat="0.4999981634 0.5 -0.5000018366 -0.5" rgba="0.211765 0.211765 0.211765 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_batterycasespring__cut_extrude2_0" type="mesh" mesh="asset_0007" pos="0.117816113 -0.0660578 0.00387991" quat="0.4999981634 0.5 -0.5000018366 -0.5" rgba="0.72 0.74 0.76 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_board_001_0" type="mesh" mesh="asset_0008" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0 0.282353 0.85098 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___adhesive_pad_0" type="mesh" mesh="asset_0009" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.988235 0.988235 0.94902 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___back_panel_0" type="mesh" mesh="asset_0010" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.168627 0.180392 0.34902 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___black_tape_0" type="mesh" mesh="asset_0011" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0 0 0 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___flex_connector_bend_0" type="mesh" mesh="asset_0012" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.658824 0.509804 0.0588235 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___flex_connector_terminals_0" type="mesh" mesh="asset_0013" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.658824 0.509804 0.0588235 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___front_panel_0" type="mesh" mesh="asset_0014" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.239216 0.239216 0.352941 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___pcb_0" type="mesh" mesh="asset_0015" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.0941176 0.0941176 0.0941176 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___protective_foil_0" type="mesh" mesh="asset_0016" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0 0 0 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_body___screen_border_0" type="mesh" mesh="asset_0017" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0 0 0 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_c_0805_2012metric_10_0" type="mesh" mesh="asset_0223" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_c_1206_3216metric_2_0" type="mesh" mesh="asset_0224" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_0" type="mesh" mesh="asset_0018" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_1_0" type="mesh" mesh="asset_0019" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_10_0" type="mesh" mesh="asset_0020" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_100_0" type="mesh" mesh="asset_0021" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_101_0" type="mesh" mesh="asset_0022" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_102_0" type="mesh" mesh="asset_0023" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_103_0" type="mesh" mesh="asset_0024" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_104_0" type="mesh" mesh="asset_0025" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_105_0" type="mesh" mesh="asset_0026" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_106_0" type="mesh" mesh="asset_0027" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_107_0" type="mesh" mesh="asset_0028" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_108_0" type="mesh" mesh="asset_0029" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_109_0" type="mesh" mesh="asset_0030" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_11_0" type="mesh" mesh="asset_0031" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_110_0" type="mesh" mesh="asset_0032" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_111_0" type="mesh" mesh="asset_0033" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_112_0" type="mesh" mesh="asset_0034" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_113_0" type="mesh" mesh="asset_0035" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_114_0" type="mesh" mesh="asset_0036" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_115_0" type="mesh" mesh="asset_0037" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_116_0" type="mesh" mesh="asset_0038" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_117_0" type="mesh" mesh="asset_0039" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_118_0" type="mesh" mesh="asset_0040" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_119_0" type="mesh" mesh="asset_0041" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_12_0" type="mesh" mesh="asset_0042" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_120_0" type="mesh" mesh="asset_0043" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_121_0" type="mesh" mesh="asset_0044" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_122_0" type="mesh" mesh="asset_0045" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_123_0" type="mesh" mesh="asset_0046" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_124_0" type="mesh" mesh="asset_0047" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_125_0" type="mesh" mesh="asset_0048" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_126_0" type="mesh" mesh="asset_0049" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_127_0" type="mesh" mesh="asset_0050" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_128_0" type="mesh" mesh="asset_0051" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_129_0" type="mesh" mesh="asset_0052" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_13_0" type="mesh" mesh="asset_0053" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_130_0" type="mesh" mesh="asset_0054" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_131_0" type="mesh" mesh="asset_0055" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_132_0" type="mesh" mesh="asset_0056" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_133_0" type="mesh" mesh="asset_0057" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_134_0" type="mesh" mesh="asset_0058" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_135_0" type="mesh" mesh="asset_0059" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_136_0" type="mesh" mesh="asset_0060" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_137_0" type="mesh" mesh="asset_0061" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_138_0" type="mesh" mesh="asset_0062" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_139_0" type="mesh" mesh="asset_0063" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_14_0" type="mesh" mesh="asset_0064" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_140_0" type="mesh" mesh="asset_0065" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_141_0" type="mesh" mesh="asset_0066" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_142_0" type="mesh" mesh="asset_0067" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_143_0" type="mesh" mesh="asset_0068" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_144_0" type="mesh" mesh="asset_0069" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_145_0" type="mesh" mesh="asset_0070" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_146_0" type="mesh" mesh="asset_0071" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.678431 0.137255 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_147_0" type="mesh" mesh="asset_0072" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_148_0" type="mesh" mesh="asset_0073" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.0980392 0.0980392 0.0980392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_149_0" type="mesh" mesh="asset_0074" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_15_0" type="mesh" mesh="asset_0075" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_150_0" type="mesh" mesh="asset_0076" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_151_0" type="mesh" mesh="asset_0077" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_152_0" type="mesh" mesh="asset_0078" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_153_0" type="mesh" mesh="asset_0079" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_154_0" type="mesh" mesh="asset_0080" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_155_0" type="mesh" mesh="asset_0081" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_156_0" type="mesh" mesh="asset_0082" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_157_0" type="mesh" mesh="asset_0083" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_158_0" type="mesh" mesh="asset_0084" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_159_0" type="mesh" mesh="asset_0085" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_16_0" type="mesh" mesh="asset_0086" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_160_0" type="mesh" mesh="asset_0087" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_161_0" type="mesh" mesh="asset_0088" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_162_0" type="mesh" mesh="asset_0089" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_163_0" type="mesh" mesh="asset_0090" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_164_0" type="mesh" mesh="asset_0091" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_165_0" type="mesh" mesh="asset_0092" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_166_0" type="mesh" mesh="asset_0093" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_167_0" type="mesh" mesh="asset_0094" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_168_0" type="mesh" mesh="asset_0095" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_169_0" type="mesh" mesh="asset_0096" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_17_0" type="mesh" mesh="asset_0097" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_170_0" type="mesh" mesh="asset_0098" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_171_0" type="mesh" mesh="asset_0099" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_172_0" type="mesh" mesh="asset_0100" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_173_0" type="mesh" mesh="asset_0101" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_174_0" type="mesh" mesh="asset_0102" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_175_0" type="mesh" mesh="asset_0103" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_176_0" type="mesh" mesh="asset_0104" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_177_0" type="mesh" mesh="asset_0105" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_178_0" type="mesh" mesh="asset_0106" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_179_0" type="mesh" mesh="asset_0107" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_18_0" type="mesh" mesh="asset_0108" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_180_0" type="mesh" mesh="asset_0109" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_181_0" type="mesh" mesh="asset_0110" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_182_0" type="mesh" mesh="asset_0111" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_183_0" type="mesh" mesh="asset_0112" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_184_0" type="mesh" mesh="asset_0113" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_185_0" type="mesh" mesh="asset_0114" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_186_0" type="mesh" mesh="asset_0115" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_187_0" type="mesh" mesh="asset_0116" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_188_0" type="mesh" mesh="asset_0117" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_189_0" type="mesh" mesh="asset_0118" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_19_0" type="mesh" mesh="asset_0119" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_190_0" type="mesh" mesh="asset_0120" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_191_0" type="mesh" mesh="asset_0121" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_192_0" type="mesh" mesh="asset_0122" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_193_0" type="mesh" mesh="asset_0123" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_194_0" type="mesh" mesh="asset_0124" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_195_0" type="mesh" mesh="asset_0125" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_196_0" type="mesh" mesh="asset_0126" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_197_0" type="mesh" mesh="asset_0127" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_198_0" type="mesh" mesh="asset_0128" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_199_0" type="mesh" mesh="asset_0129" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_2_0" type="mesh" mesh="asset_0130" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_20_0" type="mesh" mesh="asset_0131" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_200_0" type="mesh" mesh="asset_0132" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_201_0" type="mesh" mesh="asset_0133" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_202_0" type="mesh" mesh="asset_0134" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_203_0" type="mesh" mesh="asset_0135" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_204_0" type="mesh" mesh="asset_0136" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_21_0" type="mesh" mesh="asset_0137" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_22_0" type="mesh" mesh="asset_0138" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_23_0" type="mesh" mesh="asset_0139" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_24_0" type="mesh" mesh="asset_0140" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_25_0" type="mesh" mesh="asset_0141" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_26_0" type="mesh" mesh="asset_0142" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.517647 0.411765 0.294118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_27_0" type="mesh" mesh="asset_0143" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_28_0" type="mesh" mesh="asset_0144" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_29_0" type="mesh" mesh="asset_0145" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_3_0" type="mesh" mesh="asset_0146" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_30_0" type="mesh" mesh="asset_0147" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_31_0" type="mesh" mesh="asset_0148" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_32_0" type="mesh" mesh="asset_0149" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_33_0" type="mesh" mesh="asset_0150" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_34_0" type="mesh" mesh="asset_0151" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_35_0" type="mesh" mesh="asset_0152" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_36_0" type="mesh" mesh="asset_0153" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_37_0" type="mesh" mesh="asset_0154" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_38_0" type="mesh" mesh="asset_0155" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_39_0" type="mesh" mesh="asset_0156" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_4_0" type="mesh" mesh="asset_0157" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_40_0" type="mesh" mesh="asset_0158" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_41_0" type="mesh" mesh="asset_0159" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_42_0" type="mesh" mesh="asset_0160" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_43_0" type="mesh" mesh="asset_0161" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_44_0" type="mesh" mesh="asset_0162" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_45_0" type="mesh" mesh="asset_0163" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_46_0" type="mesh" mesh="asset_0164" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_47_0" type="mesh" mesh="asset_0165" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_48_0" type="mesh" mesh="asset_0166" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_49_0" type="mesh" mesh="asset_0167" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_5_0" type="mesh" mesh="asset_0168" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_50_0" type="mesh" mesh="asset_0169" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_51_0" type="mesh" mesh="asset_0170" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_52_0" type="mesh" mesh="asset_0171" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_53_0" type="mesh" mesh="asset_0172" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_54_0" type="mesh" mesh="asset_0173" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_55_0" type="mesh" mesh="asset_0174" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_56_0" type="mesh" mesh="asset_0175" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_57_0" type="mesh" mesh="asset_0176" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_58_0" type="mesh" mesh="asset_0177" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_59_0" type="mesh" mesh="asset_0178" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_6_0" type="mesh" mesh="asset_0179" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_60_0" type="mesh" mesh="asset_0180" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_61_0" type="mesh" mesh="asset_0181" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_62_0" type="mesh" mesh="asset_0182" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_63_0" type="mesh" mesh="asset_0183" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_64_0" type="mesh" mesh="asset_0184" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_65_0" type="mesh" mesh="asset_0185" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_66_0" type="mesh" mesh="asset_0186" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_67_0" type="mesh" mesh="asset_0187" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_68_0" type="mesh" mesh="asset_0188" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_69_0" type="mesh" mesh="asset_0189" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_7_0" type="mesh" mesh="asset_0190" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_70_0" type="mesh" mesh="asset_0191" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_71_0" type="mesh" mesh="asset_0192" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_72_0" type="mesh" mesh="asset_0193" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_73_0" type="mesh" mesh="asset_0194" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.984314 0.980392 0.960784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_74_0" type="mesh" mesh="asset_0195" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_75_0" type="mesh" mesh="asset_0196" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_76_0" type="mesh" mesh="asset_0197" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_77_0" type="mesh" mesh="asset_0198" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_78_0" type="mesh" mesh="asset_0199" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_79_0" type="mesh" mesh="asset_0200" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_8_0" type="mesh" mesh="asset_0201" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_80_0" type="mesh" mesh="asset_0202" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.517647 0.411765 0.294118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_81_0" type="mesh" mesh="asset_0203" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_82_0" type="mesh" mesh="asset_0204" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_83_0" type="mesh" mesh="asset_0205" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_84_0" type="mesh" mesh="asset_0206" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_85_0" type="mesh" mesh="asset_0207" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_86_0" type="mesh" mesh="asset_0208" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_87_0" type="mesh" mesh="asset_0209" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_88_0" type="mesh" mesh="asset_0210" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_89_0" type="mesh" mesh="asset_0211" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_9_0" type="mesh" mesh="asset_0212" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_90_0" type="mesh" mesh="asset_0213" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_91_0" type="mesh" mesh="asset_0214" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_92_0" type="mesh" mesh="asset_0215" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_93_0" type="mesh" mesh="asset_0216" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_94_0" type="mesh" mesh="asset_0217" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_95_0" type="mesh" mesh="asset_0218" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_96_0" type="mesh" mesh="asset_0219" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_97_0" type="mesh" mesh="asset_0220" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_98_0" type="mesh" mesh="asset_0221" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_compound_99_0" type="mesh" mesh="asset_0222" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.627451 0.627451 0.627451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_d_sma_0" type="mesh" mesh="asset_0225" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_d_smb_0" type="mesh" mesh="asset_0226" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_diode_2_001_0" type="mesh" mesh="asset_0227" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_diode_2_001_1_0" type="mesh" mesh="asset_0228" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.796078 0.796078 0.796078 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_diode_2_001_2_0" type="mesh" mesh="asset_0229" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_0" type="mesh" mesh="asset_0230" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_1_0" type="mesh" mesh="asset_0231" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_10_0" type="mesh" mesh="asset_0232" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_11_0" type="mesh" mesh="asset_0233" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_12_0" type="mesh" mesh="asset_0234" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_13_0" type="mesh" mesh="asset_0235" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_14_0" type="mesh" mesh="asset_0236" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_15_0" type="mesh" mesh="asset_0237" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_16_0" type="mesh" mesh="asset_0238" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_17_0" type="mesh" mesh="asset_0239" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_18_0" type="mesh" mesh="asset_0240" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_19_0" type="mesh" mesh="asset_0241" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_2_0" type="mesh" mesh="asset_0242" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_20_0" type="mesh" mesh="asset_0243" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_21_0" type="mesh" mesh="asset_0244" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_22_0" type="mesh" mesh="asset_0245" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_23_0" type="mesh" mesh="asset_0246" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_24_0" type="mesh" mesh="asset_0247" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_25_0" type="mesh" mesh="asset_0248" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_26_0" type="mesh" mesh="asset_0249" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_27_0" type="mesh" mesh="asset_0250" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_28_0" type="mesh" mesh="asset_0251" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_29_0" type="mesh" mesh="asset_0252" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_3_0" type="mesh" mesh="asset_0253" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_30_0" type="mesh" mesh="asset_0254" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_31_0" type="mesh" mesh="asset_0255" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_32_0" type="mesh" mesh="asset_0256" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_33_0" type="mesh" mesh="asset_0257" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_34_0" type="mesh" mesh="asset_0258" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.160784 0.160784 0.160784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_35_0" type="mesh" mesh="asset_0259" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.160784 0.160784 0.160784 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_36_0" type="mesh" mesh="asset_0260" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_37_0" type="mesh" mesh="asset_0261" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.372549 0.372549 0.372549 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_38_0" type="mesh" mesh="asset_0262" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_39_0" type="mesh" mesh="asset_0263" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_4_0" type="mesh" mesh="asset_0264" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_40_0" type="mesh" mesh="asset_0265" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_41_0" type="mesh" mesh="asset_0266" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_42_0" type="mesh" mesh="asset_0267" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_43_0" type="mesh" mesh="asset_0268" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_44_0" type="mesh" mesh="asset_0269" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_45_0" type="mesh" mesh="asset_0270" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_46_0" type="mesh" mesh="asset_0271" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_47_0" type="mesh" mesh="asset_0272" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_48_0" type="mesh" mesh="asset_0273" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_49_0" type="mesh" mesh="asset_0274" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_5_0" type="mesh" mesh="asset_0275" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_50_0" type="mesh" mesh="asset_0276" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_51_0" type="mesh" mesh="asset_0277" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_6_0" type="mesh" mesh="asset_0278" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_7_0" type="mesh" mesh="asset_0279" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_8_0" type="mesh" mesh="asset_0280" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_esp32_s3_wroom_1_9_0" type="mesh" mesh="asset_0281" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_0" type="mesh" mesh="asset_0282" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_1_0" type="mesh" mesh="asset_0283" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_2_0" type="mesh" mesh="asset_0284" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_3_0" type="mesh" mesh="asset_0285" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_4_0" type="mesh" mesh="asset_0286" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_5_0" type="mesh" mesh="asset_0287" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_6_0" type="mesh" mesh="asset_0288" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_extrude___annular_rings_7_0" type="mesh" mesh="asset_0289" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.909804 0.909804 0.909804 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_fuse_1210_3225metric_0" type="mesh" mesh="asset_0290" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_fuse_1210_3225metric_1_0" type="mesh" mesh="asset_0291" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_htssop_24_1ep_4_4x7_8mm_p0_65mm_ep3_4x7_8mm_mask2_4x4_68mm_0" type="mesh" mesh="asset_0292" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_jst_b2b_eh_a_2_0" type="mesh" mesh="asset_0293" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_led_0805_2012metric_51_0" type="mesh" mesh="asset_0294" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_mini_motor_1_solid1_0" type="mesh" mesh="asset_0393" pos="0.1836178698 -0.1024400705 0.001401913826" quat="0.4999986732 -0.5 0.4999981634 0.5000031634" rgba="0.666667 0.698039 0.768627 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_mini_motor_1_solid1_1_0" type="mesh" mesh="asset_0393" pos="0.0520143531 -0.1024401346 -0.02514222027" quat="0.5000025 -0.4999988268 -0.4999993366 -0.4999993366" rgba="0.666667 0.698039 0.768627 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_0" type="mesh" mesh="asset_0295" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_1_0" type="mesh" mesh="asset_0296" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_1_1_0" type="mesh" mesh="asset_0297" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_1_2_0" type="mesh" mesh="asset_0298" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_1_3_0" type="mesh" mesh="asset_0299" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_1_4_0" type="mesh" mesh="asset_0300" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_2_0" type="mesh" mesh="asset_0301" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_msk12c02_3_0" type="mesh" mesh="asset_0302" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_output_shaft_2_solid1_0" type="mesh" mesh="asset_0394" pos="0.1836178698 -0.1024400705 0.001401913826" quat="0.4999986732 -0.5 0.4999981634 0.5000031634" rgba="1 1 1 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_output_shaft_2_solid1_1_0" type="mesh" mesh="asset_0394" pos="0.0520143531 -0.1024401346 -0.02514222027" quat="0.5000025 -0.4999988268 -0.4999993366 -0.4999993366" rgba="1 1 1 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_part_1_0" type="mesh" mesh="asset_0303" pos="0.117816 -0.0678895 0.00187991" quat="1 0 0 0" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_part_1_1_0" type="mesh" mesh="asset_0304" pos="0.06631609789 -0.0678895 0.00187991" quat="9.381839456e-07 -0.7071054825 -0.7071080799 9.381873918e-07" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_part_2_0" type="mesh" mesh="asset_0305" pos="0.1923159021 -0.06788941552 0.001879848967" quat="9.381839456e-07 -0.7071054825 -0.7071080799 9.381873918e-07" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_pinheader_1x03_p254mm_vertical_0" type="mesh" mesh="asset_0306" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_pinheader_1x10_p254mm_vertical_0" type="mesh" mesh="asset_0307" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_pinheader_1x12_p254mm_vertical_1_0" type="mesh" mesh="asset_0308" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_pinsocket_1x04_p2_54mm_vertical_0" type="mesh" mesh="asset_0309" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.858824 0.737255 0.494118 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_pinsocket_1x08_p2_54mm_vertical_1_0" type="mesh" mesh="asset_0310" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_r_0805_2012metric_19_0" type="mesh" mesh="asset_0311" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_screw_m3_75mm_0" type="mesh" mesh="asset_0322" pos="0.1596962 -0.0359428 -0.02461009" quat="1 0 0 0" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_screw_m3_75mm_1_0" type="mesh" mesh="asset_0322" pos="0.0758735 -0.0998645 -0.02461009" quat="1 0 0 0" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_screw_m3_75mm_2_0" type="mesh" mesh="asset_0322" pos="0.1597036 -0.099885419 -0.02461009" quat="1 0 0 0" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_screw_m3_75mm_3_0" type="mesh" mesh="asset_0322" pos="0.07581165 -0.0359145 -0.02461009" quat="1 0 0 0" rgba="0.615686 0.811765 0.929412 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sm_led_001_0" type="mesh" mesh="asset_0313" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.780392 0.568627 0.113725 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sm_led_001_1_0" type="mesh" mesh="asset_0314" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0 0.282353 0.85098 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sm_led_001_2_0" type="mesh" mesh="asset_0315" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="1 1 1 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sot25_001_0" type="mesh" mesh="asset_0316" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.227451 0.227451 0.227451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sot25_001_1_0" type="mesh" mesh="asset_0317" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.827451 0.827451 0.827451 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sot_143_0" type="mesh" mesh="asset_0318" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sot_223_0" type="mesh" mesh="asset_0319" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sot_23_6_0" type="mesh" mesh="asset_0320" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.823529 0.819608 0.780392 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sra_board_unsaved_export_ok3bnj_pcb_0" type="mesh" mesh="asset_0395" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.313726 0.486275 0.411765 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_sw_spst_pts810_0" type="mesh" mesh="asset_0321" pos="-0.0383815 0.0317705 0.04887991" quat="1 0 0 0" rgba="0.66 0.69 0.73 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_tt_motor_90_1_solid1_0" type="mesh" mesh="asset_0323" pos="0.0520143531 -0.1024401346 -0.02514222027" quat="0.5000025 -0.4999988268 -0.4999993366 -0.4999993366" rgba="1 1 0 0.28" contype="0" conaffinity="0" />
+      <geom name="visual_tt_motor_90_1_solid1_1_0" type="mesh" mesh="asset_0323" pos="0.1836178698 -0.1024400705 0.001401913826" quat="0.4999986732 -0.5 0.4999981634 0.5000031634" rgba="1 1 0 0.28" contype="0" conaffinity="0" />
+      <site name="chassis_com_assumption_based" type="sphere" pos="0.117845030177 -0.0649735281334 0.0102882988927" size="0.0035" rgba="1 0.1 0.12 1" group="0" />
+      <site name="chassis_com_assumption_based_leader" type="capsule" fromto="0.117845030177 -0.0649735281334 0.0102882988927 0.117845030177 -0.0649735281334 0.082" size="0.0007" rgba="1 0.1 0.12 1" group="0" />
+      <site name="assembly_com_assumption_based" type="sphere" pos="0.117838914867 -0.0679465741051 0.00562140682895" size="0.0035" rgba="1 0.85 0.05 1" group="0" />
+      <site name="assembly_com_assumption_based_leader" type="capsule" fromto="0.117838914867 -0.0679465741051 0.00562140682895 0.117838914867 -0.0679465741051 0.082" size="0.0007" rgba="1 0.85 0.05 1" group="0" />
+      <site name="battery_group_com" type="sphere" pos="0.117734405116 -0.0660568370287 0.0124287535377" size="0.0025" rgba="0.10 0.85 1 1" group="0" />
+      <site name="battery_group_com_leader" type="capsule" fromto="0.117734405116 -0.0660568370287 0.0124287535377 0.117734405116 -0.0660568370287 0.082" size="0.0007" rgba="0.10 0.85 1 1" group="0" />
+    </body>
+  </worldbody>
+  <custom>
+    <numeric name="audit_chassis_mass_kg" data="0.299839766" />
+    <numeric name="audit_assembly_mass_kg" data="0.379839766" />
+    <numeric name="audit_populated_pcb_mass_kg" data="0.03" />
+    <numeric name="audit_battery_holder_cells_springs_mass_kg" data="0.153" />
+    <numeric name="audit_four_screws_mass_kg" data="0.018" />
+    <numeric name="audit_three_structural_parts_mass_kg" data="0.04084" />
+    <numeric name="audit_left_motor_mass_kg" data="0.028999883" />
+    <numeric name="audit_right_motor_mass_kg" data="0.028999883" />
+    <numeric name="audit_revolute_1_wheel_mass_kg" data="0.04" />
+    <numeric name="audit_revolute_2_wheel_mass_kg" data="0.04" />
+    <numeric name="audit_chassis_com_source_m" data="0.117845030177 -0.0649735281334 0.0102882988927" />
+    <numeric name="audit_assembly_com_source_m" data="0.117838914867 -0.0679465741051 0.00562140682895" />
+    <numeric name="audit_link_0603_capacitor_001" data="2.77295980783e-07 0.1309275 -0.0725755 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_001_1" data="2.77295980783e-07 0.1323275 -0.0725755 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_001_2" data="1.66376987027e-06 0.1316275 -0.0725755 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_002" data="2.77295980783e-07 0.1294285 -0.0695255 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_002_1" data="1.66376987027e-06 0.1294285 -0.0688255 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_002_2" data="2.77295980783e-07 0.1294285 -0.0681257 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_003" data="1.66376987027e-06 0.1280795 -0.0724225 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_003_1" data="2.77295980783e-07 0.1280795 -0.0731225 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_003_2" data="2.77295980783e-07 0.1280795 -0.0717225 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_004" data="2.77295980783e-07 0.1268305 -0.0731725 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_004_1" data="2.77295980783e-07 0.1268305 -0.0717725 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_004_2" data="1.66376987027e-06 0.1268305 -0.0724725 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_005" data="1.66376987027e-06 0.1193355 -0.0688745 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_005_1" data="2.77295980783e-07 0.1193355 -0.0681749 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_005_2" data="2.77295980783e-07 0.1193355 -0.0695745 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_006" data="2.77295980783e-07 0.1193355 -0.0732715 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_006_1" data="1.66376987027e-06 0.1193355 -0.0725715 0.06397491" />
+    <numeric name="audit_link_0603_capacitor_006_2" data="2.77295980783e-07 0.1193355 -0.0718715 0.06397491" />
+    <numeric name="audit_link_0603_resistor_001" data="8.31886939945e-07 0.1280805 -0.0688255 0.06372491" />
+    <numeric name="audit_link_0603_resistor_001_1" data="1.38647489189e-07 0.1280805 -0.0681257 0.06372491" />
+    <numeric name="audit_link_0603_resistor_001_2" data="1.38647489189e-07 0.1280805 -0.0695255 0.06372491" />
+    <numeric name="audit_link_0603_resistor_002" data="1.38647489189e-07 0.1268315 -0.0694755 0.06372491" />
+    <numeric name="audit_link_0603_resistor_002_1" data="8.31886939945e-07 0.1268315 -0.0687755 0.06372491" />
+    <numeric name="audit_link_0603_resistor_002_2" data="1.38647489189e-07 0.1268315 -0.0680757 0.06372491" />
+    <numeric name="audit_link_0603_resistor_003" data="1.38647489189e-07 0.1177875 -0.0695745 0.06372491" />
+    <numeric name="audit_link_0603_resistor_003_1" data="8.31886939945e-07 0.1177875 -0.0688745 0.06372491" />
+    <numeric name="audit_link_0603_resistor_003_2" data="1.38647489189e-07 0.1177875 -0.0681743 0.06372491" />
+    <numeric name="audit_link_0603_resistor_004" data="1.38647489189e-07 0.1178375 -0.0718215 0.06372491" />
+    <numeric name="audit_link_0603_resistor_004_1" data="8.31886939945e-07 0.1178375 -0.0725215 0.06372491" />
+    <numeric name="audit_link_0603_resistor_004_2" data="1.38647489189e-07 0.1178375 -0.0732215 0.06372491" />
+    <numeric name="audit_link_1x8_male_header_001" data="0.000230781434704 0.1227745 -0.0636015 0.06037491" />
+    <numeric name="audit_link_24_qfn_001" data="5.55104189935e-08 0.1211135 -0.0713735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_1" data="5.55104189935e-08 0.1249775 -0.0703735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_10" data="5.55104189935e-08 0.1249775 -0.0693735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_11" data="5.55104189935e-08 0.1211135 -0.0703735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_12" data="5.55104189935e-08 0.1227955 -0.0725555 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_13" data="5.55104189935e-08 0.1242955 -0.0686915 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_14" data="5.55104189935e-08 0.1211135 -0.0698735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_15" data="5.55104189935e-08 0.1237955 -0.0725555 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_16" data="5.55104189935e-08 0.1232955 -0.0725555 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_17" data="5.55104189935e-08 0.1222955 -0.0725555 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_18" data="5.55104189935e-08 0.1232955 -0.0686915 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_19" data="5.55104189935e-08 0.1217955 -0.0725555 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_2" data="5.55104189935e-08 0.1211135 -0.0708735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_20" data="5.55104189935e-08 0.1211135 -0.0693735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_21" data="2.49347958905e-05 0.1230435 -0.0706255 0.06394461" />
+    <numeric name="audit_link_24_qfn_001_22" data="5.55104189935e-08 0.1237955 -0.0686915 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_23" data="5.55104189935e-08 0.1249775 -0.0713735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_24" data="5.55104189935e-08 0.1227955 -0.0686915 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_3" data="5.55104189935e-08 0.1211135 -0.0718735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_4" data="5.55104189935e-08 0.1249775 -0.0698735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_5" data="5.55104189935e-08 0.1249775 -0.0708735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_6" data="5.55104189935e-08 0.1242955 -0.0725555 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_7" data="5.55104189935e-08 0.1217955 -0.0686915 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_8" data="5.55104189935e-08 0.1249775 -0.0718735 0.06356421" />
+    <numeric name="audit_link_24_qfn_001_9" data="5.55104189935e-08 0.1222955 -0.0686915 0.06356421" />
+    <numeric name="audit_link_8x1_male_header_pins_v2" data="1.29273008339e-05 0.0939095040617 -0.0925207710287 0.0588471390704" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1" data="1.29273008339e-05 0.0874325057325 -0.0925207710287 0.0588471390704" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1_1" data="0.000360015349292 0.0928300029455 -0.0925207342031 0.0601749100912" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1_2" data="1.29273008339e-05 0.0895915051756 -0.0925207710287 0.0588471390704" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1_3" data="1.29273008339e-05 0.0960685035048 -0.0925207710287 0.0588471390704" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1_4" data="1.29273008339e-05 0.085273506249 -0.0925207710287 0.0588471397005" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1_5" data="1.29273008339e-05 0.0917505046186 -0.0925207710287 0.0588471390704" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1_6" data="1.29273008339e-05 0.10038650976 -0.0925207710287 0.0588471406237" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1__3_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_1__4_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2_2" data="1.29273008339e-05 0.0982275103174 -0.0925207710287 0.0588471406237" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__2_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__5_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__6_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__7_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__8_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_8x1_male_header_pins_v2__9_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_a71ba716_8551_11ed_a139_00155d22e2d7_part" data="0.000208660386434 0.1423755 -0.0794405 0.05193402" />
+    <numeric name="audit_link_a71ba78e_8551_11ed_a139_00155d22e2d7_part" data="7.03152222476e-06 0.1450755 -0.0794405 0.05089491" />
+    <numeric name="audit_link_a71ba78e_8551_11ed_a139_00155d22e2d7_part_1" data="7.03152222476e-06 0.1396755 -0.0794405 0.05089491" />
+    <numeric name="audit_link_barreljack_horizontal" data="0.00109044498547 0.1493095 -0.1005745 0.0554535" />
+    <numeric name="audit_link_barreljack_horizontal_1" data="9.09023921386e-06 0.1523385 -0.0970645 0.05254833" />
+    <numeric name="audit_link_barreljack_horizontal_2" data="2.2133077116e-06 0.1493095 -0.1000645 0.048698306" />
+    <numeric name="audit_link_barreljack_horizontal_3" data="2.97470360766e-05 0.1493095 -0.1024025 0.052157" />
+    <numeric name="audit_link_barreljack_horizontal_4" data="8.71759558081e-05 0.1493095 -0.0997115 0.05651983" />
+    <numeric name="audit_link_battery18650__none_1__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_battery18650__none_2" data="0.116873914335 0.117710207431 -0.0660577996077 0.0136799096345" />
+    <numeric name="audit_link_battery18650__none__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_batterycaseplastic__fillet1" data="0.0353273762321 0.117812611877 -0.0660547611857 0.00831028888362" />
+    <numeric name="audit_link_batterycasespring__cut_extrude2" data="0.000798709432622 0.117816085043 -0.0660078000589 0.0115110729409" />
+    <numeric name="audit_link_batterycasespring__cut_extrude2_1__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_batterycasespring__cut_extrude2_2__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_batterycasespring__cut_extrude2_3__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_batterycasespring__cut_extrude2_4__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_batterycasespring__cut_extrude2_5__1_" data="0 0.117816112951 -0.0660578000002 0.00387991" />
+    <numeric name="audit_link_board_001" data="0.000800568836306 0.1227745 -0.0697785 0.06267491" />
+    <numeric name="audit_link_body___adhesive_pad" data="0.000129982710268 0.1204145 -0.0919885 0.06022491" />
+    <numeric name="audit_link_body___back_panel" data="0.000314635524378 0.1204145 -0.0917385 0.06072491" />
+    <numeric name="audit_link_body___black_tape" data="4.25144534956e-06 0.1204145 -0.1016015 0.06130481" />
+    <numeric name="audit_link_body___flex_connector_bend" data="1.45820691175e-05 0.1204145 -0.1036765 0.06065381" />
+    <numeric name="audit_link_body___flex_connector_terminals" data="2.65998889338e-05 0.1204145 -0.1010225 0.05892491" />
+    <numeric name="audit_link_body___front_panel" data="0.000353161914137 0.1204145 -0.0926385 0.06122491" />
+    <numeric name="audit_link_body___pcb" data="0.00109801313457 0.1204145 -0.0921835 0.05947491" />
+    <numeric name="audit_link_body___protective_foil" data="3.14635524378e-05 0.1204145 -0.0917385 0.06149991" />
+    <numeric name="audit_link_body___screen_border" data="6.89252890624e-07 0.1204145 -0.0917385 0.06147991" />
+    <numeric name="audit_link_c_0805_2012metric_10" data="6.0102491197e-05 0.124860124474 -0.0630103308851 0.0510999099915" />
+    <numeric name="audit_link_c_0805_2012metric_11__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_2__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_3__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_4__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_5__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_6__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_7__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_8__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric_9__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_0805_2012metric__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_1206_3216metric_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_1206_3216metric_2" data="7.89104343418e-05 0.126479725407 -0.0787500221412 0.0512749100316" />
+    <numeric name="audit_link_c_1206_3216metric_3__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_1206_3216metric_4__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_1206_3216metric_5__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_c_1206_3216metric__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_compound" data="4.41938809141e-10 0.0946965 -0.0903315 0.06297541" />
+    <numeric name="audit_link_compound_1" data="4.32226518191e-10 0.1008475 -0.0920245 0.06297541" />
+    <numeric name="audit_link_compound_10" data="1.55100946064e-11 0.0993145 -0.0918045 0.06497541" />
+    <numeric name="audit_link_compound_100" data="1.9592785267e-10 0.0911045 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_101" data="2.06238578721e-07 0.0946965 -0.0905445 0.06332491" />
+    <numeric name="audit_link_compound_102" data="2.4889687717e-10 0.0927915 -0.0874725 0.06147441" />
+    <numeric name="audit_link_compound_103" data="1.95925847862e-10 0.0917355 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_104" data="3.83697140364e-10 0.0849505 -0.0982755 0.06147441" />
+    <numeric name="audit_link_compound_105" data="1.9592785267e-10 0.0854295 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_106" data="4.93158638915e-10 0.0822525 -0.0875215 0.06147441" />
+    <numeric name="audit_link_compound_107" data="1.43630438752e-09 0.0984265 -0.0946835 0.06297541" />
+    <numeric name="audit_link_compound_108" data="4.41938809141e-10 0.0946965 -0.0932215 0.06297541" />
+    <numeric name="audit_link_compound_109" data="5.09036715976e-10 0.0876865 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_11" data="3.00013459346e-10 0.0980685 -0.0960405 0.06147441" />
+    <numeric name="audit_link_compound_110" data="3.00025488193e-10 0.0875055 -0.0875395 0.06147441" />
+    <numeric name="audit_link_compound_111" data="4.41938809141e-10 0.0946965 -0.0919895 0.06297541" />
+    <numeric name="audit_link_compound_112" data="5.09082826554e-10 0.0902265 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_113" data="3.32988536557e-10 0.0928095 -0.0980275 0.06147441" />
+    <numeric name="audit_link_compound_114" data="1.95925847862e-10 0.0898435 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_115" data="5.09082826554e-10 0.0902265 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_116" data="1.95925847862e-10 0.0885825 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_117" data="7.91324667956e-08 0.0879495 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_118" data="5.09108889054e-10 0.1003865 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_119" data="9.41625101959e-10 0.0841135 -0.0904255 0.06297541" />
+    <numeric name="audit_link_compound_12" data="1.95925847862e-10 0.0892135 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_120" data="2.52054449313e-10 0.0954555 -0.0973135 0.06147441" />
+    <numeric name="audit_link_compound_121" data="2.52899475762e-10 0.0977155 -0.0939635 0.06497541" />
+    <numeric name="audit_link_compound_122" data="5.09108889054e-10 0.0953065 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_123" data="7.91324667956e-08 0.0860575 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_124" data="3.28024632667e-10 0.1008135 -0.0887495 0.06147441" />
+    <numeric name="audit_link_compound_125" data="7.91324667956e-08 0.0911045 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_126" data="1.28702640545e-07 0.0946965 -0.0948485 0.06319341" />
+    <numeric name="audit_link_compound_127" data="1.28702640545e-07 0.0946965 -0.0903625 0.06319341" />
+    <numeric name="audit_link_compound_128" data="4.43647907714e-10 0.0875345 -0.0968415 0.06147441" />
+    <numeric name="audit_link_compound_129" data="1.28702640545e-07 0.0946965 -0.0919585 0.06319341" />
+    <numeric name="audit_link_compound_13" data="4.32235539826e-10 0.0951545 -0.0893765 0.06297541" />
+    <numeric name="audit_link_compound_130" data="5.09036715976e-10 0.0978465 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_131" data="3.00025488193e-10 0.0901475 -0.0874615 0.06147441" />
+    <numeric name="audit_link_compound_132" data="7.91324667956e-08 0.0873195 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_133" data="3.40713060663e-10 0.1006665 -0.0957505 0.06147441" />
+    <numeric name="audit_link_compound_134" data="1.9592785267e-10 0.0923655 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_135" data="7.91324667956e-08 0.0917345 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_136" data="0.000873792433098 0.0914965 -0.0925205 0.06222491" />
+    <numeric name="audit_link_compound_137" data="5.0906378088e-10 0.0851465 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_138" data="3.33998959643e-10 0.0928685 -0.0974005 0.06147441" />
+    <numeric name="audit_link_compound_139" data="3.40712058259e-10 0.0953835 -0.0978485 0.06147441" />
+    <numeric name="audit_link_compound_14" data="1.9592785267e-10 0.0904745 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_140" data="7.91324667956e-08 0.0879495 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_141" data="7.91324667956e-08 0.0923655 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_142" data="1.95925847862e-10 0.0879515 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_143" data="3.83623964883e-10 0.1008005 -0.0983525 0.06147441" />
+    <numeric name="audit_link_compound_144" data="7.91324667956e-08 0.0917345 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_145" data="7.65634059559e-10 0.0840955 -0.0921685 0.06297541" />
+    <numeric name="audit_link_compound_146" data="3.34931195228e-05 0.0984265 -0.0925205 0.06397491" />
+    <numeric name="audit_link_compound_147" data="5.90328661396e-10 0.0840805 -0.0939515 0.06297541" />
+    <numeric name="audit_link_compound_148" data="8.57851204594e-05 0.0892965 -0.0926055 0.06362481" />
+    <numeric name="audit_link_compound_149" data="5.09082826554e-10 0.0851465 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_15" data="2.46602374746e-09 0.0984265 -0.0906255 0.06297541" />
+    <numeric name="audit_link_compound_150" data="4.72274557002e-10 0.0928085 -0.0967425 0.06147441" />
+    <numeric name="audit_link_compound_151" data="3.12283884934e-10 0.0981045 -0.0883285 0.06147441" />
+    <numeric name="audit_link_compound_152" data="3.12283884934e-10 0.0981045 -0.0876235 0.06147441" />
+    <numeric name="audit_link_compound_153" data="7.91324667956e-08 0.0866885 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_154" data="7.91324667956e-08 0.0898425 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_155" data="4.32233535018e-10 0.0941875 -0.0958355 0.06297541" />
+    <numeric name="audit_link_compound_156" data="1.53088119123e-11 0.0993165 -0.0915885 0.06497541" />
+    <numeric name="audit_link_compound_157" data="5.74801425684e-10 0.1007575 -0.0878805 0.06147441" />
+    <numeric name="audit_link_compound_158" data="3.46827724177e-10 0.1009205 -0.0929815 0.06297541" />
+    <numeric name="audit_link_compound_159" data="4.47023001493e-10 0.0848925 -0.0882605 0.06147441" />
+    <numeric name="audit_link_compound_16" data="5.09036715976e-10 0.0826065 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_160" data="7.91324667956e-08 0.0885805 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_161" data="1.95925847862e-10 0.0873215 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_162" data="7.1590781153e-10 0.0820885 -0.0943285 0.06297541" />
+    <numeric name="audit_link_compound_163" data="5.09108889054e-10 0.0978465 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_164" data="2.36704639083e-10 0.0990745 -0.0927105 0.06497541" />
+    <numeric name="audit_link_compound_165" data="2.06238578721e-07 0.0946965 -0.0946665 0.06332491" />
+    <numeric name="audit_link_compound_166" data="4.35269816295e-10 0.0821385 -0.0901575 0.06297541" />
+    <numeric name="audit_link_compound_167" data="1.9592785267e-10 0.0873215 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_168" data="5.01688093316e-10 0.0849305 -0.0975015 0.06147441" />
+    <numeric name="audit_link_compound_169" data="5.09108889054e-10 0.1003865 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_17" data="7.91324667956e-08 0.0904735 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_170" data="4.43538645694e-10 0.0954635 -0.0883015 0.06147441" />
+    <numeric name="audit_link_compound_171" data="5.74810447319e-10 0.0849035 -0.0965325 0.06147441" />
+    <numeric name="audit_link_compound_172" data="4.43539648097e-10 0.0981015 -0.0967635 0.06147441" />
+    <numeric name="audit_link_compound_173" data="7.91324667956e-08 0.0892115 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_174" data="1.95925847862e-10 0.0854295 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_175" data="5.09108889054e-10 0.0978465 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_176" data="1.9592785267e-10 0.0892135 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_177" data="2.36704639083e-10 0.0990745 -0.0921645 0.06497541" />
+    <numeric name="audit_link_compound_178" data="1.9592785267e-10 0.0885825 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_179" data="3.5077819777e-10 0.0941335 -0.0893665 0.06297541" />
+    <numeric name="audit_link_compound_18" data="7.91324667956e-08 0.0929965 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_180" data="1.9592785267e-10 0.0860605 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_181" data="5.01536730334e-10 0.1007805 -0.0975795 0.06147441" />
+    <numeric name="audit_link_compound_182" data="1.79210763582e-09 0.0984265 -0.0911675 0.06497541" />
+    <numeric name="audit_link_compound_183" data="2.07930636428e-10 0.0977395 -0.0921745 0.06497541" />
+    <numeric name="audit_link_compound_184" data="4.43531628867e-10 0.0822545 -0.0883015 0.06147441" />
+    <numeric name="audit_link_compound_185" data="4.12476155038e-10 0.0840975 -0.0985875 0.06297541" />
+    <numeric name="audit_link_compound_186" data="7.91324667956e-08 0.0923655 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_187" data="7.85638030888e-10 0.0840745 -0.0967755 0.06297541" />
+    <numeric name="audit_link_compound_188" data="7.91324667956e-08 0.0854265 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_189" data="8.83573889914e-10 0.0841265 -0.0957225 0.06297541" />
+    <numeric name="audit_link_compound_19" data="3.94083046705e-10 0.0954265 -0.0890825 0.06147441" />
+    <numeric name="audit_link_compound_190" data="1.9592785267e-10 0.0879515 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_191" data="1.95925847862e-10 0.0904745 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_192" data="2.07937653255e-10 0.0977385 -0.0916285 0.06497541" />
+    <numeric name="audit_link_compound_193" data="2.4889687717e-10 0.0848665 -0.0875505 0.06147441" />
+    <numeric name="audit_link_compound_194" data="2.38527009291e-06 0.0984265 -0.0907005 0.06363481" />
+    <numeric name="audit_link_compound_195" data="5.09082826554e-10 0.0851465 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_196" data="1.95925847862e-10 0.0929965 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_197" data="5.09036715976e-10 0.0826065 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_198" data="1.64582684127e-11 0.0991695 -0.0916325 0.06497541" />
+    <numeric name="audit_link_compound_199" data="1.9592785267e-10 0.0866905 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_2" data="6.50025820571e-10 0.0821025 -0.0934445 0.06297541" />
+    <numeric name="audit_link_compound_20" data="4.47021999089e-10 0.0875335 -0.0882605 0.06147441" />
+    <numeric name="audit_link_compound_200" data="5.09108889054e-10 0.0953065 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_201" data="3.94084049109e-10 0.0822145 -0.0978235 0.06147441" />
+    <numeric name="audit_link_compound_202" data="6.49375260469e-10 0.0841755 -0.0947005 0.06297541" />
+    <numeric name="audit_link_compound_203" data="5.09082826554e-10 0.0876865 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_204" data="5.09036715976e-10 0.0876865 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_21" data="3.94084049109e-10 0.0822175 -0.0890825 0.06147441" />
+    <numeric name="audit_link_compound_22" data="3.32852209633e-10 0.0981755 -0.0890085 0.06147441" />
+    <numeric name="audit_link_compound_23" data="2.52069485371e-10 0.0875305 -0.0973915 0.06147441" />
+    <numeric name="audit_link_compound_24" data="7.91324667956e-08 0.0929965 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_25" data="4.43539648097e-10 0.0954595 -0.0967635 0.06147441" />
+    <numeric name="audit_link_compound_26" data="9.89945979784e-07 0.0946965 -0.0911605 0.06332491" />
+    <numeric name="audit_link_compound_27" data="7.91324667956e-08 0.0885805 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_28" data="3.14644546012e-10 0.0990675 -0.0937615 0.06497541" />
+    <numeric name="audit_link_compound_29" data="5.09036715976e-10 0.0826065 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_3" data="2.48897879574e-10 0.0901465 -0.0961285 0.06147441" />
+    <numeric name="audit_link_compound_30" data="1.17261202945e-09 0.0946965 -0.0911605 0.06297541" />
+    <numeric name="audit_link_compound_31" data="3.00025488193e-10 0.0875015 -0.0961175 0.06147441" />
+    <numeric name="audit_link_compound_32" data="5.09108889054e-10 0.0927665 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_33" data="4.20992578189e-10 0.0821945 -0.0950455 0.06297541" />
+    <numeric name="audit_link_compound_34" data="4.47023001493e-10 0.0901755 -0.0881835 0.06147441" />
+    <numeric name="audit_link_compound_35" data="4.43533633674e-10 0.0822515 -0.0970415 0.06147441" />
+    <numeric name="audit_link_compound_36" data="5.0906378088e-10 0.0902265 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_37" data="3.90140592344e-10 0.0977095 -0.0932935 0.06497541" />
+    <numeric name="audit_link_compound_38" data="5.09108889054e-10 0.0902265 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_39" data="3.40971680857e-10 0.0980245 -0.0978485 0.06147441" />
+    <numeric name="audit_link_compound_4" data="1.95925847862e-10 0.0923655 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_40" data="3.6940987822e-10 0.0988155 -0.0863885 0.06297541" />
+    <numeric name="audit_link_compound_41" data="7.65634059559e-10 0.0840955 -0.0912965 0.06297541" />
+    <numeric name="audit_link_compound_42" data="5.43641701855e-10 0.0821055 -0.0908895 0.06297541" />
+    <numeric name="audit_link_compound_43" data="5.74809444915e-10 0.1007535 -0.0966105 0.06147441" />
+    <numeric name="audit_link_compound_44" data="3.40971680857e-10 0.0927455 -0.0889455 0.06147441" />
+    <numeric name="audit_link_compound_45" data="2.06238578721e-07 0.0946965 -0.0917765 0.06332491" />
+    <numeric name="audit_link_compound_46" data="5.09108889054e-10 0.0953065 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_47" data="4.93158638915e-10 0.0954605 -0.0875215 0.06147441" />
+    <numeric name="audit_link_compound_48" data="5.09082826554e-10 0.0927665 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_49" data="3.27226719199e-10 0.0990985 -0.0932425 0.06497541" />
+    <numeric name="audit_link_compound_5" data="3.25191839373e-10 0.0928665 -0.0960845 0.06147441" />
+    <numeric name="audit_link_compound_50" data="1.95925847862e-10 0.0866905 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_51" data="7.91324667956e-08 0.0898425 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_52" data="6.04023502862e-10 0.0820595 -0.0917115 0.06297541" />
+    <numeric name="audit_link_compound_53" data="9.41485767823e-10 0.0822485 -0.0894265 0.06297541" />
+    <numeric name="audit_link_compound_54" data="4.25607645537e-10 0.0952245 -0.0958615 0.06297541" />
+    <numeric name="audit_link_compound_55" data="4.12476155038e-10 0.0995085 -0.0863105 0.06297541" />
+    <numeric name="audit_link_compound_56" data="4.72274557002e-10 0.0848835 -0.0957915 0.06147441" />
+    <numeric name="audit_link_compound_57" data="5.0906378088e-10 0.0927665 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_58" data="2.52055451717e-10 0.0901725 -0.0973915 0.06147441" />
+    <numeric name="audit_link_compound_59" data="7.91324667956e-08 0.0860575 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_6" data="2.06238578721e-07 0.0946965 -0.0934345 0.06332491" />
+    <numeric name="audit_link_compound_60" data="1.9592785267e-10 0.0929965 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_61" data="4.7227656181e-10 0.0848875 -0.0889865 0.06147441" />
+    <numeric name="audit_link_compound_62" data="5.09036715976e-10 0.0826065 -0.0999415 0.06297541" />
+    <numeric name="audit_link_compound_63" data="1.17261202945e-09 0.0946965 -0.0940505 0.06297541" />
+    <numeric name="audit_link_compound_64" data="7.91324667956e-08 0.0866885 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_65" data="7.91324667956e-08 0.0904735 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_66" data="1.9592785267e-10 0.0898435 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_67" data="1.47548835421e-11 0.0991635 -0.0917635 0.06497541" />
+    <numeric name="audit_link_compound_68" data="1.28702640545e-07 0.0946965 -0.0932525 0.06319341" />
+    <numeric name="audit_link_compound_69" data="6.65513962533e-10 0.0841985 -0.0894965 0.06297541" />
+    <numeric name="audit_link_compound_7" data="4.93268903339e-10 0.0822485 -0.0962615 0.06147441" />
+    <numeric name="audit_link_compound_70" data="5.09082826554e-10 0.0978465 -0.0851005 0.06297541" />
+    <numeric name="audit_link_compound_71" data="1.9592785267e-10 0.0917355 -0.0890785 0.06297541" />
+    <numeric name="audit_link_compound_72" data="8.01328658428e-10 0.0821885 -0.0924685 0.06297541" />
+    <numeric name="audit_link_compound_73" data="2.38527009291e-06 0.0984265 -0.0943415 0.06363481" />
+    <numeric name="audit_link_compound_74" data="7.91324667956e-08 0.0911045 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_75" data="2.4889687717e-10 0.0954295 -0.0960505 0.06147441" />
+    <numeric name="audit_link_compound_76" data="4.72352744503e-10 0.0875255 -0.0978885 0.06147441" />
+    <numeric name="audit_link_compound_77" data="1.43630438752e-09 0.0984265 -0.0903585 0.06297541" />
+    <numeric name="audit_link_compound_78" data="5.09036715976e-10 0.0876865 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_79" data="7.91324667956e-08 0.0854265 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_8" data="2.52054449313e-10 0.0980965 -0.0973135 0.06147441" />
+    <numeric name="audit_link_compound_80" data="9.89945979784e-07 0.0946965 -0.0940505 0.06332491" />
+    <numeric name="audit_link_compound_81" data="5.09082826554e-10 0.0851465 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_82" data="1.52664102292e-11 0.0994085 -0.0916975 0.06497541" />
+    <numeric name="audit_link_compound_83" data="5.09082826554e-10 0.0927665 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_84" data="2.46602374746e-09 0.0984265 -0.0944165 0.06297541" />
+    <numeric name="audit_link_compound_85" data="7.91324667956e-08 0.0873195 -0.0896885 0.06355681" />
+    <numeric name="audit_link_compound_86" data="4.09363691069e-10 0.0833805 -0.0986445 0.06297541" />
+    <numeric name="audit_link_compound_87" data="4.72350739695e-10 0.0901665 -0.0978885 0.06147441" />
+    <numeric name="audit_link_compound_88" data="7.91324667956e-08 0.0892115 -0.0955235 0.06355681" />
+    <numeric name="audit_link_compound_89" data="4.92055994674e-10 0.0840865 -0.0930645 0.06297541" />
+    <numeric name="audit_link_compound_9" data="4.72274557002e-10 0.0875285 -0.0889865 0.06147441" />
+    <numeric name="audit_link_compound_90" data="5.09108889054e-10 0.0953065 -0.0851005 0.06147441" />
+    <numeric name="audit_link_compound_91" data="3.40963661626e-10 0.0901035 -0.0889455 0.06147441" />
+    <numeric name="audit_link_compound_92" data="1.95925847862e-10 0.0911045 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_93" data="4.41938809141e-10 0.0946965 -0.0948795 0.06297541" />
+    <numeric name="audit_link_compound_94" data="5.09108889054e-10 0.1003865 -0.0999415 0.06147441" />
+    <numeric name="audit_link_compound_95" data="4.43533633674e-10 0.0901765 -0.0968415 0.06147441" />
+    <numeric name="audit_link_compound_96" data="2.26481122167e-10 0.0977515 -0.0927445 0.06497541" />
+    <numeric name="audit_link_compound_97" data="4.47021999089e-10 0.0928175 -0.0881835 0.06147441" />
+    <numeric name="audit_link_compound_98" data="1.95925847862e-10 0.0860605 -0.0961335 0.06297541" />
+    <numeric name="audit_link_compound_99" data="5.09108889054e-10 0.1003865 -0.0851005 0.06297541" />
+    <numeric name="audit_link_d_sma" data="4.5389748713e-05 0.1474155 -0.0627689 0.05158451" />
+    <numeric name="audit_link_d_smb" data="0.000124178591467 0.137244536801 -0.0849383105638 0.0515514257411" />
+    <numeric name="audit_link_d_smb_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_diode_2_001" data="2.42633857884e-07 0.1218765 -0.0750545 0.06382491" />
+    <numeric name="audit_link_diode_2_001_1" data="2.42633857884e-07 0.1246265 -0.0750545 0.06382491" />
+    <numeric name="audit_link_diode_2_001_2" data="7.74694788004e-06 0.1232595 -0.0750545 0.06407131" />
+    <numeric name="audit_link_esp32_s3_wroom_1" data="6.46388096981e-07 0.1166345 -0.0463709 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_1" data="6.46388096981e-07 0.1166345 -0.0451009 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_10" data="5.61523584222e-07 0.1237175 -0.0399909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_11" data="6.46388096981e-07 0.1338015 -0.0412909 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_12" data="6.46388096981e-07 0.1338015 -0.0400209 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_13" data="6.46388096981e-07 0.1220425 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_14" data="6.46388096981e-07 0.1166345 -0.0400209 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_15" data="6.46388096981e-07 0.1166345 -0.0438309 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_16" data="6.46388096981e-07 0.1182325 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_17" data="6.46388096981e-07 0.1322025 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_18" data="6.46388096981e-07 0.1338015 -0.0374809 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_19" data="6.46388096981e-07 0.1338015 -0.0336709 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_2" data="5.61523584222e-07 0.1223175 -0.0399909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_20" data="6.46388096981e-07 0.1338015 -0.0362109 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_21" data="5.61523584222e-07 0.1223175 -0.0413909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_22" data="6.46388096981e-07 0.1309325 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_23" data="6.46388096981e-07 0.1338015 -0.0463709 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_24" data="6.46388096981e-07 0.1338015 -0.0501809 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_25" data="6.46388096981e-07 0.1283925 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_26" data="6.46388096981e-07 0.1166345 -0.0476409 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_27" data="5.61523584222e-07 0.1223175 -0.0427909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_28" data="6.46388096981e-07 0.1166345 -0.0412909 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_29" data="6.46388096981e-07 0.1338015 -0.0438309 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_3" data="6.46388096981e-07 0.1338015 -0.0349409 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_30" data="6.46388096981e-07 0.1338015 -0.0387509 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_31" data="6.46388096981e-07 0.1207725 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_32" data="6.46388096981e-07 0.1338015 -0.0476409 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_33" data="6.46388096981e-07 0.1338015 -0.0451009 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_34" data="0.000598896207144 0.1252305 -0.0385952 0.05087993" />
+    <numeric name="audit_link_esp32_s3_wroom_1_35" data="1.29982710268e-05 0.1256745 -0.0287176 0.05137491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_36" data="6.46388096981e-07 0.1245825 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_37" data="0.00110603236541 0.1253215 -0.0418268 0.0524233" />
+    <numeric name="audit_link_esp32_s3_wroom_1_38" data="6.46388096981e-07 0.1195025 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_39" data="5.61523584222e-07 0.1237175 -0.0413909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_4" data="6.46388096981e-07 0.1166345 -0.0425609 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_40" data="5.61523584222e-07 0.1237175 -0.0427909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_41" data="6.46388096981e-07 0.1166345 -0.0374809 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_42" data="6.46388096981e-07 0.1258525 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_43" data="5.61523584222e-07 0.1251175 -0.0413909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_44" data="6.46388096981e-07 0.1271225 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_45" data="6.46388096981e-07 0.1166345 -0.0362109 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_46" data="6.46388096981e-07 0.1166345 -0.0387509 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_47" data="5.61523584222e-07 0.1251175 -0.0427909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_48" data="6.46388096981e-07 0.1166345 -0.0336709 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_49" data="5.61523584222e-07 0.1251175 -0.0399909 0.05067491" />
+    <numeric name="audit_link_esp32_s3_wroom_1_5" data="6.46388096981e-07 0.1166345 -0.0489109 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_50" data="6.46388096981e-07 0.1338015 -0.0489109 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_51" data="6.46388096981e-07 0.1166345 -0.0501809 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_6" data="6.46388096981e-07 0.1296625 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_7" data="6.46388096981e-07 0.1166345 -0.0349409 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_8" data="6.46388096981e-07 0.1233125 -0.0512642 0.05079769" />
+    <numeric name="audit_link_esp32_s3_wroom_1_9" data="6.46388096981e-07 0.1338015 -0.0425609 0.05079769" />
+    <numeric name="audit_link_extrude___annular_rings" data="8.98373380428e-06 0.1094145 -0.0816885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_1" data="5.03089453905e-06 0.1216845 -0.0811885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_2" data="8.98373380428e-06 0.1314145 -0.0816885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_3" data="6.66736895236e-06 0.1166045 -0.0811885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_4" data="5.03089453905e-06 0.1191445 -0.0811885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_5" data="8.98373380428e-06 0.1314145 -0.1036885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_6" data="8.98373380428e-06 0.1094145 -0.1036885 0.05947491" />
+    <numeric name="audit_link_extrude___annular_rings_7" data="5.03089453905e-06 0.1242245 -0.0811885 0.05947491" />
+    <numeric name="audit_link_fuse_1210_3225metric" data="7.92044393924e-05 0.1410425 -0.0879725 0.05131064" />
+    <numeric name="audit_link_fuse_1210_3225metric_1" data="3.26858836984e-05 0.1353405 -0.0684705 0.05131079" />
+    <numeric name="audit_link_htssop_24_1ep_4_4x7_8mm_p0_65mm_ep3_4x7_8mm_mask2_4x4_68mm" data="0.000263221228256 0.0870065 -0.0742205 0.05126582" />
+    <numeric name="audit_link_jst_b2b_eh_a_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_jst_b2b_eh_a_2" data="0.000404439883334 0.0969947548383 -0.0915737657032 0.0525517014567" />
+    <numeric name="audit_link_jst_b2b_eh_a__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_10__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_11__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_12__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_13__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_14__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_15__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_16__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_17__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_18__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_19__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_20__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_21__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_22__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_23__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_24__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_25__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_26__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_27__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_28__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_29__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_2__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_30__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_31__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_32__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_33__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_34__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_35__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_36__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_37__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_38__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_39__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_3__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_40__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_41__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_42__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_43__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_44__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_45__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_46__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_47__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_48__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_49__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_4__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_50__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_51" data="0.000245045852064 0.0934667962696 -0.0535825940818 0.0509688761393" />
+    <numeric name="audit_link_led_0805_2012metric_52__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_53__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_54__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_55__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_56__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_57__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_58__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_59__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_5__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_60__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_61__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_62__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_63__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_64__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_65__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_66__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_6__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_7__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_8__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric_9__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_led_0805_2012metric__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_mini_motor_1_solid1" data="0.0076472 0.14596354107 -0.0560461600254 -0.0118699158401" />
+    <numeric name="audit_link_mini_motor_1_solid1_1" data="0.0076472 0.0896682179006 -0.0560459450777 -0.0118700497746" />
+    <numeric name="audit_link_msk12c02" data="7.46239549775e-05 0.160957841023 -0.0845587952608 0.0511052424816" />
+    <numeric name="audit_link_msk12c02_1" data="2.0797273739e-07 0.159112187272 -0.086806451325 0.0505499100269" />
+    <numeric name="audit_link_msk12c02_1_1" data="6.51660741258e-07 0.160962190477 -0.0830564460477 0.0502302777678" />
+    <numeric name="audit_link_msk12c02_1_2" data="6.51660741258e-07 0.160962190481 -0.0860564438775 0.0502302777932" />
+    <numeric name="audit_link_msk12c02_1_3" data="1.17532052467e-05 0.160962191067 -0.0845563917587 0.0515938949332" />
+    <numeric name="audit_link_msk12c02_1_4" data="7.05896804231e-06 0.163069591565 -0.0853064733021 0.0511344721181" />
+    <numeric name="audit_link_msk12c02_1__3_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02_1__4_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02_1__5_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02_2" data="2.0797273739e-07 0.159112187171 -0.0823064963127 0.0505499100269" />
+    <numeric name="audit_link_msk12c02_3" data="2.0797273739e-07 0.159112187272 -0.0838064526959 0.0505499100269" />
+    <numeric name="audit_link_msk12c02__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02__2_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02__6_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02__7_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_msk12c02__8_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_output_shaft_2_solid1" data="0.000435783 0.17395695686 -0.0790894829171 -0.0118700747664" />
+    <numeric name="audit_link_output_shaft_2_solid1_1" data="0.000435783 0.0616750325442 -0.0790895479024 -0.0118700601355" />
+    <numeric name="audit_link_part_1" data="0.032 0.117787185379 -0.0543869588412 0.00287991006324" />
+    <numeric name="audit_link_part_1_1" data="0.00442 0.0668379530297 -0.0726113592864 -0.00296858575023" />
+    <numeric name="audit_link_part_2" data="0.00442 0.168797075717 -0.0725751335471 -0.00295238060176" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical" data="0.000716656607209 0.153114898185 -0.0511309429378 0.052100819139" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical_2__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical_3__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical_4__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical_5__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinheader_1x03_p254mm_vertical_6__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinheader_1x10_p254mm_vertical" data="0.00034126638759 0.1251515 -0.0572426 0.05210082" />
+    <numeric name="audit_link_pinheader_1x12_p254mm_vertical_1" data="0.000819038127333 0.125097326938 -0.0483617998478 0.0521008218834" />
+    <numeric name="audit_link_pinheader_1x12_p254mm_vertical__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinsocket_1x04_p2_54mm_vertical" data="0.000357994503121 0.1202245 -0.0811885 0.05471496" />
+    <numeric name="audit_link_pinsocket_1x08_p2_54mm_vertical_1" data="0.00214797002594 0.10186576794 -0.08283268107 0.0547149569092" />
+    <numeric name="audit_link_pinsocket_1x08_p2_54mm_vertical_2__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_pinsocket_1x08_p2_54mm_vertical__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_10__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_11__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_12__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_13__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_14__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_15__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_16__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_17__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_18__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_19" data="3.64034387308e-05 0.130102855926 -0.0772281741266 0.0507152159102" />
+    <numeric name="audit_link_r_0805_2012metric_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_20__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_2__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_3__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_4__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_5__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_6__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_7__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_8__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric_9__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_r_0805_2012metric__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_rim" data="0.0210509 0.20300863886 -0.0790893677754 -0.0118702014609" />
+    <numeric name="audit_link_rim_1" data="0.0210509 0.0326233505448 -0.0790897232777 -0.0118699830445" />
+    <numeric name="audit_link_root" data="0 0 0 0" />
+    <numeric name="audit_link_screw_m3_75mm" data="0.0045 0.1596962 -0.0359428 0.0128899114901" />
+    <numeric name="audit_link_screw_m3_75mm_1" data="0.0045 0.0758735 -0.0998645 0.0128899114901" />
+    <numeric name="audit_link_screw_m3_75mm_2" data="0.0045 0.1597036 -0.099885419 0.0128899114901" />
+    <numeric name="audit_link_screw_m3_75mm_3" data="0.0045 0.07581165 -0.0359145 0.0128899114901" />
+    <numeric name="audit_link_sm_led_001" data="7.79721843336e-07 0.1162405 -0.0689735 0.06354991" />
+    <numeric name="audit_link_sm_led_001_1" data="6.80586106895e-08 0.1162405 -0.0689735 0.06387491" />
+    <numeric name="audit_link_sm_led_001_2" data="1.63864962967e-06 0.1162405 -0.0689735 0.06385361" />
+    <numeric name="audit_link_sot25_001" data="8.53146923303e-06 0.1314935 -0.0697485 0.06407491" />
+    <numeric name="audit_link_sot25_001_1" data="1.20151133259e-06 0.1314935 -0.0696515 0.06394351" />
+    <numeric name="audit_link_sot_143" data="6.46373060923e-06 0.1487775 -0.0570969 0.05104928" />
+    <numeric name="audit_link_sot_223" data="0.000130759372775 0.137606764988 -0.0779101863089 0.0513438750206" />
+    <numeric name="audit_link_sot_223_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_sot_23_6" data="1.13788875992e-05 0.1452095 -0.0710055 0.05126046" />
+    <numeric name="audit_link_sra_board_unsaved_export_ok3bnj_pcb" data="0.0161266732175 0.1176514 -0.067843 0.04963491" />
+    <numeric name="audit_link_sw_spst_pts810" data="9.30060368685e-05 0.148776056265 -0.0483580014717 0.0515143579259" />
+    <numeric name="audit_link_sw_spst_pts810_1__1_" data="0 -0.0383815 0.0317705 0.04887991" />
+    <numeric name="audit_link_tt_motor_90_1_solid1" data="0.0209169 0.0704819498947 -0.0647561155528 -0.011870020856" />
+    <numeric name="audit_link_tt_motor_90_1_solid1_1" data="0.0209169 0.165149896176 -0.0647561386374 -0.0118699987467" />
+    <numeric name="audit_link_tyre" data="0.0189491 0.033817350545 -0.0790897226194 -0.0118699219748" />
+    <numeric name="audit_link_tyre_1" data="0.0189491 0.201814638859 -0.0790893523241 -0.0118702571375" />
+  </custom>
+</mujoco>
