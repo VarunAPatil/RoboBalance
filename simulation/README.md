@@ -1,8 +1,8 @@
 # Wall-E MuJoCo preview
 
-Core conversion, model building, IMU/motor behavior, the PID runner, and the viewer live directly in `simulation/`. Optional offline sweeps and gravity logging live in `simulation/diagnostics/`; the generated XML and audits live in `simulation/models/`; saved inspection screenshots live in `simulation/renders/`. The `verify_*.py` commands remain at the package root so model checks are easy to find. The older CAD exports are preserved in `archive/cad/`; the active `Assembly 1/` source has not moved.
+Core conversion, model building, IMU/motor behavior, the PID runner, and the viewer live directly in `simulation/`. Optional offline sweeps and gravity logging live in `simulation/diagnostics/`; the generated XML and audits live in `simulation/models/`; saved inspection screenshots live in `simulation/renders/`. The `verify_*.py` commands remain at the package root so model checks are easy to find. The older CAD exports are preserved in `archive/cad/`; the active source is `Wall-E-URDF/`.
 
-The active visual preview is generated from `Assembly 1/assembly_1/urdf/assembly_1.urdf` and its sibling `meshes/` directory. The original export files are unchanged. Regenerate and check the model from the project root:
+The active visual preview is generated from `Wall-E-URDF/urdf/assembly_1.urdf` and its sibling `Wall-E-URDF/meshes/` directory. The URDF and mesh export files are unchanged. Regenerate and check the model from the project root:
 
 ```sh
 .venv/bin/python -m simulation.convert_urdf

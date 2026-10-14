@@ -1,6 +1,6 @@
 # Provisional Wall-E MuJoCo dynamics inspection
 
-The separate [dynamic MJCF](models/wall_e_dynamic.xml) has a floating chassis and two hinged wheels. It is derived from the corrected `Assembly 1/assembly_1/urdf/assembly_1.urdf`, the current mass ledger, and the three Onshape screenshots. It is **CAD/screenshot-derived, not hardware-validated**. The source URDF/STLs and the geometry-only preview remain unchanged. [The machine-readable audit](models/wall_e_dynamic_audit.json) records every full-precision calculation and source hash; regenerate with `.venv/bin/python -m simulation.build_dynamic` and check with `.venv/bin/python -m simulation.verify_dynamic`.
+The separate [dynamic MJCF](models/wall_e_dynamic.xml) has a floating chassis and two hinged wheels. It is derived from the corrected `Wall-E-URDF/urdf/assembly_1.urdf`, the current mass ledger, and the three Onshape screenshots. It is **CAD/screenshot-derived, not hardware-validated**. The source URDF/STLs and the geometry-only preview remain unchanged. [The machine-readable audit](models/wall_e_dynamic_audit.json) records every full-precision calculation and source hash; regenerate with `.venv/bin/python -m simulation.build_dynamic` and check with `.venv/bin/python -m simulation.verify_dynamic`.
 
 ## Chosen mass scenario
 

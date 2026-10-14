@@ -1,6 +1,6 @@
 {
   "mode": "static mass and COM audit; no dynamic chassis inertia, joints, contact, or motors",
-  "source_urdf": "Assembly 1/assembly_1/urdf/assembly_1.urdf",
+  "source_urdf": "Wall-E-URDF/urdf/assembly_1.urdf",
   "source_sha256": "2b36828c3e11cd8cc90e3f3cd164ebaa30394eceb374e10859ab6bfdb632a0ef",
   "source_exported_mass_kg": 0.23876112368804775,
   "dependency_versions": {

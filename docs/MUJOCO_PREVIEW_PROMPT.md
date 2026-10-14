@@ -12,7 +12,7 @@ Read AGENTS.md, docs/SESSION_CONTEXT.md, docs/HARDWARE.md, docs/PLAN.md, docs/PR
 
 ## 2. Resolve the input and runtime
 
-The most recently inspected source is Assembly-Wall-E/assembly_1/urdf/assembly_1.urdf with meshes under Assembly-Wall-E/assembly_1/meshes/. Verify that these paths still exist and select the intended weighted export; do not silently switch to the old Wall-E-Assembly export. If names changed, inventory candidate exports and report the selected path.
+The active source is `Wall-E-URDF/urdf/assembly_1.urdf` with meshes under `Wall-E-URDF/meshes/`. Verify these paths and source hashes before conversion; do not silently switch to an archived export.
 
 System python3 currently imports MuJoCo 3.7.0 and mujoco.viewer. The project .venv was last checked without MuJoCo. Recheck both interpreters. Prefer the project environment for the completed workflow; install mujoco==3.7.0 there if needed and record the version as an optional simulation dependency in pyproject.toml. Install only necessary mesh-processing dependencies, record their versions, and do not upgrade unrelated RL packages. System Python remains a usable initial diagnostic runtime.
 

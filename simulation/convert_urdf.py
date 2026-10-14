@@ -22,7 +22,7 @@ import numpy as np
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = PROJECT / "Assembly 1/assembly_1/urdf/assembly_1.urdf"
+DEFAULT_SOURCE = PROJECT / "Wall-E-URDF/urdf/assembly_1.urdf"
 MODEL_PATH = PROJECT / "simulation/models/wall_e_preview.xml"
 REPORT_PATH = PROJECT / "simulation/models/wall_e_preview_audit.json"
 STL_DTYPE = np.dtype([("normal", "<f4", (3,)), ("vertices", "<f4", (3, 3)), ("attribute", "<u2")])
@@ -122,7 +122,8 @@ def resolve_source(requested: Path | None) -> Path:
         raise FileNotFoundError(f"Expected corrected assembly source: {DEFAULT_SOURCE}")
     if not source.is_file() or not (source.parent.parent / "meshes").is_dir():
         raise FileNotFoundError(f"URDF or mesh directory missing: {source}")
-    if source.parent.parent.name != "assembly_1" or source.parent.parent.parent.name == "Wall-E-Assembly":
+    if (source.name != "assembly_1.urdf" or source.parent.name != "urdf"
+            or source.parent.parent.name != "Wall-E-URDF"):
         raise ValueError(f"Refusing older/unexpected source: {source}")
     print(f"Selected assembly source: {source}")
     return source

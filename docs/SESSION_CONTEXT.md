@@ -1,5 +1,9 @@
 # Chat handoff — 2026-09-27
 
+## Current status — URDF bundle rename, 2026-10-14
+
+The active CAD package is now flattened into the root-level `Wall-E-URDF/` folder with `urdf/`, `meshes/`, and `launch/` directly inside it. The URDF/STL contents are byte-identical; only their paths changed. `simulation/convert_urdf.py`, the current project docs, audit metadata, and generated preview/COM/dynamic/balance MJCF mesh paths were updated. The converter still resolves the URDF's `package://assembly_1/meshes/` entries against `Wall-E-URDF/meshes/`. No runtime dependencies changed. Verification passed: preview, mass-audit, dynamic, and balance-IO checks; 27 pytest tests and 6 subtests.
+
 ## Latest status — structural mass reconciliation (2026-10-10)
 
 The user supplied individual masses for the three structural URDF links: `part_1`=32 g, `part_1_1`=4.42 g, and `part_2`=4.42 g. `simulation.mass_audit` assigns these exact values and uses each transformed mesh centroid for COM; together they total 40.84 g. The selected 30 g PCB scenario estimates 379.839766 g for the assembly; the reconstructed-PCB alternative estimates 379.767823 g, within 0.000177 g of the Onshape screenshot's 379.768 g. The residual in the 30 g scenario comes from PCB reconstruction at 29.928057 g versus the rounded 30 g target. Both scenarios remain explicit. The static MJCFs carry mass and COM as `custom/numeric` audit metadata only; they still have zero compiled body mass/inertia and no dynamic joints. `simulation.convert_urdf` now uses `Assembly 1/assembly_1/urdf/assembly_1.urdf` because the previous `Updated-Correct-Wall-E-Assembly` directory is absent. `verify_preview`, `verify_mass_audit`, and seven focused tests passed after regeneration.

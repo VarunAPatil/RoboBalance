@@ -10,402 +10,402 @@
     <texture name="sky" type="skybox" builtin="gradient" rgb1="0.72 0.80 0.87" rgb2="0.95 0.97 0.99" width="512" height="512" />
     <texture name="floor_grid" type="2d" builtin="checker" rgb1="0.82 0.84 0.86" rgb2="0.88 0.90 0.92" width="256" height="256" />
     <material name="floor_mat" texture="floor_grid" texrepeat="12 12" reflectance="0" />
-    <mesh name="asset_0000" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal.stl" scale="1 1 1" />
-    <mesh name="asset_0001" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_1.stl" scale="1 1 1" />
-    <mesh name="asset_0002" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_2.stl" scale="1 1 1" />
-    <mesh name="asset_0003" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_3.stl" scale="1 1 1" />
-    <mesh name="asset_0004" file="../../Assembly 1/assembly_1/meshes/BarrelJack_Horizontal_4.stl" scale="1 1 1" />
-    <mesh name="asset_0005" file="../../Assembly 1/assembly_1/meshes/Battery18650__NONE_2.stl" scale="1 1 1" />
-    <mesh name="asset_0006" file="../../Assembly 1/assembly_1/meshes/BatteryCasePlastic__Fillet1.stl" scale="1 1 1" />
-    <mesh name="asset_0007" file="../../Assembly 1/assembly_1/meshes/BatteryCaseSpring__Cut_Extrude2.stl" scale="1 1 1" />
-    <mesh name="asset_0008" file="../../Assembly 1/assembly_1/meshes/Board_001.stl" scale="1 1 1" />
-    <mesh name="asset_0009" file="../../Assembly 1/assembly_1/meshes/Body___Adhesive_Pad.stl" scale="1 1 1" />
-    <mesh name="asset_0010" file="../../Assembly 1/assembly_1/meshes/Body___Back_Panel.stl" scale="1 1 1" />
-    <mesh name="asset_0011" file="../../Assembly 1/assembly_1/meshes/Body___Black_Tape.stl" scale="1 1 1" />
-    <mesh name="asset_0012" file="../../Assembly 1/assembly_1/meshes/Body___Flex_Connector_Bend.stl" scale="1 1 1" />
-    <mesh name="asset_0013" file="../../Assembly 1/assembly_1/meshes/Body___Flex_Connector_Terminals.stl" scale="1 1 1" />
-    <mesh name="asset_0014" file="../../Assembly 1/assembly_1/meshes/Body___Front_Panel.stl" scale="1 1 1" />
-    <mesh name="asset_0015" file="../../Assembly 1/assembly_1/meshes/Body___PCB.stl" scale="1 1 1" />
-    <mesh name="asset_0016" file="../../Assembly 1/assembly_1/meshes/Body___Protective_Foil.stl" scale="1 1 1" />
-    <mesh name="asset_0017" file="../../Assembly 1/assembly_1/meshes/Body___Screen_Border.stl" scale="1 1 1" />
-    <mesh name="asset_0018" file="../../Assembly 1/assembly_1/meshes/COMPOUND.stl" scale="1 1 1" />
-    <mesh name="asset_0019" file="../../Assembly 1/assembly_1/meshes/COMPOUND_1.stl" scale="1 1 1" />
-    <mesh name="asset_0020" file="../../Assembly 1/assembly_1/meshes/COMPOUND_10.stl" scale="1 1 1" />
-    <mesh name="asset_0021" file="../../Assembly 1/assembly_1/meshes/COMPOUND_100.stl" scale="1 1 1" />
-    <mesh name="asset_0022" file="../../Assembly 1/assembly_1/meshes/COMPOUND_101.stl" scale="1 1 1" />
-    <mesh name="asset_0023" file="../../Assembly 1/assembly_1/meshes/COMPOUND_102.stl" scale="1 1 1" />
-    <mesh name="asset_0024" file="../../Assembly 1/assembly_1/meshes/COMPOUND_103.stl" scale="1 1 1" />
-    <mesh name="asset_0025" file="../../Assembly 1/assembly_1/meshes/COMPOUND_104.stl" scale="1 1 1" />
-    <mesh name="asset_0026" file="../../Assembly 1/assembly_1/meshes/COMPOUND_105.stl" scale="1 1 1" />
-    <mesh name="asset_0027" file="../../Assembly 1/assembly_1/meshes/COMPOUND_106.stl" scale="1 1 1" />
-    <mesh name="asset_0028" file="../../Assembly 1/assembly_1/meshes/COMPOUND_107.stl" scale="1 1 1" />
-    <mesh name="asset_0029" file="../../Assembly 1/assembly_1/meshes/COMPOUND_108.stl" scale="1 1 1" />
-    <mesh name="asset_0030" file="../../Assembly 1/assembly_1/meshes/COMPOUND_109.stl" scale="1 1 1" />
-    <mesh name="asset_0031" file="../../Assembly 1/assembly_1/meshes/COMPOUND_11.stl" scale="1 1 1" />
-    <mesh name="asset_0032" file="../../Assembly 1/assembly_1/meshes/COMPOUND_110.stl" scale="1 1 1" />
-    <mesh name="asset_0033" file="../../Assembly 1/assembly_1/meshes/COMPOUND_111.stl" scale="1 1 1" />
-    <mesh name="asset_0034" file="../../Assembly 1/assembly_1/meshes/COMPOUND_112.stl" scale="1 1 1" />
-    <mesh name="asset_0035" file="../../Assembly 1/assembly_1/meshes/COMPOUND_113.stl" scale="1 1 1" />
-    <mesh name="asset_0036" file="../../Assembly 1/assembly_1/meshes/COMPOUND_114.stl" scale="1 1 1" />
-    <mesh name="asset_0037" file="../../Assembly 1/assembly_1/meshes/COMPOUND_115.stl" scale="1 1 1" />
-    <mesh name="asset_0038" file="../../Assembly 1/assembly_1/meshes/COMPOUND_116.stl" scale="1 1 1" />
-    <mesh name="asset_0039" file="../../Assembly 1/assembly_1/meshes/COMPOUND_117.stl" scale="1 1 1" />
-    <mesh name="asset_0040" file="../../Assembly 1/assembly_1/meshes/COMPOUND_118.stl" scale="1 1 1" />
-    <mesh name="asset_0041" file="../../Assembly 1/assembly_1/meshes/COMPOUND_119.stl" scale="1 1 1" />
-    <mesh name="asset_0042" file="../../Assembly 1/assembly_1/meshes/COMPOUND_12.stl" scale="1 1 1" />
-    <mesh name="asset_0043" file="../../Assembly 1/assembly_1/meshes/COMPOUND_120.stl" scale="1 1 1" />
-    <mesh name="asset_0044" file="../../Assembly 1/assembly_1/meshes/COMPOUND_121.stl" scale="1 1 1" />
-    <mesh name="asset_0045" file="../../Assembly 1/assembly_1/meshes/COMPOUND_122.stl" scale="1 1 1" />
-    <mesh name="asset_0046" file="../../Assembly 1/assembly_1/meshes/COMPOUND_123.stl" scale="1 1 1" />
-    <mesh name="asset_0047" file="../../Assembly 1/assembly_1/meshes/COMPOUND_124.stl" scale="1 1 1" />
-    <mesh name="asset_0048" file="../../Assembly 1/assembly_1/meshes/COMPOUND_125.stl" scale="1 1 1" />
-    <mesh name="asset_0049" file="../../Assembly 1/assembly_1/meshes/COMPOUND_126.stl" scale="1 1 1" />
-    <mesh name="asset_0050" file="../../Assembly 1/assembly_1/meshes/COMPOUND_127.stl" scale="1 1 1" />
-    <mesh name="asset_0051" file="../../Assembly 1/assembly_1/meshes/COMPOUND_128.stl" scale="1 1 1" />
-    <mesh name="asset_0052" file="../../Assembly 1/assembly_1/meshes/COMPOUND_129.stl" scale="1 1 1" />
-    <mesh name="asset_0053" file="../../Assembly 1/assembly_1/meshes/COMPOUND_13.stl" scale="1 1 1" />
-    <mesh name="asset_0054" file="../../Assembly 1/assembly_1/meshes/COMPOUND_130.stl" scale="1 1 1" />
-    <mesh name="asset_0055" file="../../Assembly 1/assembly_1/meshes/COMPOUND_131.stl" scale="1 1 1" />
-    <mesh name="asset_0056" file="../../Assembly 1/assembly_1/meshes/COMPOUND_132.stl" scale="1 1 1" />
-    <mesh name="asset_0057" file="../../Assembly 1/assembly_1/meshes/COMPOUND_133.stl" scale="1 1 1" />
-    <mesh name="asset_0058" file="../../Assembly 1/assembly_1/meshes/COMPOUND_134.stl" scale="1 1 1" />
-    <mesh name="asset_0059" file="../../Assembly 1/assembly_1/meshes/COMPOUND_135.stl" scale="1 1 1" />
-    <mesh name="asset_0060" file="../../Assembly 1/assembly_1/meshes/COMPOUND_136.stl" scale="1 1 1" />
-    <mesh name="asset_0061" file="../../Assembly 1/assembly_1/meshes/COMPOUND_137.stl" scale="1 1 1" />
-    <mesh name="asset_0062" file="../../Assembly 1/assembly_1/meshes/COMPOUND_138.stl" scale="1 1 1" />
-    <mesh name="asset_0063" file="../../Assembly 1/assembly_1/meshes/COMPOUND_139.stl" scale="1 1 1" />
-    <mesh name="asset_0064" file="../../Assembly 1/assembly_1/meshes/COMPOUND_14.stl" scale="1 1 1" />
-    <mesh name="asset_0065" file="../../Assembly 1/assembly_1/meshes/COMPOUND_140.stl" scale="1 1 1" />
-    <mesh name="asset_0066" file="../../Assembly 1/assembly_1/meshes/COMPOUND_141.stl" scale="1 1 1" />
-    <mesh name="asset_0067" file="../../Assembly 1/assembly_1/meshes/COMPOUND_142.stl" scale="1 1 1" />
-    <mesh name="asset_0068" file="../../Assembly 1/assembly_1/meshes/COMPOUND_143.stl" scale="1 1 1" />
-    <mesh name="asset_0069" file="../../Assembly 1/assembly_1/meshes/COMPOUND_144.stl" scale="1 1 1" />
-    <mesh name="asset_0070" file="../../Assembly 1/assembly_1/meshes/COMPOUND_145.stl" scale="1 1 1" />
-    <mesh name="asset_0071" file="../../Assembly 1/assembly_1/meshes/COMPOUND_146.stl" scale="1 1 1" />
-    <mesh name="asset_0072" file="../../Assembly 1/assembly_1/meshes/COMPOUND_147.stl" scale="1 1 1" />
-    <mesh name="asset_0073" file="../../Assembly 1/assembly_1/meshes/COMPOUND_148.stl" scale="1 1 1" />
-    <mesh name="asset_0074" file="../../Assembly 1/assembly_1/meshes/COMPOUND_149.stl" scale="1 1 1" />
-    <mesh name="asset_0075" file="../../Assembly 1/assembly_1/meshes/COMPOUND_15.stl" scale="1 1 1" />
-    <mesh name="asset_0076" file="../../Assembly 1/assembly_1/meshes/COMPOUND_150.stl" scale="1 1 1" />
-    <mesh name="asset_0077" file="../../Assembly 1/assembly_1/meshes/COMPOUND_151.stl" scale="1 1 1" />
-    <mesh name="asset_0078" file="../../Assembly 1/assembly_1/meshes/COMPOUND_152.stl" scale="1 1 1" />
-    <mesh name="asset_0079" file="../../Assembly 1/assembly_1/meshes/COMPOUND_153.stl" scale="1 1 1" />
-    <mesh name="asset_0080" file="../../Assembly 1/assembly_1/meshes/COMPOUND_154.stl" scale="1 1 1" />
-    <mesh name="asset_0081" file="../../Assembly 1/assembly_1/meshes/COMPOUND_155.stl" scale="1 1 1" />
-    <mesh name="asset_0082" file="../../Assembly 1/assembly_1/meshes/COMPOUND_156.stl" scale="1 1 1" />
-    <mesh name="asset_0083" file="../../Assembly 1/assembly_1/meshes/COMPOUND_157.stl" scale="1 1 1" />
-    <mesh name="asset_0084" file="../../Assembly 1/assembly_1/meshes/COMPOUND_158.stl" scale="1 1 1" />
-    <mesh name="asset_0085" file="../../Assembly 1/assembly_1/meshes/COMPOUND_159.stl" scale="1 1 1" />
-    <mesh name="asset_0086" file="../../Assembly 1/assembly_1/meshes/COMPOUND_16.stl" scale="1 1 1" />
-    <mesh name="asset_0087" file="../../Assembly 1/assembly_1/meshes/COMPOUND_160.stl" scale="1 1 1" />
-    <mesh name="asset_0088" file="../../Assembly 1/assembly_1/meshes/COMPOUND_161.stl" scale="1 1 1" />
-    <mesh name="asset_0089" file="../../Assembly 1/assembly_1/meshes/COMPOUND_162.stl" scale="1 1 1" />
-    <mesh name="asset_0090" file="../../Assembly 1/assembly_1/meshes/COMPOUND_163.stl" scale="1 1 1" />
-    <mesh name="asset_0091" file="../../Assembly 1/assembly_1/meshes/COMPOUND_164.stl" scale="1 1 1" />
-    <mesh name="asset_0092" file="../../Assembly 1/assembly_1/meshes/COMPOUND_165.stl" scale="1 1 1" />
-    <mesh name="asset_0093" file="../../Assembly 1/assembly_1/meshes/COMPOUND_166.stl" scale="1 1 1" />
-    <mesh name="asset_0094" file="../../Assembly 1/assembly_1/meshes/COMPOUND_167.stl" scale="1 1 1" />
-    <mesh name="asset_0095" file="../../Assembly 1/assembly_1/meshes/COMPOUND_168.stl" scale="1 1 1" />
-    <mesh name="asset_0096" file="../../Assembly 1/assembly_1/meshes/COMPOUND_169.stl" scale="1 1 1" />
-    <mesh name="asset_0097" file="../../Assembly 1/assembly_1/meshes/COMPOUND_17.stl" scale="1 1 1" />
-    <mesh name="asset_0098" file="../../Assembly 1/assembly_1/meshes/COMPOUND_170.stl" scale="1 1 1" />
-    <mesh name="asset_0099" file="../../Assembly 1/assembly_1/meshes/COMPOUND_171.stl" scale="1 1 1" />
-    <mesh name="asset_0100" file="../../Assembly 1/assembly_1/meshes/COMPOUND_172.stl" scale="1 1 1" />
-    <mesh name="asset_0101" file="../../Assembly 1/assembly_1/meshes/COMPOUND_173.stl" scale="1 1 1" />
-    <mesh name="asset_0102" file="../../Assembly 1/assembly_1/meshes/COMPOUND_174.stl" scale="1 1 1" />
-    <mesh name="asset_0103" file="../../Assembly 1/assembly_1/meshes/COMPOUND_175.stl" scale="1 1 1" />
-    <mesh name="asset_0104" file="../../Assembly 1/assembly_1/meshes/COMPOUND_176.stl" scale="1 1 1" />
-    <mesh name="asset_0105" file="../../Assembly 1/assembly_1/meshes/COMPOUND_177.stl" scale="1 1 1" />
-    <mesh name="asset_0106" file="../../Assembly 1/assembly_1/meshes/COMPOUND_178.stl" scale="1 1 1" />
-    <mesh name="asset_0107" file="../../Assembly 1/assembly_1/meshes/COMPOUND_179.stl" scale="1 1 1" />
-    <mesh name="asset_0108" file="../../Assembly 1/assembly_1/meshes/COMPOUND_18.stl" scale="1 1 1" />
-    <mesh name="asset_0109" file="../../Assembly 1/assembly_1/meshes/COMPOUND_180.stl" scale="1 1 1" />
-    <mesh name="asset_0110" file="../../Assembly 1/assembly_1/meshes/COMPOUND_181.stl" scale="1 1 1" />
-    <mesh name="asset_0111" file="../../Assembly 1/assembly_1/meshes/COMPOUND_182.stl" scale="1 1 1" />
-    <mesh name="asset_0112" file="../../Assembly 1/assembly_1/meshes/COMPOUND_183.stl" scale="1 1 1" />
-    <mesh name="asset_0113" file="../../Assembly 1/assembly_1/meshes/COMPOUND_184.stl" scale="1 1 1" />
-    <mesh name="asset_0114" file="../../Assembly 1/assembly_1/meshes/COMPOUND_185.stl" scale="1 1 1" />
-    <mesh name="asset_0115" file="../../Assembly 1/assembly_1/meshes/COMPOUND_186.stl" scale="1 1 1" />
-    <mesh name="asset_0116" file="../../Assembly 1/assembly_1/meshes/COMPOUND_187.stl" scale="1 1 1" />
-    <mesh name="asset_0117" file="../../Assembly 1/assembly_1/meshes/COMPOUND_188.stl" scale="1 1 1" />
-    <mesh name="asset_0118" file="../../Assembly 1/assembly_1/meshes/COMPOUND_189.stl" scale="1 1 1" />
-    <mesh name="asset_0119" file="../../Assembly 1/assembly_1/meshes/COMPOUND_19.stl" scale="1 1 1" />
-    <mesh name="asset_0120" file="../../Assembly 1/assembly_1/meshes/COMPOUND_190.stl" scale="1 1 1" />
-    <mesh name="asset_0121" file="../../Assembly 1/assembly_1/meshes/COMPOUND_191.stl" scale="1 1 1" />
-    <mesh name="asset_0122" file="../../Assembly 1/assembly_1/meshes/COMPOUND_192.stl" scale="1 1 1" />
-    <mesh name="asset_0123" file="../../Assembly 1/assembly_1/meshes/COMPOUND_193.stl" scale="1 1 1" />
-    <mesh name="asset_0124" file="../../Assembly 1/assembly_1/meshes/COMPOUND_194.stl" scale="1 1 1" />
-    <mesh name="asset_0125" file="../../Assembly 1/assembly_1/meshes/COMPOUND_195.stl" scale="1 1 1" />
-    <mesh name="asset_0126" file="../../Assembly 1/assembly_1/meshes/COMPOUND_196.stl" scale="1 1 1" />
-    <mesh name="asset_0127" file="../../Assembly 1/assembly_1/meshes/COMPOUND_197.stl" scale="1 1 1" />
-    <mesh name="asset_0128" file="../../Assembly 1/assembly_1/meshes/COMPOUND_198.stl" scale="1 1 1" />
-    <mesh name="asset_0129" file="../../Assembly 1/assembly_1/meshes/COMPOUND_199.stl" scale="1 1 1" />
-    <mesh name="asset_0130" file="../../Assembly 1/assembly_1/meshes/COMPOUND_2.stl" scale="1 1 1" />
-    <mesh name="asset_0131" file="../../Assembly 1/assembly_1/meshes/COMPOUND_20.stl" scale="1 1 1" />
-    <mesh name="asset_0132" file="../../Assembly 1/assembly_1/meshes/COMPOUND_200.stl" scale="1 1 1" />
-    <mesh name="asset_0133" file="../../Assembly 1/assembly_1/meshes/COMPOUND_201.stl" scale="1 1 1" />
-    <mesh name="asset_0134" file="../../Assembly 1/assembly_1/meshes/COMPOUND_202.stl" scale="1 1 1" />
-    <mesh name="asset_0135" file="../../Assembly 1/assembly_1/meshes/COMPOUND_203.stl" scale="1 1 1" />
-    <mesh name="asset_0136" file="../../Assembly 1/assembly_1/meshes/COMPOUND_204.stl" scale="1 1 1" />
-    <mesh name="asset_0137" file="../../Assembly 1/assembly_1/meshes/COMPOUND_21.stl" scale="1 1 1" />
-    <mesh name="asset_0138" file="../../Assembly 1/assembly_1/meshes/COMPOUND_22.stl" scale="1 1 1" />
-    <mesh name="asset_0139" file="../../Assembly 1/assembly_1/meshes/COMPOUND_23.stl" scale="1 1 1" />
-    <mesh name="asset_0140" file="../../Assembly 1/assembly_1/meshes/COMPOUND_24.stl" scale="1 1 1" />
-    <mesh name="asset_0141" file="../../Assembly 1/assembly_1/meshes/COMPOUND_25.stl" scale="1 1 1" />
-    <mesh name="asset_0142" file="../../Assembly 1/assembly_1/meshes/COMPOUND_26.stl" scale="1 1 1" />
-    <mesh name="asset_0143" file="../../Assembly 1/assembly_1/meshes/COMPOUND_27.stl" scale="1 1 1" />
-    <mesh name="asset_0144" file="../../Assembly 1/assembly_1/meshes/COMPOUND_28.stl" scale="1 1 1" />
-    <mesh name="asset_0145" file="../../Assembly 1/assembly_1/meshes/COMPOUND_29.stl" scale="1 1 1" />
-    <mesh name="asset_0146" file="../../Assembly 1/assembly_1/meshes/COMPOUND_3.stl" scale="1 1 1" />
-    <mesh name="asset_0147" file="../../Assembly 1/assembly_1/meshes/COMPOUND_30.stl" scale="1 1 1" />
-    <mesh name="asset_0148" file="../../Assembly 1/assembly_1/meshes/COMPOUND_31.stl" scale="1 1 1" />
-    <mesh name="asset_0149" file="../../Assembly 1/assembly_1/meshes/COMPOUND_32.stl" scale="1 1 1" />
-    <mesh name="asset_0150" file="../../Assembly 1/assembly_1/meshes/COMPOUND_33.stl" scale="1 1 1" />
-    <mesh name="asset_0151" file="../../Assembly 1/assembly_1/meshes/COMPOUND_34.stl" scale="1 1 1" />
-    <mesh name="asset_0152" file="../../Assembly 1/assembly_1/meshes/COMPOUND_35.stl" scale="1 1 1" />
-    <mesh name="asset_0153" file="../../Assembly 1/assembly_1/meshes/COMPOUND_36.stl" scale="1 1 1" />
-    <mesh name="asset_0154" file="../../Assembly 1/assembly_1/meshes/COMPOUND_37.stl" scale="1 1 1" />
-    <mesh name="asset_0155" file="../../Assembly 1/assembly_1/meshes/COMPOUND_38.stl" scale="1 1 1" />
-    <mesh name="asset_0156" file="../../Assembly 1/assembly_1/meshes/COMPOUND_39.stl" scale="1 1 1" />
-    <mesh name="asset_0157" file="../../Assembly 1/assembly_1/meshes/COMPOUND_4.stl" scale="1 1 1" />
-    <mesh name="asset_0158" file="../../Assembly 1/assembly_1/meshes/COMPOUND_40.stl" scale="1 1 1" />
-    <mesh name="asset_0159" file="../../Assembly 1/assembly_1/meshes/COMPOUND_41.stl" scale="1 1 1" />
-    <mesh name="asset_0160" file="../../Assembly 1/assembly_1/meshes/COMPOUND_42.stl" scale="1 1 1" />
-    <mesh name="asset_0161" file="../../Assembly 1/assembly_1/meshes/COMPOUND_43.stl" scale="1 1 1" />
-    <mesh name="asset_0162" file="../../Assembly 1/assembly_1/meshes/COMPOUND_44.stl" scale="1 1 1" />
-    <mesh name="asset_0163" file="../../Assembly 1/assembly_1/meshes/COMPOUND_45.stl" scale="1 1 1" />
-    <mesh name="asset_0164" file="../../Assembly 1/assembly_1/meshes/COMPOUND_46.stl" scale="1 1 1" />
-    <mesh name="asset_0165" file="../../Assembly 1/assembly_1/meshes/COMPOUND_47.stl" scale="1 1 1" />
-    <mesh name="asset_0166" file="../../Assembly 1/assembly_1/meshes/COMPOUND_48.stl" scale="1 1 1" />
-    <mesh name="asset_0167" file="../../Assembly 1/assembly_1/meshes/COMPOUND_49.stl" scale="1 1 1" />
-    <mesh name="asset_0168" file="../../Assembly 1/assembly_1/meshes/COMPOUND_5.stl" scale="1 1 1" />
-    <mesh name="asset_0169" file="../../Assembly 1/assembly_1/meshes/COMPOUND_50.stl" scale="1 1 1" />
-    <mesh name="asset_0170" file="../../Assembly 1/assembly_1/meshes/COMPOUND_51.stl" scale="1 1 1" />
-    <mesh name="asset_0171" file="../../Assembly 1/assembly_1/meshes/COMPOUND_52.stl" scale="1 1 1" />
-    <mesh name="asset_0172" file="../../Assembly 1/assembly_1/meshes/COMPOUND_53.stl" scale="1 1 1" />
-    <mesh name="asset_0173" file="../../Assembly 1/assembly_1/meshes/COMPOUND_54.stl" scale="1 1 1" />
-    <mesh name="asset_0174" file="../../Assembly 1/assembly_1/meshes/COMPOUND_55.stl" scale="1 1 1" />
-    <mesh name="asset_0175" file="../../Assembly 1/assembly_1/meshes/COMPOUND_56.stl" scale="1 1 1" />
-    <mesh name="asset_0176" file="../../Assembly 1/assembly_1/meshes/COMPOUND_57.stl" scale="1 1 1" />
-    <mesh name="asset_0177" file="../../Assembly 1/assembly_1/meshes/COMPOUND_58.stl" scale="1 1 1" />
-    <mesh name="asset_0178" file="../../Assembly 1/assembly_1/meshes/COMPOUND_59.stl" scale="1 1 1" />
-    <mesh name="asset_0179" file="../../Assembly 1/assembly_1/meshes/COMPOUND_6.stl" scale="1 1 1" />
-    <mesh name="asset_0180" file="../../Assembly 1/assembly_1/meshes/COMPOUND_60.stl" scale="1 1 1" />
-    <mesh name="asset_0181" file="../../Assembly 1/assembly_1/meshes/COMPOUND_61.stl" scale="1 1 1" />
-    <mesh name="asset_0182" file="../../Assembly 1/assembly_1/meshes/COMPOUND_62.stl" scale="1 1 1" />
-    <mesh name="asset_0183" file="../../Assembly 1/assembly_1/meshes/COMPOUND_63.stl" scale="1 1 1" />
-    <mesh name="asset_0184" file="../../Assembly 1/assembly_1/meshes/COMPOUND_64.stl" scale="1 1 1" />
-    <mesh name="asset_0185" file="../../Assembly 1/assembly_1/meshes/COMPOUND_65.stl" scale="1 1 1" />
-    <mesh name="asset_0186" file="../../Assembly 1/assembly_1/meshes/COMPOUND_66.stl" scale="1 1 1" />
-    <mesh name="asset_0187" file="../../Assembly 1/assembly_1/meshes/COMPOUND_67.stl" scale="1 1 1" />
-    <mesh name="asset_0188" file="../../Assembly 1/assembly_1/meshes/COMPOUND_68.stl" scale="1 1 1" />
-    <mesh name="asset_0189" file="../../Assembly 1/assembly_1/meshes/COMPOUND_69.stl" scale="1 1 1" />
-    <mesh name="asset_0190" file="../../Assembly 1/assembly_1/meshes/COMPOUND_7.stl" scale="1 1 1" />
-    <mesh name="asset_0191" file="../../Assembly 1/assembly_1/meshes/COMPOUND_70.stl" scale="1 1 1" />
-    <mesh name="asset_0192" file="../../Assembly 1/assembly_1/meshes/COMPOUND_71.stl" scale="1 1 1" />
-    <mesh name="asset_0193" file="../../Assembly 1/assembly_1/meshes/COMPOUND_72.stl" scale="1 1 1" />
-    <mesh name="asset_0194" file="../../Assembly 1/assembly_1/meshes/COMPOUND_73.stl" scale="1 1 1" />
-    <mesh name="asset_0195" file="../../Assembly 1/assembly_1/meshes/COMPOUND_74.stl" scale="1 1 1" />
-    <mesh name="asset_0196" file="../../Assembly 1/assembly_1/meshes/COMPOUND_75.stl" scale="1 1 1" />
-    <mesh name="asset_0197" file="../../Assembly 1/assembly_1/meshes/COMPOUND_76.stl" scale="1 1 1" />
-    <mesh name="asset_0198" file="../../Assembly 1/assembly_1/meshes/COMPOUND_77.stl" scale="1 1 1" />
-    <mesh name="asset_0199" file="../../Assembly 1/assembly_1/meshes/COMPOUND_78.stl" scale="1 1 1" />
-    <mesh name="asset_0200" file="../../Assembly 1/assembly_1/meshes/COMPOUND_79.stl" scale="1 1 1" />
-    <mesh name="asset_0201" file="../../Assembly 1/assembly_1/meshes/COMPOUND_8.stl" scale="1 1 1" />
-    <mesh name="asset_0202" file="../../Assembly 1/assembly_1/meshes/COMPOUND_80.stl" scale="1 1 1" />
-    <mesh name="asset_0203" file="../../Assembly 1/assembly_1/meshes/COMPOUND_81.stl" scale="1 1 1" />
-    <mesh name="asset_0204" file="../../Assembly 1/assembly_1/meshes/COMPOUND_82.stl" scale="1 1 1" />
-    <mesh name="asset_0205" file="../../Assembly 1/assembly_1/meshes/COMPOUND_83.stl" scale="1 1 1" />
-    <mesh name="asset_0206" file="../../Assembly 1/assembly_1/meshes/COMPOUND_84.stl" scale="1 1 1" />
-    <mesh name="asset_0207" file="../../Assembly 1/assembly_1/meshes/COMPOUND_85.stl" scale="1 1 1" />
-    <mesh name="asset_0208" file="../../Assembly 1/assembly_1/meshes/COMPOUND_86.stl" scale="1 1 1" />
-    <mesh name="asset_0209" file="../../Assembly 1/assembly_1/meshes/COMPOUND_87.stl" scale="1 1 1" />
-    <mesh name="asset_0210" file="../../Assembly 1/assembly_1/meshes/COMPOUND_88.stl" scale="1 1 1" />
-    <mesh name="asset_0211" file="../../Assembly 1/assembly_1/meshes/COMPOUND_89.stl" scale="1 1 1" />
-    <mesh name="asset_0212" file="../../Assembly 1/assembly_1/meshes/COMPOUND_9.stl" scale="1 1 1" />
-    <mesh name="asset_0213" file="../../Assembly 1/assembly_1/meshes/COMPOUND_90.stl" scale="1 1 1" />
-    <mesh name="asset_0214" file="../../Assembly 1/assembly_1/meshes/COMPOUND_91.stl" scale="1 1 1" />
-    <mesh name="asset_0215" file="../../Assembly 1/assembly_1/meshes/COMPOUND_92.stl" scale="1 1 1" />
-    <mesh name="asset_0216" file="../../Assembly 1/assembly_1/meshes/COMPOUND_93.stl" scale="1 1 1" />
-    <mesh name="asset_0217" file="../../Assembly 1/assembly_1/meshes/COMPOUND_94.stl" scale="1 1 1" />
-    <mesh name="asset_0218" file="../../Assembly 1/assembly_1/meshes/COMPOUND_95.stl" scale="1 1 1" />
-    <mesh name="asset_0219" file="../../Assembly 1/assembly_1/meshes/COMPOUND_96.stl" scale="1 1 1" />
-    <mesh name="asset_0220" file="../../Assembly 1/assembly_1/meshes/COMPOUND_97.stl" scale="1 1 1" />
-    <mesh name="asset_0221" file="../../Assembly 1/assembly_1/meshes/COMPOUND_98.stl" scale="1 1 1" />
-    <mesh name="asset_0222" file="../../Assembly 1/assembly_1/meshes/COMPOUND_99.stl" scale="1 1 1" />
-    <mesh name="asset_0223" file="../../Assembly 1/assembly_1/meshes/C_0805_2012Metric_10.stl" scale="1 1 1" />
-    <mesh name="asset_0224" file="../../Assembly 1/assembly_1/meshes/C_1206_3216Metric_2.stl" scale="1 1 1" />
-    <mesh name="asset_0225" file="../../Assembly 1/assembly_1/meshes/D_SMA.stl" scale="1 1 1" />
-    <mesh name="asset_0226" file="../../Assembly 1/assembly_1/meshes/D_SMB.stl" scale="1 1 1" />
-    <mesh name="asset_0227" file="../../Assembly 1/assembly_1/meshes/Diode_2_001.stl" scale="1 1 1" />
-    <mesh name="asset_0228" file="../../Assembly 1/assembly_1/meshes/Diode_2_001_1.stl" scale="1 1 1" />
-    <mesh name="asset_0229" file="../../Assembly 1/assembly_1/meshes/Diode_2_001_2.stl" scale="1 1 1" />
-    <mesh name="asset_0230" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1.stl" scale="1 1 1" />
-    <mesh name="asset_0231" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_1.stl" scale="1 1 1" />
-    <mesh name="asset_0232" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_10.stl" scale="1 1 1" />
-    <mesh name="asset_0233" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_11.stl" scale="1 1 1" />
-    <mesh name="asset_0234" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_12.stl" scale="1 1 1" />
-    <mesh name="asset_0235" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_13.stl" scale="1 1 1" />
-    <mesh name="asset_0236" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_14.stl" scale="1 1 1" />
-    <mesh name="asset_0237" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_15.stl" scale="1 1 1" />
-    <mesh name="asset_0238" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_16.stl" scale="1 1 1" />
-    <mesh name="asset_0239" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_17.stl" scale="1 1 1" />
-    <mesh name="asset_0240" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_18.stl" scale="1 1 1" />
-    <mesh name="asset_0241" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_19.stl" scale="1 1 1" />
-    <mesh name="asset_0242" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_2.stl" scale="1 1 1" />
-    <mesh name="asset_0243" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_20.stl" scale="1 1 1" />
-    <mesh name="asset_0244" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_21.stl" scale="1 1 1" />
-    <mesh name="asset_0245" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_22.stl" scale="1 1 1" />
-    <mesh name="asset_0246" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_23.stl" scale="1 1 1" />
-    <mesh name="asset_0247" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_24.stl" scale="1 1 1" />
-    <mesh name="asset_0248" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_25.stl" scale="1 1 1" />
-    <mesh name="asset_0249" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_26.stl" scale="1 1 1" />
-    <mesh name="asset_0250" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_27.stl" scale="1 1 1" />
-    <mesh name="asset_0251" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_28.stl" scale="1 1 1" />
-    <mesh name="asset_0252" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_29.stl" scale="1 1 1" />
-    <mesh name="asset_0253" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_3.stl" scale="1 1 1" />
-    <mesh name="asset_0254" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_30.stl" scale="1 1 1" />
-    <mesh name="asset_0255" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_31.stl" scale="1 1 1" />
-    <mesh name="asset_0256" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_32.stl" scale="1 1 1" />
-    <mesh name="asset_0257" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_33.stl" scale="1 1 1" />
-    <mesh name="asset_0258" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_34.stl" scale="1 1 1" />
-    <mesh name="asset_0259" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_35.stl" scale="1 1 1" />
-    <mesh name="asset_0260" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_36.stl" scale="1 1 1" />
-    <mesh name="asset_0261" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_37.stl" scale="1 1 1" />
-    <mesh name="asset_0262" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_38.stl" scale="1 1 1" />
-    <mesh name="asset_0263" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_39.stl" scale="1 1 1" />
-    <mesh name="asset_0264" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_4.stl" scale="1 1 1" />
-    <mesh name="asset_0265" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_40.stl" scale="1 1 1" />
-    <mesh name="asset_0266" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_41.stl" scale="1 1 1" />
-    <mesh name="asset_0267" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_42.stl" scale="1 1 1" />
-    <mesh name="asset_0268" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_43.stl" scale="1 1 1" />
-    <mesh name="asset_0269" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_44.stl" scale="1 1 1" />
-    <mesh name="asset_0270" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_45.stl" scale="1 1 1" />
-    <mesh name="asset_0271" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_46.stl" scale="1 1 1" />
-    <mesh name="asset_0272" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_47.stl" scale="1 1 1" />
-    <mesh name="asset_0273" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_48.stl" scale="1 1 1" />
-    <mesh name="asset_0274" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_49.stl" scale="1 1 1" />
-    <mesh name="asset_0275" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_5.stl" scale="1 1 1" />
-    <mesh name="asset_0276" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_50.stl" scale="1 1 1" />
-    <mesh name="asset_0277" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_51.stl" scale="1 1 1" />
-    <mesh name="asset_0278" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_6.stl" scale="1 1 1" />
-    <mesh name="asset_0279" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_7.stl" scale="1 1 1" />
-    <mesh name="asset_0280" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_8.stl" scale="1 1 1" />
-    <mesh name="asset_0281" file="../../Assembly 1/assembly_1/meshes/ESP32_S3_WROOM_1_9.stl" scale="1 1 1" />
-    <mesh name="asset_0282" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings.stl" scale="1 1 1" />
-    <mesh name="asset_0283" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_1.stl" scale="1 1 1" />
-    <mesh name="asset_0284" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_2.stl" scale="1 1 1" />
-    <mesh name="asset_0285" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_3.stl" scale="1 1 1" />
-    <mesh name="asset_0286" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_4.stl" scale="1 1 1" />
-    <mesh name="asset_0287" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_5.stl" scale="1 1 1" />
-    <mesh name="asset_0288" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_6.stl" scale="1 1 1" />
-    <mesh name="asset_0289" file="../../Assembly 1/assembly_1/meshes/Extrude___Annular_Rings_7.stl" scale="1 1 1" />
-    <mesh name="asset_0290" file="../../Assembly 1/assembly_1/meshes/Fuse_1210_3225Metric.stl" scale="1 1 1" />
-    <mesh name="asset_0291" file="../../Assembly 1/assembly_1/meshes/Fuse_1210_3225Metric_1.stl" scale="1 1 1" />
-    <mesh name="asset_0292" file="../../Assembly 1/assembly_1/meshes/HTSSOP_24_1EP_4_4x7_8mm_P0_65mm_EP3_4x7_8mm_Mask2_4x4_68mm.stl" scale="1 1 1" />
-    <mesh name="asset_0293" file="../../Assembly 1/assembly_1/meshes/JST_B2B_EH_A_2.stl" scale="1 1 1" />
-    <mesh name="asset_0294" file="../../Assembly 1/assembly_1/meshes/LED_0805_2012Metric_51.stl" scale="1 1 1" />
-    <mesh name="asset_0295" file="../../Assembly 1/assembly_1/meshes/MSK12C02.stl" scale="1 1 1" />
-    <mesh name="asset_0296" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1.stl" scale="1 1 1" />
-    <mesh name="asset_0297" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_1.stl" scale="1 1 1" />
-    <mesh name="asset_0298" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_2.stl" scale="1 1 1" />
-    <mesh name="asset_0299" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_3.stl" scale="1 1 1" />
-    <mesh name="asset_0300" file="../../Assembly 1/assembly_1/meshes/MSK12C02_1_4.stl" scale="1 1 1" />
-    <mesh name="asset_0301" file="../../Assembly 1/assembly_1/meshes/MSK12C02_2.stl" scale="1 1 1" />
-    <mesh name="asset_0302" file="../../Assembly 1/assembly_1/meshes/MSK12C02_3.stl" scale="1 1 1" />
-    <mesh name="asset_0303" file="../../Assembly 1/assembly_1/meshes/Part_1.stl" scale="1 1 1" />
-    <mesh name="asset_0304" file="../../Assembly 1/assembly_1/meshes/Part_1_1.stl" scale="1 1 1" />
-    <mesh name="asset_0305" file="../../Assembly 1/assembly_1/meshes/Part_2.stl" scale="1 1 1" />
-    <mesh name="asset_0306" file="../../Assembly 1/assembly_1/meshes/PinHeader_1x03_P254mm_Vertical.stl" scale="1 1 1" />
-    <mesh name="asset_0307" file="../../Assembly 1/assembly_1/meshes/PinHeader_1x10_P254mm_Vertical.stl" scale="1 1 1" />
-    <mesh name="asset_0308" file="../../Assembly 1/assembly_1/meshes/PinHeader_1x12_P254mm_Vertical_1.stl" scale="1 1 1" />
-    <mesh name="asset_0309" file="../../Assembly 1/assembly_1/meshes/PinSocket_1x04_P2_54mm_Vertical.stl" scale="1 1 1" />
-    <mesh name="asset_0310" file="../../Assembly 1/assembly_1/meshes/PinSocket_1x08_P2_54mm_Vertical_1.stl" scale="1 1 1" />
-    <mesh name="asset_0311" file="../../Assembly 1/assembly_1/meshes/R_0805_2012Metric_19.stl" scale="1 1 1" />
-    <mesh name="asset_0312" file="../../Assembly 1/assembly_1/meshes/Rim.stl" scale="1 1 1" />
-    <mesh name="asset_0313" file="../../Assembly 1/assembly_1/meshes/SM_LED_001.stl" scale="1 1 1" />
-    <mesh name="asset_0314" file="../../Assembly 1/assembly_1/meshes/SM_LED_001_1.stl" scale="1 1 1" />
-    <mesh name="asset_0315" file="../../Assembly 1/assembly_1/meshes/SM_LED_001_2.stl" scale="1 1 1" />
-    <mesh name="asset_0316" file="../../Assembly 1/assembly_1/meshes/SOT25_001.stl" scale="1 1 1" />
-    <mesh name="asset_0317" file="../../Assembly 1/assembly_1/meshes/SOT25_001_1.stl" scale="1 1 1" />
-    <mesh name="asset_0318" file="../../Assembly 1/assembly_1/meshes/SOT_143.stl" scale="1 1 1" />
-    <mesh name="asset_0319" file="../../Assembly 1/assembly_1/meshes/SOT_223.stl" scale="1 1 1" />
-    <mesh name="asset_0320" file="../../Assembly 1/assembly_1/meshes/SOT_23_6.stl" scale="1 1 1" />
-    <mesh name="asset_0321" file="../../Assembly 1/assembly_1/meshes/SW_SPST_PTS810.stl" scale="1 1 1" />
-    <mesh name="asset_0322" file="../../Assembly 1/assembly_1/meshes/Screw_M3_75mm.stl" scale="1 1 1" />
-    <mesh name="asset_0323" file="../../Assembly 1/assembly_1/meshes/TT_MOTOR_90_1_solid1.stl" scale="1 1 1" />
-    <mesh name="asset_0324" file="../../Assembly 1/assembly_1/meshes/Tyre.stl" scale="1 1 1" />
-    <mesh name="asset_0325" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_001.stl" scale="1 1 1" />
-    <mesh name="asset_0326" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_001_1.stl" scale="1 1 1" />
-    <mesh name="asset_0327" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_001_2.stl" scale="1 1 1" />
-    <mesh name="asset_0328" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_002.stl" scale="1 1 1" />
-    <mesh name="asset_0329" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_002_1.stl" scale="1 1 1" />
-    <mesh name="asset_0330" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_002_2.stl" scale="1 1 1" />
-    <mesh name="asset_0331" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_003.stl" scale="1 1 1" />
-    <mesh name="asset_0332" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_003_1.stl" scale="1 1 1" />
-    <mesh name="asset_0333" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_003_2.stl" scale="1 1 1" />
-    <mesh name="asset_0334" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_004.stl" scale="1 1 1" />
-    <mesh name="asset_0335" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_004_1.stl" scale="1 1 1" />
-    <mesh name="asset_0336" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_004_2.stl" scale="1 1 1" />
-    <mesh name="asset_0337" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_005.stl" scale="1 1 1" />
-    <mesh name="asset_0338" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_005_1.stl" scale="1 1 1" />
-    <mesh name="asset_0339" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_005_2.stl" scale="1 1 1" />
-    <mesh name="asset_0340" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_006.stl" scale="1 1 1" />
-    <mesh name="asset_0341" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_006_1.stl" scale="1 1 1" />
-    <mesh name="asset_0342" file="../../Assembly 1/assembly_1/meshes/_0603_Capacitor_006_2.stl" scale="1 1 1" />
-    <mesh name="asset_0343" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_001.stl" scale="1 1 1" />
-    <mesh name="asset_0344" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_001_1.stl" scale="1 1 1" />
-    <mesh name="asset_0345" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_001_2.stl" scale="1 1 1" />
-    <mesh name="asset_0346" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_002.stl" scale="1 1 1" />
-    <mesh name="asset_0347" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_002_1.stl" scale="1 1 1" />
-    <mesh name="asset_0348" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_002_2.stl" scale="1 1 1" />
-    <mesh name="asset_0349" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_003.stl" scale="1 1 1" />
-    <mesh name="asset_0350" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_003_1.stl" scale="1 1 1" />
-    <mesh name="asset_0351" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_003_2.stl" scale="1 1 1" />
-    <mesh name="asset_0352" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_004.stl" scale="1 1 1" />
-    <mesh name="asset_0353" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_004_1.stl" scale="1 1 1" />
-    <mesh name="asset_0354" file="../../Assembly 1/assembly_1/meshes/_0603_Resistor_004_2.stl" scale="1 1 1" />
-    <mesh name="asset_0355" file="../../Assembly 1/assembly_1/meshes/_1x8_Male_Header_001.stl" scale="1 1 1" />
-    <mesh name="asset_0356" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001.stl" scale="1 1 1" />
-    <mesh name="asset_0357" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_1.stl" scale="1 1 1" />
-    <mesh name="asset_0358" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_10.stl" scale="1 1 1" />
-    <mesh name="asset_0359" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_11.stl" scale="1 1 1" />
-    <mesh name="asset_0360" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_12.stl" scale="1 1 1" />
-    <mesh name="asset_0361" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_13.stl" scale="1 1 1" />
-    <mesh name="asset_0362" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_14.stl" scale="1 1 1" />
-    <mesh name="asset_0363" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_15.stl" scale="1 1 1" />
-    <mesh name="asset_0364" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_16.stl" scale="1 1 1" />
-    <mesh name="asset_0365" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_17.stl" scale="1 1 1" />
-    <mesh name="asset_0366" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_18.stl" scale="1 1 1" />
-    <mesh name="asset_0367" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_19.stl" scale="1 1 1" />
-    <mesh name="asset_0368" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_2.stl" scale="1 1 1" />
-    <mesh name="asset_0369" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_20.stl" scale="1 1 1" />
-    <mesh name="asset_0370" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_21.stl" scale="1 1 1" />
-    <mesh name="asset_0371" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_22.stl" scale="1 1 1" />
-    <mesh name="asset_0372" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_23.stl" scale="1 1 1" />
-    <mesh name="asset_0373" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_24.stl" scale="1 1 1" />
-    <mesh name="asset_0374" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_3.stl" scale="1 1 1" />
-    <mesh name="asset_0375" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_4.stl" scale="1 1 1" />
-    <mesh name="asset_0376" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_5.stl" scale="1 1 1" />
-    <mesh name="asset_0377" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_6.stl" scale="1 1 1" />
-    <mesh name="asset_0378" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_7.stl" scale="1 1 1" />
-    <mesh name="asset_0379" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_8.stl" scale="1 1 1" />
-    <mesh name="asset_0380" file="../../Assembly 1/assembly_1/meshes/_24_QFN_001_9.stl" scale="1 1 1" />
-    <mesh name="asset_0381" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2.stl" scale="1 1 1" />
-    <mesh name="asset_0382" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1.stl" scale="1 1 1" />
-    <mesh name="asset_0383" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_1.stl" scale="1 1 1" />
-    <mesh name="asset_0384" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_2.stl" scale="1 1 1" />
-    <mesh name="asset_0385" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_3.stl" scale="1 1 1" />
-    <mesh name="asset_0386" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_4.stl" scale="1 1 1" />
-    <mesh name="asset_0387" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_5.stl" scale="1 1 1" />
-    <mesh name="asset_0388" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_1_6.stl" scale="1 1 1" />
-    <mesh name="asset_0389" file="../../Assembly 1/assembly_1/meshes/_8x1_male_header_pins_v2_2.stl" scale="1 1 1" />
-    <mesh name="asset_0390" file="../../Assembly 1/assembly_1/meshes/a71ba716_8551_11ed_a139_00155d22e2d7_part.stl" scale="1 1 1" />
-    <mesh name="asset_0391" file="../../Assembly 1/assembly_1/meshes/a71ba78e_8551_11ed_a139_00155d22e2d7_part.stl" scale="1 1 1" />
-    <mesh name="asset_0392" file="../../Assembly 1/assembly_1/meshes/a71ba78e_8551_11ed_a139_00155d22e2d7_part_1.stl" scale="1 1 1" />
-    <mesh name="asset_0393" file="../../Assembly 1/assembly_1/meshes/mini_motor_1_solid1.stl" scale="1 1 1" />
-    <mesh name="asset_0394" file="../../Assembly 1/assembly_1/meshes/output_shaft_2_solid1.stl" scale="1 1 1" />
-    <mesh name="asset_0395" file="../../Assembly 1/assembly_1/meshes/sra_board_unsaved_export_ok3Bnj_PCB.stl" scale="1 1 1" />
+    <mesh name="asset_0000" file="../../Wall-E-URDF/meshes/BarrelJack_Horizontal.stl" scale="1 1 1" />
+    <mesh name="asset_0001" file="../../Wall-E-URDF/meshes/BarrelJack_Horizontal_1.stl" scale="1 1 1" />
+    <mesh name="asset_0002" file="../../Wall-E-URDF/meshes/BarrelJack_Horizontal_2.stl" scale="1 1 1" />
+    <mesh name="asset_0003" file="../../Wall-E-URDF/meshes/BarrelJack_Horizontal_3.stl" scale="1 1 1" />
+    <mesh name="asset_0004" file="../../Wall-E-URDF/meshes/BarrelJack_Horizontal_4.stl" scale="1 1 1" />
+    <mesh name="asset_0005" file="../../Wall-E-URDF/meshes/Battery18650__NONE_2.stl" scale="1 1 1" />
+    <mesh name="asset_0006" file="../../Wall-E-URDF/meshes/BatteryCasePlastic__Fillet1.stl" scale="1 1 1" />
+    <mesh name="asset_0007" file="../../Wall-E-URDF/meshes/BatteryCaseSpring__Cut_Extrude2.stl" scale="1 1 1" />
+    <mesh name="asset_0008" file="../../Wall-E-URDF/meshes/Board_001.stl" scale="1 1 1" />
+    <mesh name="asset_0009" file="../../Wall-E-URDF/meshes/Body___Adhesive_Pad.stl" scale="1 1 1" />
+    <mesh name="asset_0010" file="../../Wall-E-URDF/meshes/Body___Back_Panel.stl" scale="1 1 1" />
+    <mesh name="asset_0011" file="../../Wall-E-URDF/meshes/Body___Black_Tape.stl" scale="1 1 1" />
+    <mesh name="asset_0012" file="../../Wall-E-URDF/meshes/Body___Flex_Connector_Bend.stl" scale="1 1 1" />
+    <mesh name="asset_0013" file="../../Wall-E-URDF/meshes/Body___Flex_Connector_Terminals.stl" scale="1 1 1" />
+    <mesh name="asset_0014" file="../../Wall-E-URDF/meshes/Body___Front_Panel.stl" scale="1 1 1" />
+    <mesh name="asset_0015" file="../../Wall-E-URDF/meshes/Body___PCB.stl" scale="1 1 1" />
+    <mesh name="asset_0016" file="../../Wall-E-URDF/meshes/Body___Protective_Foil.stl" scale="1 1 1" />
+    <mesh name="asset_0017" file="../../Wall-E-URDF/meshes/Body___Screen_Border.stl" scale="1 1 1" />
+    <mesh name="asset_0018" file="../../Wall-E-URDF/meshes/COMPOUND.stl" scale="1 1 1" />
+    <mesh name="asset_0019" file="../../Wall-E-URDF/meshes/COMPOUND_1.stl" scale="1 1 1" />
+    <mesh name="asset_0020" file="../../Wall-E-URDF/meshes/COMPOUND_10.stl" scale="1 1 1" />
+    <mesh name="asset_0021" file="../../Wall-E-URDF/meshes/COMPOUND_100.stl" scale="1 1 1" />
+    <mesh name="asset_0022" file="../../Wall-E-URDF/meshes/COMPOUND_101.stl" scale="1 1 1" />
+    <mesh name="asset_0023" file="../../Wall-E-URDF/meshes/COMPOUND_102.stl" scale="1 1 1" />
+    <mesh name="asset_0024" file="../../Wall-E-URDF/meshes/COMPOUND_103.stl" scale="1 1 1" />
+    <mesh name="asset_0025" file="../../Wall-E-URDF/meshes/COMPOUND_104.stl" scale="1 1 1" />
+    <mesh name="asset_0026" file="../../Wall-E-URDF/meshes/COMPOUND_105.stl" scale="1 1 1" />
+    <mesh name="asset_0027" file="../../Wall-E-URDF/meshes/COMPOUND_106.stl" scale="1 1 1" />
+    <mesh name="asset_0028" file="../../Wall-E-URDF/meshes/COMPOUND_107.stl" scale="1 1 1" />
+    <mesh name="asset_0029" file="../../Wall-E-URDF/meshes/COMPOUND_108.stl" scale="1 1 1" />
+    <mesh name="asset_0030" file="../../Wall-E-URDF/meshes/COMPOUND_109.stl" scale="1 1 1" />
+    <mesh name="asset_0031" file="../../Wall-E-URDF/meshes/COMPOUND_11.stl" scale="1 1 1" />
+    <mesh name="asset_0032" file="../../Wall-E-URDF/meshes/COMPOUND_110.stl" scale="1 1 1" />
+    <mesh name="asset_0033" file="../../Wall-E-URDF/meshes/COMPOUND_111.stl" scale="1 1 1" />
+    <mesh name="asset_0034" file="../../Wall-E-URDF/meshes/COMPOUND_112.stl" scale="1 1 1" />
+    <mesh name="asset_0035" file="../../Wall-E-URDF/meshes/COMPOUND_113.stl" scale="1 1 1" />
+    <mesh name="asset_0036" file="../../Wall-E-URDF/meshes/COMPOUND_114.stl" scale="1 1 1" />
+    <mesh name="asset_0037" file="../../Wall-E-URDF/meshes/COMPOUND_115.stl" scale="1 1 1" />
+    <mesh name="asset_0038" file="../../Wall-E-URDF/meshes/COMPOUND_116.stl" scale="1 1 1" />
+    <mesh name="asset_0039" file="../../Wall-E-URDF/meshes/COMPOUND_117.stl" scale="1 1 1" />
+    <mesh name="asset_0040" file="../../Wall-E-URDF/meshes/COMPOUND_118.stl" scale="1 1 1" />
+    <mesh name="asset_0041" file="../../Wall-E-URDF/meshes/COMPOUND_119.stl" scale="1 1 1" />
+    <mesh name="asset_0042" file="../../Wall-E-URDF/meshes/COMPOUND_12.stl" scale="1 1 1" />
+    <mesh name="asset_0043" file="../../Wall-E-URDF/meshes/COMPOUND_120.stl" scale="1 1 1" />
+    <mesh name="asset_0044" file="../../Wall-E-URDF/meshes/COMPOUND_121.stl" scale="1 1 1" />
+    <mesh name="asset_0045" file="../../Wall-E-URDF/meshes/COMPOUND_122.stl" scale="1 1 1" />
+    <mesh name="asset_0046" file="../../Wall-E-URDF/meshes/COMPOUND_123.stl" scale="1 1 1" />
+    <mesh name="asset_0047" file="../../Wall-E-URDF/meshes/COMPOUND_124.stl" scale="1 1 1" />
+    <mesh name="asset_0048" file="../../Wall-E-URDF/meshes/COMPOUND_125.stl" scale="1 1 1" />
+    <mesh name="asset_0049" file="../../Wall-E-URDF/meshes/COMPOUND_126.stl" scale="1 1 1" />
+    <mesh name="asset_0050" file="../../Wall-E-URDF/meshes/COMPOUND_127.stl" scale="1 1 1" />
+    <mesh name="asset_0051" file="../../Wall-E-URDF/meshes/COMPOUND_128.stl" scale="1 1 1" />
+    <mesh name="asset_0052" file="../../Wall-E-URDF/meshes/COMPOUND_129.stl" scale="1 1 1" />
+    <mesh name="asset_0053" file="../../Wall-E-URDF/meshes/COMPOUND_13.stl" scale="1 1 1" />
+    <mesh name="asset_0054" file="../../Wall-E-URDF/meshes/COMPOUND_130.stl" scale="1 1 1" />
+    <mesh name="asset_0055" file="../../Wall-E-URDF/meshes/COMPOUND_131.stl" scale="1 1 1" />
+    <mesh name="asset_0056" file="../../Wall-E-URDF/meshes/COMPOUND_132.stl" scale="1 1 1" />
+    <mesh name="asset_0057" file="../../Wall-E-URDF/meshes/COMPOUND_133.stl" scale="1 1 1" />
+    <mesh name="asset_0058" file="../../Wall-E-URDF/meshes/COMPOUND_134.stl" scale="1 1 1" />
+    <mesh name="asset_0059" file="../../Wall-E-URDF/meshes/COMPOUND_135.stl" scale="1 1 1" />
+    <mesh name="asset_0060" file="../../Wall-E-URDF/meshes/COMPOUND_136.stl" scale="1 1 1" />
+    <mesh name="asset_0061" file="../../Wall-E-URDF/meshes/COMPOUND_137.stl" scale="1 1 1" />
+    <mesh name="asset_0062" file="../../Wall-E-URDF/meshes/COMPOUND_138.stl" scale="1 1 1" />
+    <mesh name="asset_0063" file="../../Wall-E-URDF/meshes/COMPOUND_139.stl" scale="1 1 1" />
+    <mesh name="asset_0064" file="../../Wall-E-URDF/meshes/COMPOUND_14.stl" scale="1 1 1" />
+    <mesh name="asset_0065" file="../../Wall-E-URDF/meshes/COMPOUND_140.stl" scale="1 1 1" />
+    <mesh name="asset_0066" file="../../Wall-E-URDF/meshes/COMPOUND_141.stl" scale="1 1 1" />
+    <mesh name="asset_0067" file="../../Wall-E-URDF/meshes/COMPOUND_142.stl" scale="1 1 1" />
+    <mesh name="asset_0068" file="../../Wall-E-URDF/meshes/COMPOUND_143.stl" scale="1 1 1" />
+    <mesh name="asset_0069" file="../../Wall-E-URDF/meshes/COMPOUND_144.stl" scale="1 1 1" />
+    <mesh name="asset_0070" file="../../Wall-E-URDF/meshes/COMPOUND_145.stl" scale="1 1 1" />
+    <mesh name="asset_0071" file="../../Wall-E-URDF/meshes/COMPOUND_146.stl" scale="1 1 1" />
+    <mesh name="asset_0072" file="../../Wall-E-URDF/meshes/COMPOUND_147.stl" scale="1 1 1" />
+    <mesh name="asset_0073" file="../../Wall-E-URDF/meshes/COMPOUND_148.stl" scale="1 1 1" />
+    <mesh name="asset_0074" file="../../Wall-E-URDF/meshes/COMPOUND_149.stl" scale="1 1 1" />
+    <mesh name="asset_0075" file="../../Wall-E-URDF/meshes/COMPOUND_15.stl" scale="1 1 1" />
+    <mesh name="asset_0076" file="../../Wall-E-URDF/meshes/COMPOUND_150.stl" scale="1 1 1" />
+    <mesh name="asset_0077" file="../../Wall-E-URDF/meshes/COMPOUND_151.stl" scale="1 1 1" />
+    <mesh name="asset_0078" file="../../Wall-E-URDF/meshes/COMPOUND_152.stl" scale="1 1 1" />
+    <mesh name="asset_0079" file="../../Wall-E-URDF/meshes/COMPOUND_153.stl" scale="1 1 1" />
+    <mesh name="asset_0080" file="../../Wall-E-URDF/meshes/COMPOUND_154.stl" scale="1 1 1" />
+    <mesh name="asset_0081" file="../../Wall-E-URDF/meshes/COMPOUND_155.stl" scale="1 1 1" />
+    <mesh name="asset_0082" file="../../Wall-E-URDF/meshes/COMPOUND_156.stl" scale="1 1 1" />
+    <mesh name="asset_0083" file="../../Wall-E-URDF/meshes/COMPOUND_157.stl" scale="1 1 1" />
+    <mesh name="asset_0084" file="../../Wall-E-URDF/meshes/COMPOUND_158.stl" scale="1 1 1" />
+    <mesh name="asset_0085" file="../../Wall-E-URDF/meshes/COMPOUND_159.stl" scale="1 1 1" />
+    <mesh name="asset_0086" file="../../Wall-E-URDF/meshes/COMPOUND_16.stl" scale="1 1 1" />
+    <mesh name="asset_0087" file="../../Wall-E-URDF/meshes/COMPOUND_160.stl" scale="1 1 1" />
+    <mesh name="asset_0088" file="../../Wall-E-URDF/meshes/COMPOUND_161.stl" scale="1 1 1" />
+    <mesh name="asset_0089" file="../../Wall-E-URDF/meshes/COMPOUND_162.stl" scale="1 1 1" />
+    <mesh name="asset_0090" file="../../Wall-E-URDF/meshes/COMPOUND_163.stl" scale="1 1 1" />
+    <mesh name="asset_0091" file="../../Wall-E-URDF/meshes/COMPOUND_164.stl" scale="1 1 1" />
+    <mesh name="asset_0092" file="../../Wall-E-URDF/meshes/COMPOUND_165.stl" scale="1 1 1" />
+    <mesh name="asset_0093" file="../../Wall-E-URDF/meshes/COMPOUND_166.stl" scale="1 1 1" />
+    <mesh name="asset_0094" file="../../Wall-E-URDF/meshes/COMPOUND_167.stl" scale="1 1 1" />
+    <mesh name="asset_0095" file="../../Wall-E-URDF/meshes/COMPOUND_168.stl" scale="1 1 1" />
+    <mesh name="asset_0096" file="../../Wall-E-URDF/meshes/COMPOUND_169.stl" scale="1 1 1" />
+    <mesh name="asset_0097" file="../../Wall-E-URDF/meshes/COMPOUND_17.stl" scale="1 1 1" />
+    <mesh name="asset_0098" file="../../Wall-E-URDF/meshes/COMPOUND_170.stl" scale="1 1 1" />
+    <mesh name="asset_0099" file="../../Wall-E-URDF/meshes/COMPOUND_171.stl" scale="1 1 1" />
+    <mesh name="asset_0100" file="../../Wall-E-URDF/meshes/COMPOUND_172.stl" scale="1 1 1" />
+    <mesh name="asset_0101" file="../../Wall-E-URDF/meshes/COMPOUND_173.stl" scale="1 1 1" />
+    <mesh name="asset_0102" file="../../Wall-E-URDF/meshes/COMPOUND_174.stl" scale="1 1 1" />
+    <mesh name="asset_0103" file="../../Wall-E-URDF/meshes/COMPOUND_175.stl" scale="1 1 1" />
+    <mesh name="asset_0104" file="../../Wall-E-URDF/meshes/COMPOUND_176.stl" scale="1 1 1" />
+    <mesh name="asset_0105" file="../../Wall-E-URDF/meshes/COMPOUND_177.stl" scale="1 1 1" />
+    <mesh name="asset_0106" file="../../Wall-E-URDF/meshes/COMPOUND_178.stl" scale="1 1 1" />
+    <mesh name="asset_0107" file="../../Wall-E-URDF/meshes/COMPOUND_179.stl" scale="1 1 1" />
+    <mesh name="asset_0108" file="../../Wall-E-URDF/meshes/COMPOUND_18.stl" scale="1 1 1" />
+    <mesh name="asset_0109" file="../../Wall-E-URDF/meshes/COMPOUND_180.stl" scale="1 1 1" />
+    <mesh name="asset_0110" file="../../Wall-E-URDF/meshes/COMPOUND_181.stl" scale="1 1 1" />
+    <mesh name="asset_0111" file="../../Wall-E-URDF/meshes/COMPOUND_182.stl" scale="1 1 1" />
+    <mesh name="asset_0112" file="../../Wall-E-URDF/meshes/COMPOUND_183.stl" scale="1 1 1" />
+    <mesh name="asset_0113" file="../../Wall-E-URDF/meshes/COMPOUND_184.stl" scale="1 1 1" />
+    <mesh name="asset_0114" file="../../Wall-E-URDF/meshes/COMPOUND_185.stl" scale="1 1 1" />
+    <mesh name="asset_0115" file="../../Wall-E-URDF/meshes/COMPOUND_186.stl" scale="1 1 1" />
+    <mesh name="asset_0116" file="../../Wall-E-URDF/meshes/COMPOUND_187.stl" scale="1 1 1" />
+    <mesh name="asset_0117" file="../../Wall-E-URDF/meshes/COMPOUND_188.stl" scale="1 1 1" />
+    <mesh name="asset_0118" file="../../Wall-E-URDF/meshes/COMPOUND_189.stl" scale="1 1 1" />
+    <mesh name="asset_0119" file="../../Wall-E-URDF/meshes/COMPOUND_19.stl" scale="1 1 1" />
+    <mesh name="asset_0120" file="../../Wall-E-URDF/meshes/COMPOUND_190.stl" scale="1 1 1" />
+    <mesh name="asset_0121" file="../../Wall-E-URDF/meshes/COMPOUND_191.stl" scale="1 1 1" />
+    <mesh name="asset_0122" file="../../Wall-E-URDF/meshes/COMPOUND_192.stl" scale="1 1 1" />
+    <mesh name="asset_0123" file="../../Wall-E-URDF/meshes/COMPOUND_193.stl" scale="1 1 1" />
+    <mesh name="asset_0124" file="../../Wall-E-URDF/meshes/COMPOUND_194.stl" scale="1 1 1" />
+    <mesh name="asset_0125" file="../../Wall-E-URDF/meshes/COMPOUND_195.stl" scale="1 1 1" />
+    <mesh name="asset_0126" file="../../Wall-E-URDF/meshes/COMPOUND_196.stl" scale="1 1 1" />
+    <mesh name="asset_0127" file="../../Wall-E-URDF/meshes/COMPOUND_197.stl" scale="1 1 1" />
+    <mesh name="asset_0128" file="../../Wall-E-URDF/meshes/COMPOUND_198.stl" scale="1 1 1" />
+    <mesh name="asset_0129" file="../../Wall-E-URDF/meshes/COMPOUND_199.stl" scale="1 1 1" />
+    <mesh name="asset_0130" file="../../Wall-E-URDF/meshes/COMPOUND_2.stl" scale="1 1 1" />
+    <mesh name="asset_0131" file="../../Wall-E-URDF/meshes/COMPOUND_20.stl" scale="1 1 1" />
+    <mesh name="asset_0132" file="../../Wall-E-URDF/meshes/COMPOUND_200.stl" scale="1 1 1" />
+    <mesh name="asset_0133" file="../../Wall-E-URDF/meshes/COMPOUND_201.stl" scale="1 1 1" />
+    <mesh name="asset_0134" file="../../Wall-E-URDF/meshes/COMPOUND_202.stl" scale="1 1 1" />
+    <mesh name="asset_0135" file="../../Wall-E-URDF/meshes/COMPOUND_203.stl" scale="1 1 1" />
+    <mesh name="asset_0136" file="../../Wall-E-URDF/meshes/COMPOUND_204.stl" scale="1 1 1" />
+    <mesh name="asset_0137" file="../../Wall-E-URDF/meshes/COMPOUND_21.stl" scale="1 1 1" />
+    <mesh name="asset_0138" file="../../Wall-E-URDF/meshes/COMPOUND_22.stl" scale="1 1 1" />
+    <mesh name="asset_0139" file="../../Wall-E-URDF/meshes/COMPOUND_23.stl" scale="1 1 1" />
+    <mesh name="asset_0140" file="../../Wall-E-URDF/meshes/COMPOUND_24.stl" scale="1 1 1" />
+    <mesh name="asset_0141" file="../../Wall-E-URDF/meshes/COMPOUND_25.stl" scale="1 1 1" />
+    <mesh name="asset_0142" file="../../Wall-E-URDF/meshes/COMPOUND_26.stl" scale="1 1 1" />
+    <mesh name="asset_0143" file="../../Wall-E-URDF/meshes/COMPOUND_27.stl" scale="1 1 1" />
+    <mesh name="asset_0144" file="../../Wall-E-URDF/meshes/COMPOUND_28.stl" scale="1 1 1" />
+    <mesh name="asset_0145" file="../../Wall-E-URDF/meshes/COMPOUND_29.stl" scale="1 1 1" />
+    <mesh name="asset_0146" file="../../Wall-E-URDF/meshes/COMPOUND_3.stl" scale="1 1 1" />
+    <mesh name="asset_0147" file="../../Wall-E-URDF/meshes/COMPOUND_30.stl" scale="1 1 1" />
+    <mesh name="asset_0148" file="../../Wall-E-URDF/meshes/COMPOUND_31.stl" scale="1 1 1" />
+    <mesh name="asset_0149" file="../../Wall-E-URDF/meshes/COMPOUND_32.stl" scale="1 1 1" />
+    <mesh name="asset_0150" file="../../Wall-E-URDF/meshes/COMPOUND_33.stl" scale="1 1 1" />
+    <mesh name="asset_0151" file="../../Wall-E-URDF/meshes/COMPOUND_34.stl" scale="1 1 1" />
+    <mesh name="asset_0152" file="../../Wall-E-URDF/meshes/COMPOUND_35.stl" scale="1 1 1" />
+    <mesh name="asset_0153" file="../../Wall-E-URDF/meshes/COMPOUND_36.stl" scale="1 1 1" />
+    <mesh name="asset_0154" file="../../Wall-E-URDF/meshes/COMPOUND_37.stl" scale="1 1 1" />
+    <mesh name="asset_0155" file="../../Wall-E-URDF/meshes/COMPOUND_38.stl" scale="1 1 1" />
+    <mesh name="asset_0156" file="../../Wall-E-URDF/meshes/COMPOUND_39.stl" scale="1 1 1" />
+    <mesh name="asset_0157" file="../../Wall-E-URDF/meshes/COMPOUND_4.stl" scale="1 1 1" />
+    <mesh name="asset_0158" file="../../Wall-E-URDF/meshes/COMPOUND_40.stl" scale="1 1 1" />
+    <mesh name="asset_0159" file="../../Wall-E-URDF/meshes/COMPOUND_41.stl" scale="1 1 1" />
+    <mesh name="asset_0160" file="../../Wall-E-URDF/meshes/COMPOUND_42.stl" scale="1 1 1" />
+    <mesh name="asset_0161" file="../../Wall-E-URDF/meshes/COMPOUND_43.stl" scale="1 1 1" />
+    <mesh name="asset_0162" file="../../Wall-E-URDF/meshes/COMPOUND_44.stl" scale="1 1 1" />
+    <mesh name="asset_0163" file="../../Wall-E-URDF/meshes/COMPOUND_45.stl" scale="1 1 1" />
+    <mesh name="asset_0164" file="../../Wall-E-URDF/meshes/COMPOUND_46.stl" scale="1 1 1" />
+    <mesh name="asset_0165" file="../../Wall-E-URDF/meshes/COMPOUND_47.stl" scale="1 1 1" />
+    <mesh name="asset_0166" file="../../Wall-E-URDF/meshes/COMPOUND_48.stl" scale="1 1 1" />
+    <mesh name="asset_0167" file="../../Wall-E-URDF/meshes/COMPOUND_49.stl" scale="1 1 1" />
+    <mesh name="asset_0168" file="../../Wall-E-URDF/meshes/COMPOUND_5.stl" scale="1 1 1" />
+    <mesh name="asset_0169" file="../../Wall-E-URDF/meshes/COMPOUND_50.stl" scale="1 1 1" />
+    <mesh name="asset_0170" file="../../Wall-E-URDF/meshes/COMPOUND_51.stl" scale="1 1 1" />
+    <mesh name="asset_0171" file="../../Wall-E-URDF/meshes/COMPOUND_52.stl" scale="1 1 1" />
+    <mesh name="asset_0172" file="../../Wall-E-URDF/meshes/COMPOUND_53.stl" scale="1 1 1" />
+    <mesh name="asset_0173" file="../../Wall-E-URDF/meshes/COMPOUND_54.stl" scale="1 1 1" />
+    <mesh name="asset_0174" file="../../Wall-E-URDF/meshes/COMPOUND_55.stl" scale="1 1 1" />
+    <mesh name="asset_0175" file="../../Wall-E-URDF/meshes/COMPOUND_56.stl" scale="1 1 1" />
+    <mesh name="asset_0176" file="../../Wall-E-URDF/meshes/COMPOUND_57.stl" scale="1 1 1" />
+    <mesh name="asset_0177" file="../../Wall-E-URDF/meshes/COMPOUND_58.stl" scale="1 1 1" />
+    <mesh name="asset_0178" file="../../Wall-E-URDF/meshes/COMPOUND_59.stl" scale="1 1 1" />
+    <mesh name="asset_0179" file="../../Wall-E-URDF/meshes/COMPOUND_6.stl" scale="1 1 1" />
+    <mesh name="asset_0180" file="../../Wall-E-URDF/meshes/COMPOUND_60.stl" scale="1 1 1" />
+    <mesh name="asset_0181" file="../../Wall-E-URDF/meshes/COMPOUND_61.stl" scale="1 1 1" />
+    <mesh name="asset_0182" file="../../Wall-E-URDF/meshes/COMPOUND_62.stl" scale="1 1 1" />
+    <mesh name="asset_0183" file="../../Wall-E-URDF/meshes/COMPOUND_63.stl" scale="1 1 1" />
+    <mesh name="asset_0184" file="../../Wall-E-URDF/meshes/COMPOUND_64.stl" scale="1 1 1" />
+    <mesh name="asset_0185" file="../../Wall-E-URDF/meshes/COMPOUND_65.stl" scale="1 1 1" />
+    <mesh name="asset_0186" file="../../Wall-E-URDF/meshes/COMPOUND_66.stl" scale="1 1 1" />
+    <mesh name="asset_0187" file="../../Wall-E-URDF/meshes/COMPOUND_67.stl" scale="1 1 1" />
+    <mesh name="asset_0188" file="../../Wall-E-URDF/meshes/COMPOUND_68.stl" scale="1 1 1" />
+    <mesh name="asset_0189" file="../../Wall-E-URDF/meshes/COMPOUND_69.stl" scale="1 1 1" />
+    <mesh name="asset_0190" file="../../Wall-E-URDF/meshes/COMPOUND_7.stl" scale="1 1 1" />
+    <mesh name="asset_0191" file="../../Wall-E-URDF/meshes/COMPOUND_70.stl" scale="1 1 1" />
+    <mesh name="asset_0192" file="../../Wall-E-URDF/meshes/COMPOUND_71.stl" scale="1 1 1" />
+    <mesh name="asset_0193" file="../../Wall-E-URDF/meshes/COMPOUND_72.stl" scale="1 1 1" />
+    <mesh name="asset_0194" file="../../Wall-E-URDF/meshes/COMPOUND_73.stl" scale="1 1 1" />
+    <mesh name="asset_0195" file="../../Wall-E-URDF/meshes/COMPOUND_74.stl" scale="1 1 1" />
+    <mesh name="asset_0196" file="../../Wall-E-URDF/meshes/COMPOUND_75.stl" scale="1 1 1" />
+    <mesh name="asset_0197" file="../../Wall-E-URDF/meshes/COMPOUND_76.stl" scale="1 1 1" />
+    <mesh name="asset_0198" file="../../Wall-E-URDF/meshes/COMPOUND_77.stl" scale="1 1 1" />
+    <mesh name="asset_0199" file="../../Wall-E-URDF/meshes/COMPOUND_78.stl" scale="1 1 1" />
+    <mesh name="asset_0200" file="../../Wall-E-URDF/meshes/COMPOUND_79.stl" scale="1 1 1" />
+    <mesh name="asset_0201" file="../../Wall-E-URDF/meshes/COMPOUND_8.stl" scale="1 1 1" />
+    <mesh name="asset_0202" file="../../Wall-E-URDF/meshes/COMPOUND_80.stl" scale="1 1 1" />
+    <mesh name="asset_0203" file="../../Wall-E-URDF/meshes/COMPOUND_81.stl" scale="1 1 1" />
+    <mesh name="asset_0204" file="../../Wall-E-URDF/meshes/COMPOUND_82.stl" scale="1 1 1" />
+    <mesh name="asset_0205" file="../../Wall-E-URDF/meshes/COMPOUND_83.stl" scale="1 1 1" />
+    <mesh name="asset_0206" file="../../Wall-E-URDF/meshes/COMPOUND_84.stl" scale="1 1 1" />
+    <mesh name="asset_0207" file="../../Wall-E-URDF/meshes/COMPOUND_85.stl" scale="1 1 1" />
+    <mesh name="asset_0208" file="../../Wall-E-URDF/meshes/COMPOUND_86.stl" scale="1 1 1" />
+    <mesh name="asset_0209" file="../../Wall-E-URDF/meshes/COMPOUND_87.stl" scale="1 1 1" />
+    <mesh name="asset_0210" file="../../Wall-E-URDF/meshes/COMPOUND_88.stl" scale="1 1 1" />
+    <mesh name="asset_0211" file="../../Wall-E-URDF/meshes/COMPOUND_89.stl" scale="1 1 1" />
+    <mesh name="asset_0212" file="../../Wall-E-URDF/meshes/COMPOUND_9.stl" scale="1 1 1" />
+    <mesh name="asset_0213" file="../../Wall-E-URDF/meshes/COMPOUND_90.stl" scale="1 1 1" />
+    <mesh name="asset_0214" file="../../Wall-E-URDF/meshes/COMPOUND_91.stl" scale="1 1 1" />
+    <mesh name="asset_0215" file="../../Wall-E-URDF/meshes/COMPOUND_92.stl" scale="1 1 1" />
+    <mesh name="asset_0216" file="../../Wall-E-URDF/meshes/COMPOUND_93.stl" scale="1 1 1" />
+    <mesh name="asset_0217" file="../../Wall-E-URDF/meshes/COMPOUND_94.stl" scale="1 1 1" />
+    <mesh name="asset_0218" file="../../Wall-E-URDF/meshes/COMPOUND_95.stl" scale="1 1 1" />
+    <mesh name="asset_0219" file="../../Wall-E-URDF/meshes/COMPOUND_96.stl" scale="1 1 1" />
+    <mesh name="asset_0220" file="../../Wall-E-URDF/meshes/COMPOUND_97.stl" scale="1 1 1" />
+    <mesh name="asset_0221" file="../../Wall-E-URDF/meshes/COMPOUND_98.stl" scale="1 1 1" />
+    <mesh name="asset_0222" file="../../Wall-E-URDF/meshes/COMPOUND_99.stl" scale="1 1 1" />
+    <mesh name="asset_0223" file="../../Wall-E-URDF/meshes/C_0805_2012Metric_10.stl" scale="1 1 1" />
+    <mesh name="asset_0224" file="../../Wall-E-URDF/meshes/C_1206_3216Metric_2.stl" scale="1 1 1" />
+    <mesh name="asset_0225" file="../../Wall-E-URDF/meshes/D_SMA.stl" scale="1 1 1" />
+    <mesh name="asset_0226" file="../../Wall-E-URDF/meshes/D_SMB.stl" scale="1 1 1" />
+    <mesh name="asset_0227" file="../../Wall-E-URDF/meshes/Diode_2_001.stl" scale="1 1 1" />
+    <mesh name="asset_0228" file="../../Wall-E-URDF/meshes/Diode_2_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0229" file="../../Wall-E-URDF/meshes/Diode_2_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0230" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1.stl" scale="1 1 1" />
+    <mesh name="asset_0231" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0232" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_10.stl" scale="1 1 1" />
+    <mesh name="asset_0233" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_11.stl" scale="1 1 1" />
+    <mesh name="asset_0234" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_12.stl" scale="1 1 1" />
+    <mesh name="asset_0235" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_13.stl" scale="1 1 1" />
+    <mesh name="asset_0236" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_14.stl" scale="1 1 1" />
+    <mesh name="asset_0237" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_15.stl" scale="1 1 1" />
+    <mesh name="asset_0238" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_16.stl" scale="1 1 1" />
+    <mesh name="asset_0239" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_17.stl" scale="1 1 1" />
+    <mesh name="asset_0240" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_18.stl" scale="1 1 1" />
+    <mesh name="asset_0241" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_19.stl" scale="1 1 1" />
+    <mesh name="asset_0242" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_2.stl" scale="1 1 1" />
+    <mesh name="asset_0243" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_20.stl" scale="1 1 1" />
+    <mesh name="asset_0244" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_21.stl" scale="1 1 1" />
+    <mesh name="asset_0245" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_22.stl" scale="1 1 1" />
+    <mesh name="asset_0246" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_23.stl" scale="1 1 1" />
+    <mesh name="asset_0247" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_24.stl" scale="1 1 1" />
+    <mesh name="asset_0248" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_25.stl" scale="1 1 1" />
+    <mesh name="asset_0249" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_26.stl" scale="1 1 1" />
+    <mesh name="asset_0250" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_27.stl" scale="1 1 1" />
+    <mesh name="asset_0251" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_28.stl" scale="1 1 1" />
+    <mesh name="asset_0252" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_29.stl" scale="1 1 1" />
+    <mesh name="asset_0253" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_3.stl" scale="1 1 1" />
+    <mesh name="asset_0254" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_30.stl" scale="1 1 1" />
+    <mesh name="asset_0255" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_31.stl" scale="1 1 1" />
+    <mesh name="asset_0256" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_32.stl" scale="1 1 1" />
+    <mesh name="asset_0257" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_33.stl" scale="1 1 1" />
+    <mesh name="asset_0258" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_34.stl" scale="1 1 1" />
+    <mesh name="asset_0259" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_35.stl" scale="1 1 1" />
+    <mesh name="asset_0260" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_36.stl" scale="1 1 1" />
+    <mesh name="asset_0261" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_37.stl" scale="1 1 1" />
+    <mesh name="asset_0262" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_38.stl" scale="1 1 1" />
+    <mesh name="asset_0263" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_39.stl" scale="1 1 1" />
+    <mesh name="asset_0264" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_4.stl" scale="1 1 1" />
+    <mesh name="asset_0265" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_40.stl" scale="1 1 1" />
+    <mesh name="asset_0266" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_41.stl" scale="1 1 1" />
+    <mesh name="asset_0267" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_42.stl" scale="1 1 1" />
+    <mesh name="asset_0268" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_43.stl" scale="1 1 1" />
+    <mesh name="asset_0269" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_44.stl" scale="1 1 1" />
+    <mesh name="asset_0270" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_45.stl" scale="1 1 1" />
+    <mesh name="asset_0271" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_46.stl" scale="1 1 1" />
+    <mesh name="asset_0272" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_47.stl" scale="1 1 1" />
+    <mesh name="asset_0273" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_48.stl" scale="1 1 1" />
+    <mesh name="asset_0274" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_49.stl" scale="1 1 1" />
+    <mesh name="asset_0275" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_5.stl" scale="1 1 1" />
+    <mesh name="asset_0276" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_50.stl" scale="1 1 1" />
+    <mesh name="asset_0277" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_51.stl" scale="1 1 1" />
+    <mesh name="asset_0278" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_6.stl" scale="1 1 1" />
+    <mesh name="asset_0279" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_7.stl" scale="1 1 1" />
+    <mesh name="asset_0280" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_8.stl" scale="1 1 1" />
+    <mesh name="asset_0281" file="../../Wall-E-URDF/meshes/ESP32_S3_WROOM_1_9.stl" scale="1 1 1" />
+    <mesh name="asset_0282" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings.stl" scale="1 1 1" />
+    <mesh name="asset_0283" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_1.stl" scale="1 1 1" />
+    <mesh name="asset_0284" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_2.stl" scale="1 1 1" />
+    <mesh name="asset_0285" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_3.stl" scale="1 1 1" />
+    <mesh name="asset_0286" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_4.stl" scale="1 1 1" />
+    <mesh name="asset_0287" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_5.stl" scale="1 1 1" />
+    <mesh name="asset_0288" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_6.stl" scale="1 1 1" />
+    <mesh name="asset_0289" file="../../Wall-E-URDF/meshes/Extrude___Annular_Rings_7.stl" scale="1 1 1" />
+    <mesh name="asset_0290" file="../../Wall-E-URDF/meshes/Fuse_1210_3225Metric.stl" scale="1 1 1" />
+    <mesh name="asset_0291" file="../../Wall-E-URDF/meshes/Fuse_1210_3225Metric_1.stl" scale="1 1 1" />
+    <mesh name="asset_0292" file="../../Wall-E-URDF/meshes/HTSSOP_24_1EP_4_4x7_8mm_P0_65mm_EP3_4x7_8mm_Mask2_4x4_68mm.stl" scale="1 1 1" />
+    <mesh name="asset_0293" file="../../Wall-E-URDF/meshes/JST_B2B_EH_A_2.stl" scale="1 1 1" />
+    <mesh name="asset_0294" file="../../Wall-E-URDF/meshes/LED_0805_2012Metric_51.stl" scale="1 1 1" />
+    <mesh name="asset_0295" file="../../Wall-E-URDF/meshes/MSK12C02.stl" scale="1 1 1" />
+    <mesh name="asset_0296" file="../../Wall-E-URDF/meshes/MSK12C02_1.stl" scale="1 1 1" />
+    <mesh name="asset_0297" file="../../Wall-E-URDF/meshes/MSK12C02_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0298" file="../../Wall-E-URDF/meshes/MSK12C02_1_2.stl" scale="1 1 1" />
+    <mesh name="asset_0299" file="../../Wall-E-URDF/meshes/MSK12C02_1_3.stl" scale="1 1 1" />
+    <mesh name="asset_0300" file="../../Wall-E-URDF/meshes/MSK12C02_1_4.stl" scale="1 1 1" />
+    <mesh name="asset_0301" file="../../Wall-E-URDF/meshes/MSK12C02_2.stl" scale="1 1 1" />
+    <mesh name="asset_0302" file="../../Wall-E-URDF/meshes/MSK12C02_3.stl" scale="1 1 1" />
+    <mesh name="asset_0303" file="../../Wall-E-URDF/meshes/Part_1.stl" scale="1 1 1" />
+    <mesh name="asset_0304" file="../../Wall-E-URDF/meshes/Part_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0305" file="../../Wall-E-URDF/meshes/Part_2.stl" scale="1 1 1" />
+    <mesh name="asset_0306" file="../../Wall-E-URDF/meshes/PinHeader_1x03_P254mm_Vertical.stl" scale="1 1 1" />
+    <mesh name="asset_0307" file="../../Wall-E-URDF/meshes/PinHeader_1x10_P254mm_Vertical.stl" scale="1 1 1" />
+    <mesh name="asset_0308" file="../../Wall-E-URDF/meshes/PinHeader_1x12_P254mm_Vertical_1.stl" scale="1 1 1" />
+    <mesh name="asset_0309" file="../../Wall-E-URDF/meshes/PinSocket_1x04_P2_54mm_Vertical.stl" scale="1 1 1" />
+    <mesh name="asset_0310" file="../../Wall-E-URDF/meshes/PinSocket_1x08_P2_54mm_Vertical_1.stl" scale="1 1 1" />
+    <mesh name="asset_0311" file="../../Wall-E-URDF/meshes/R_0805_2012Metric_19.stl" scale="1 1 1" />
+    <mesh name="asset_0312" file="../../Wall-E-URDF/meshes/Rim.stl" scale="1 1 1" />
+    <mesh name="asset_0313" file="../../Wall-E-URDF/meshes/SM_LED_001.stl" scale="1 1 1" />
+    <mesh name="asset_0314" file="../../Wall-E-URDF/meshes/SM_LED_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0315" file="../../Wall-E-URDF/meshes/SM_LED_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0316" file="../../Wall-E-URDF/meshes/SOT25_001.stl" scale="1 1 1" />
+    <mesh name="asset_0317" file="../../Wall-E-URDF/meshes/SOT25_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0318" file="../../Wall-E-URDF/meshes/SOT_143.stl" scale="1 1 1" />
+    <mesh name="asset_0319" file="../../Wall-E-URDF/meshes/SOT_223.stl" scale="1 1 1" />
+    <mesh name="asset_0320" file="../../Wall-E-URDF/meshes/SOT_23_6.stl" scale="1 1 1" />
+    <mesh name="asset_0321" file="../../Wall-E-URDF/meshes/SW_SPST_PTS810.stl" scale="1 1 1" />
+    <mesh name="asset_0322" file="../../Wall-E-URDF/meshes/Screw_M3_75mm.stl" scale="1 1 1" />
+    <mesh name="asset_0323" file="../../Wall-E-URDF/meshes/TT_MOTOR_90_1_solid1.stl" scale="1 1 1" />
+    <mesh name="asset_0324" file="../../Wall-E-URDF/meshes/Tyre.stl" scale="1 1 1" />
+    <mesh name="asset_0325" file="../../Wall-E-URDF/meshes/_0603_Capacitor_001.stl" scale="1 1 1" />
+    <mesh name="asset_0326" file="../../Wall-E-URDF/meshes/_0603_Capacitor_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0327" file="../../Wall-E-URDF/meshes/_0603_Capacitor_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0328" file="../../Wall-E-URDF/meshes/_0603_Capacitor_002.stl" scale="1 1 1" />
+    <mesh name="asset_0329" file="../../Wall-E-URDF/meshes/_0603_Capacitor_002_1.stl" scale="1 1 1" />
+    <mesh name="asset_0330" file="../../Wall-E-URDF/meshes/_0603_Capacitor_002_2.stl" scale="1 1 1" />
+    <mesh name="asset_0331" file="../../Wall-E-URDF/meshes/_0603_Capacitor_003.stl" scale="1 1 1" />
+    <mesh name="asset_0332" file="../../Wall-E-URDF/meshes/_0603_Capacitor_003_1.stl" scale="1 1 1" />
+    <mesh name="asset_0333" file="../../Wall-E-URDF/meshes/_0603_Capacitor_003_2.stl" scale="1 1 1" />
+    <mesh name="asset_0334" file="../../Wall-E-URDF/meshes/_0603_Capacitor_004.stl" scale="1 1 1" />
+    <mesh name="asset_0335" file="../../Wall-E-URDF/meshes/_0603_Capacitor_004_1.stl" scale="1 1 1" />
+    <mesh name="asset_0336" file="../../Wall-E-URDF/meshes/_0603_Capacitor_004_2.stl" scale="1 1 1" />
+    <mesh name="asset_0337" file="../../Wall-E-URDF/meshes/_0603_Capacitor_005.stl" scale="1 1 1" />
+    <mesh name="asset_0338" file="../../Wall-E-URDF/meshes/_0603_Capacitor_005_1.stl" scale="1 1 1" />
+    <mesh name="asset_0339" file="../../Wall-E-URDF/meshes/_0603_Capacitor_005_2.stl" scale="1 1 1" />
+    <mesh name="asset_0340" file="../../Wall-E-URDF/meshes/_0603_Capacitor_006.stl" scale="1 1 1" />
+    <mesh name="asset_0341" file="../../Wall-E-URDF/meshes/_0603_Capacitor_006_1.stl" scale="1 1 1" />
+    <mesh name="asset_0342" file="../../Wall-E-URDF/meshes/_0603_Capacitor_006_2.stl" scale="1 1 1" />
+    <mesh name="asset_0343" file="../../Wall-E-URDF/meshes/_0603_Resistor_001.stl" scale="1 1 1" />
+    <mesh name="asset_0344" file="../../Wall-E-URDF/meshes/_0603_Resistor_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0345" file="../../Wall-E-URDF/meshes/_0603_Resistor_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0346" file="../../Wall-E-URDF/meshes/_0603_Resistor_002.stl" scale="1 1 1" />
+    <mesh name="asset_0347" file="../../Wall-E-URDF/meshes/_0603_Resistor_002_1.stl" scale="1 1 1" />
+    <mesh name="asset_0348" file="../../Wall-E-URDF/meshes/_0603_Resistor_002_2.stl" scale="1 1 1" />
+    <mesh name="asset_0349" file="../../Wall-E-URDF/meshes/_0603_Resistor_003.stl" scale="1 1 1" />
+    <mesh name="asset_0350" file="../../Wall-E-URDF/meshes/_0603_Resistor_003_1.stl" scale="1 1 1" />
+    <mesh name="asset_0351" file="../../Wall-E-URDF/meshes/_0603_Resistor_003_2.stl" scale="1 1 1" />
+    <mesh name="asset_0352" file="../../Wall-E-URDF/meshes/_0603_Resistor_004.stl" scale="1 1 1" />
+    <mesh name="asset_0353" file="../../Wall-E-URDF/meshes/_0603_Resistor_004_1.stl" scale="1 1 1" />
+    <mesh name="asset_0354" file="../../Wall-E-URDF/meshes/_0603_Resistor_004_2.stl" scale="1 1 1" />
+    <mesh name="asset_0355" file="../../Wall-E-URDF/meshes/_1x8_Male_Header_001.stl" scale="1 1 1" />
+    <mesh name="asset_0356" file="../../Wall-E-URDF/meshes/_24_QFN_001.stl" scale="1 1 1" />
+    <mesh name="asset_0357" file="../../Wall-E-URDF/meshes/_24_QFN_001_1.stl" scale="1 1 1" />
+    <mesh name="asset_0358" file="../../Wall-E-URDF/meshes/_24_QFN_001_10.stl" scale="1 1 1" />
+    <mesh name="asset_0359" file="../../Wall-E-URDF/meshes/_24_QFN_001_11.stl" scale="1 1 1" />
+    <mesh name="asset_0360" file="../../Wall-E-URDF/meshes/_24_QFN_001_12.stl" scale="1 1 1" />
+    <mesh name="asset_0361" file="../../Wall-E-URDF/meshes/_24_QFN_001_13.stl" scale="1 1 1" />
+    <mesh name="asset_0362" file="../../Wall-E-URDF/meshes/_24_QFN_001_14.stl" scale="1 1 1" />
+    <mesh name="asset_0363" file="../../Wall-E-URDF/meshes/_24_QFN_001_15.stl" scale="1 1 1" />
+    <mesh name="asset_0364" file="../../Wall-E-URDF/meshes/_24_QFN_001_16.stl" scale="1 1 1" />
+    <mesh name="asset_0365" file="../../Wall-E-URDF/meshes/_24_QFN_001_17.stl" scale="1 1 1" />
+    <mesh name="asset_0366" file="../../Wall-E-URDF/meshes/_24_QFN_001_18.stl" scale="1 1 1" />
+    <mesh name="asset_0367" file="../../Wall-E-URDF/meshes/_24_QFN_001_19.stl" scale="1 1 1" />
+    <mesh name="asset_0368" file="../../Wall-E-URDF/meshes/_24_QFN_001_2.stl" scale="1 1 1" />
+    <mesh name="asset_0369" file="../../Wall-E-URDF/meshes/_24_QFN_001_20.stl" scale="1 1 1" />
+    <mesh name="asset_0370" file="../../Wall-E-URDF/meshes/_24_QFN_001_21.stl" scale="1 1 1" />
+    <mesh name="asset_0371" file="../../Wall-E-URDF/meshes/_24_QFN_001_22.stl" scale="1 1 1" />
+    <mesh name="asset_0372" file="../../Wall-E-URDF/meshes/_24_QFN_001_23.stl" scale="1 1 1" />
+    <mesh name="asset_0373" file="../../Wall-E-URDF/meshes/_24_QFN_001_24.stl" scale="1 1 1" />
+    <mesh name="asset_0374" file="../../Wall-E-URDF/meshes/_24_QFN_001_3.stl" scale="1 1 1" />
+    <mesh name="asset_0375" file="../../Wall-E-URDF/meshes/_24_QFN_001_4.stl" scale="1 1 1" />
+    <mesh name="asset_0376" file="../../Wall-E-URDF/meshes/_24_QFN_001_5.stl" scale="1 1 1" />
+    <mesh name="asset_0377" file="../../Wall-E-URDF/meshes/_24_QFN_001_6.stl" scale="1 1 1" />
+    <mesh name="asset_0378" file="../../Wall-E-URDF/meshes/_24_QFN_001_7.stl" scale="1 1 1" />
+    <mesh name="asset_0379" file="../../Wall-E-URDF/meshes/_24_QFN_001_8.stl" scale="1 1 1" />
+    <mesh name="asset_0380" file="../../Wall-E-URDF/meshes/_24_QFN_001_9.stl" scale="1 1 1" />
+    <mesh name="asset_0381" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2.stl" scale="1 1 1" />
+    <mesh name="asset_0382" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1.stl" scale="1 1 1" />
+    <mesh name="asset_0383" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1_1.stl" scale="1 1 1" />
+    <mesh name="asset_0384" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1_2.stl" scale="1 1 1" />
+    <mesh name="asset_0385" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1_3.stl" scale="1 1 1" />
+    <mesh name="asset_0386" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1_4.stl" scale="1 1 1" />
+    <mesh name="asset_0387" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1_5.stl" scale="1 1 1" />
+    <mesh name="asset_0388" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_1_6.stl" scale="1 1 1" />
+    <mesh name="asset_0389" file="../../Wall-E-URDF/meshes/_8x1_male_header_pins_v2_2.stl" scale="1 1 1" />
+    <mesh name="asset_0390" file="../../Wall-E-URDF/meshes/a71ba716_8551_11ed_a139_00155d22e2d7_part.stl" scale="1 1 1" />
+    <mesh name="asset_0391" file="../../Wall-E-URDF/meshes/a71ba78e_8551_11ed_a139_00155d22e2d7_part.stl" scale="1 1 1" />
+    <mesh name="asset_0392" file="../../Wall-E-URDF/meshes/a71ba78e_8551_11ed_a139_00155d22e2d7_part_1.stl" scale="1 1 1" />
+    <mesh name="asset_0393" file="../../Wall-E-URDF/meshes/mini_motor_1_solid1.stl" scale="1 1 1" />
+    <mesh name="asset_0394" file="../../Wall-E-URDF/meshes/output_shaft_2_solid1.stl" scale="1 1 1" />
+    <mesh name="asset_0395" file="../../Wall-E-URDF/meshes/sra_board_unsaved_export_ok3Bnj_PCB.stl" scale="1 1 1" />
   </asset>
   <worldbody>
     <light name="key" pos="0.2 -0.25 0.5" dir="-0.3 0.5 -1" directional="true" diffuse="0.9 0.9 0.9" />
